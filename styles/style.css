@@ -1,0 +1,99 @@
+/* Site layout */
+
+
+/* || General styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 4fr);
+  grid-gap: 18px;
+}
+
+header {
+  background-color: #06BEE1;
+  color: #242424;
+  grid-column: auto / span 4;
+}
+
+.navigation {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Styling case study buttons */
+.btn {
+  background-color: #CC0E74; /* Green */
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Typography */
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-size: 400;
+}
+
+h4 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.case-title {
+  color: #2541B2;
+  font-weight: 400;
+}
+
+/* Card Style for Preview Images on Homepage */
+
+.card {
+  /* Add shadows to create the "card" effect */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* footer formatting */
+
+.footer {
+  background-color: #03256C;
+  color: #FFF;
+  font-size:
+}
+
+.caption {
+  font-size: 12px;
+}
+
+
+
+/* footer icon customizations */
+ion-icon {
+  color: white;
+}
