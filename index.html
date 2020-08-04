@@ -8,75 +8,80 @@
       <link rel="stylesheet" href="styles/style.css">
    </head>
    <body id="home">
-      <div class = "container">
+      <div class ="container">
          <!-- logo and nav menu -->
-         <header>
-            <img src="assets/images/maddie_logo.png" alt="my logo" width="96" height="96">
+         <div class ="header">
+            <div>
+              <img id="mylogo" src="assets/images/maddie_logo.png" alt="my logo">
+            </div>
             <div class = "navigation">
-               <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-               </ul>
+
+                <a href="#">Home</a></li>
+                <a href="#">About</a></li>
+                <a href="#">Contact</a></li>
+
             </div>
             <!-- hero unit -->
             <section class="hero">
                <h1>Welcome! I’m Madeleine and I’m a digital designer in Los Angeles, making things friendly, user-friendly and just friendly.</h1>
             </section>
-         </header>
+         </div>
          <!-- end of hero -->
          <!-- Deskspace Preview & Description -->
-         <div id="cases">
-            <section id="case_1">
-               <div class = "card">
-                  <img src="assets/images/ds_preview.png" alt="Deskspace Screen" width="671" height="460">
-               </div>
-               <h4>Cloud App</h4>
-               <h2 class="case-title">DeskSpace</h2>
-               <p class="case-description">DeskSpace is a cloud storage platform with content creation and sharing capabilities similar to G-Drive.</p>
-               <a href="" class="btn">case study</a>
-            </section>
+
+            <div class="case" id="case1">
+                <img class="imagepreview" id="deskspacepreview" src="assets/images/ds_preview.png" alt="Deskspace Screen">
+                <div class="summary">
+                   <h4>Cloud App</h4>
+                   <h2 class="case-title">DeskSpace</h2>
+                   <p class="case-description">DeskSpace is a cloud storage platform with content creation and sharing capabilities similar to G-Drive.</p>
+                   <a href="" class="btn">case study</a>
+                </div>
+            </div>
+            <div class ="divider"></div>
             <!-- end of Deskspace section -->
             <!-- Second Case Study Preview & Description -->
-            <section id="case_2">
-               <h4>Case Type</h4>
-               <h2 class="case-title">Temporary Title</h2>
-               <p class="case-description">Lorem Ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-               </p>
-               <a href="" class="btn">case study</a>
-               <div class = "card">
-                  <img src="assets/images/water.jpg" alt="temporary photo">
-               </div>
-            </section>
+            <div class="case" id="case2">
+                <div class ="summary2">
+                   <h4>Case Type</h4>
+                   <h2 class="case-title">Temporary Title</h2>
+                   <p class="case-description">Lorem Ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                   </p>
+                   <a href="" class="btn">case study</a>
+                </div>
+                <img class="imagepreview" id="water" src="assets/images/water.jpg" alt="temporary photo">
+            </div>
+            <div class ="divider"></div>
+
             <!-- end of "" section -->
             <!-- Third Case Study Preview & Description -->
-            <section id="case_3">
-               <h4>Case Type</h4>
-               <h2 class="case-title">Temporary Title</h2>
-               <p class="case-description">Lorem Ipsum dolor sit amet, consectetur adipiscing elit,
-                  sed do eiusmod tempor incididunt ut labore et dolore magna
-               </p>
-               <a href="" class="btn">case study</a>
-               <div class = "card">
-                  <img src="assets/images/fire.jpg" alt="temporary photo" width="671" height="460">
-               </div>
-            </section>
+            <div class="case" id="case3">
+                <img id="fire" class="imagepreview" src="assets/images/fire.jpg" alt="temporary photo">
+                <div class = "summary">
+                   <h4>Case Type</h4>
+                   <h2 class="case-title">Temporary Title</h2>
+                   <p class="case-description">Lorem Ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                   </p>
+                   <a href="" class="btn">case study</a>
+                </div>
+            </div>
             <!-- end of "" section -->
-         </div>
+
          <!-- end of case studies section -->
          <!-- footer -->
          <div class="footer">
             <div class="footer-content">
                <a href="#">
-                  <h2>Contact Me</h2>
+                  <h2 class="footer-heading">Contact Me</h2>
                </a>
                <p>Wanna connect? Please hit me up on one of the below!</p>
                <p>Thank you for visiting, and have a great day.</p>
             </div>
             <!-- clickable social icons -->
             <div class="social">
-               <ul>
+               <ul id="icons">
                   <li class="linkedin">
                      <a href="http://www.linkedin.com/in/madeleinebrooks">
                         <ion-icon name="logo-linkedin"></ion-icon>

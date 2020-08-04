@@ -7,82 +7,61 @@
       <link rel="stylesheet" href="styles/reset.css">
       <link rel="stylesheet" href="styles/style.css">
    </head>
-   <body id="deskspace">
-      <div class = "container">
-         <!-- DEAR GRADER - just including img sizes here so it is easier to see in a web browser - sizes will be dealt with in CSS ultimately -->
+   <body>
+      <div class = "deskspace">
          <!-- entire header section -->
-         <header id="deskspace-header">
+         <div class ="header">
             <!-- my logo -->
-            <img id="my-logo" src="assets/images/maddie_logo.png" alt="my logo" width="96" height="96">
+            <img id="mylogo" src="assets/images/maddie_logo.png" alt="my logo">
             <!-- nav menu -->
-            <nav class = "menu">
-               <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Contact</a></li>
-               </ul>
-            </nav>
+            <div class = "navigation">
+
+                  <a href="#">Home</a></li>
+                  <a href="#">About</a></li>
+                  <a href="#">Contact</a></li>
+
+            </div>
+
             <!-- app title with prototype button &amp; description -->
             <div class = "header-main-content">
                <h1>DeskSpace</h1>
                <a href="" class = "btn">prototype</a>
-               <p class = "app-description">A cloud sharing app that allows users to back-up files, organize them, create content, and collaborate.</p>
+               <h3 class = "app-description">A cloud sharing app that allows users to back-up files, organize them, create content, and collaborate.</h3>
             </div>
-         </header>
+         </div>
          <!-- end of header -->
          <!-- Preview Image and Project Details -->
          <section id = "preview-details">
             <img id="deskspace-preview-image" src="assets/images/ds_preview.png" alt="Deskspace Screen">
             <div id= "specs">
-               <h3>Project Specs</h3>
-               <p><strong>Duration</strong> 5 weeks</p>
-               <p><strong>Design Roles</strong> UX Researcher, UX Designer, &amp; Graphic Designer</p>
-               <p><strong>Deliverables</strong> User Surveys, User Personas, Competitive Analysis, User Stories &amp; Flows,
+               <h2 class ="bold">Project Specs</h2>
+               <p><strong>  Duration </strong>   5 weeks</p>
+               <p><strong>  Design Roles </strong>   UX Researcher, UX Designer, &amp; Graphic Designer</p>
+               <p><strong>  Deliverables </strong>   User Surveys, User Personas, Competitive Analysis, User Stories &amp; Flows,
                   Brand Personality &amp; Messaging, Wireframes, User Testing, Custom Graphics, Brand Guidelines, Clickable Prototype
                </p>
-               <p><strong>Tools</strong> Google Forms; Draw.io; Figma; Adobe Photoshop, Illustrator, and XD</p>
+               <p><strong>  Tools  </strong>   Google Forms; Draw.io; Figma; Adobe Photoshop, Illustrator, and XD</p>
             </div>
          </section>
          <!-- problem and solutions and screens separated visually -->
-         <section id = "problem-solution-screens">
-            <div class = "wrapper">
-               <section id="problem">
-                  <h2>The Problem</h2>
-                  <p>A company wants to get into the cloud storage industry - what do consumers already get from their cloud storage options,
-                     what users should they target, what do those users wish they had, how can you build it, and what type of brand should deliver it?
-                  </p>
-               </section>
-            </div>
-            <div class = "wrapper">
-               <section id="solution">
-                  <h2>The Solution</h2>
-                  <p>DeskSpace is a customizable cloud storage and content creation service for consumers straddling too many cloud services. In addition
-                     to all the Google Drive and Dropbox features, DeskSpace allows users to reduce file bloat across multiple services to get more
-                     ‘desk space’ without forcing local downloads or having to temporarily pay for more space.
-                  </p>
-               </section>
-            </div>
-            <!-- Back to top button -->
-            <div id="to-top"></div>
-            <!-- preview image for solution -->
-            <div class = "screens">
-               <img id="getting-started" src="assets/images/getting_started.png" alt="Getting Started Screen" width="1130" height="780">
-               <img id="clean-up" src="clean_up_screen.png" alt="Clean Up Screen" width="1130" height="780">
-            </div>
-            <!-- end of problem and solution section -->
-         </section>
+
          <!-- Table of Contents animated -->
          <div class = "table-of-contents" id = "discovery-table">
          </div>
          <!-- Discovery Content Begins -->
          <section class = "discovery-content">
             <!-- user surveys sub-section -->
-            <section id="user-surveys">
-               <h2 class="category-heading">User Surveys</h2>
+
+            <div class="category-heading-div">
+             <h2>User Surveys</h2>
+             </div>
+
+             <section id="user-surveys">
                <!-- Questions area -->
                <div class = "question-area">
-                  <div class = "connected-section">
-                     <h3>Questions</h3>
+                    <div class = "connected-heading">
+                     <h3>The Questions</h3>
+                    </div>
                      <!-- Card of Question breakdown attached to heading -->
                      <div class = "question-breakdown">
                         <h5>Current Usage</h5>
@@ -98,10 +77,11 @@
                         <h5>Devices</h5>
                         <p>How users access these features (mobile vs web)</p>
                      </div>
-                  </div>
-                  <!-- Questionnaire button -->
-                  <a href="https://docs.google.com/document/d/1TEJP3ois44Khwo63D6coW1SJqJbbfFDbZTu1Spb40pM/edit?usp=sharing" class="btn">Questionnaire</a>
-               </div>
+                     <!-- Questionnaire button -->
+                     <a href="https://docs.google.com/document/d/1TEJP3ois44Khwo63D6coW1SJqJbbfFDbZTu1Spb40pM/edit?usp=sharing" class="btn">Questionnaire</a>
+                </div>
+
+
                <!-- Answers section -->
                <div id = "answers-area">
                   <h3>The Answers</h3>
@@ -160,7 +140,9 @@
             </section>
             <!-- user personas section -->
             <section id = "user-personas">
-               <h2 class="category-heading">User Personas</h2>
+              <div class="category-heading-div">
+               <h2>User Personas</h2>
+             </div>
                <div class="persona" id="chris-div">
                   <img id="chris" src="assets/images/chris.jpg" alt="Chris Persona" width="211" height="211">
                   <p class = "persona-heading">Chris &amp;#x95; <i>On-the-go Professional</i> &amp;#x95; 32</p>
@@ -366,7 +348,7 @@
                   </ol>
                </div>
                <!-- graphic for user test success rate -->
-               <img src="assets/images/user_success.png" alt="graphic for user success on tests">
+               <img src="assets/images/user_success.png" alt="graphic for user success on tests" width="200px" height="200px">
                <p>After bringing the wireframes to life in Figma and after fixing a few bugs within the various click behaviors of the prototype,
                   I asked new users to narrate their experiences and perform the same three tasks as before, plus one a new one that involved the
                   ‘new feature’: deleting duplicates. The users were able to perform all four tasks, this time with even less hesitation. They
@@ -467,39 +449,8 @@
             </section>
             <!-- end of Prototype content -->
          </section>
-         <!-- ********* CONCLUSION ****** -->
-         <section id = "conclusion">
-            <div class = "conclusion-area">
-               <h2 id="conclusion-font">Conclusion</h2>
-               <p>
-                  <strong>It wasn’t surprising</strong> that users want as much free space as they can get and want files to upload and download as fast as possible;
-                  however, it was surprising that in trying to solve those issues on their own, users created new issues like having too many
-                  forgettable, disorganized accounts and getting confused on who had access to what.
-               </p>
-               <div class="quote">
-                  <p>"...realizing I could use design to alleviate the 'free space' issue by helping users make the most of the
-                     space they have."
-                  </p>
-               </div>
-               <div class="image-wrapper">
-                  <img src="assets/images/venn5.png" alt="revelation illustration">
-               </div>
-               <div class="column1">
-                  <p>At first, I considered free space and upload times purely technically issues. My breakthrough was realizing I could use design
-                     to alleviate the “free space” issue by helping users make the most of the space they have. Not only did it address the number
-                     one problem among users, but it also fit perfectly with the needs of our second user persona, Jenna, who wants her
-                     things organized.
-                  </p>
-               </div>
-               <div class ="column2">
-                  <p>If given more time, I would create more examples of what onboarding messaging should look like for first-time users so that
-                     during usability tests, I would hear more certainty from respondents about what the buttons like “clean up” and “sync” did.
-                     As it is, the users were able to correctly guess what the buttons did, and accomplished the other tested tasks easily, so the
-                     app is on the right track, and I look forward to seeing its successful evolution.
-                  </p>
-               </div>
-            </div>
-         </section>
+
+
          <!-- end of content -->
          <!-- footer -->
          <div class="footer">
@@ -510,17 +461,28 @@
             </div>
             <!-- clickable social icons -->
             <div class="social">
-               <ul>
-                  <li class="linkedin">
-                     <a href="http://www.linkedin.com/in/madeleinebrooks"> </a>
-                  </li>
-                  <li class="github">
-                     <a href="https://github.com/madeleinemb">icon goes here</a>
-                  </li>
-                  <li class="email"><a href="mailto:madeleineut@gmail.com"> </a></li>
-               </ul>
-               <p>&amp;copy; 2020 Madeleine Brooks – Designed and coded by hand.</p>
+              <ul id="icons">
+                 <li class="linkedin">
+                    <a href="http://www.linkedin.com/in/madeleinebrooks">
+                       <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                 </li>
+                 <li class="github">
+                    <a href="https://github.com/madeleinemb">
+                       <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                 </li>
+                 <li class="email">
+                    <a href="mailto:madeleineut@gmail.com">
+                       <ion-icon name="mail-outline"></ion-icon>
+                    </a>
+                 </li>
+              </ul>
+               <p>&copy; 2020 Madeleine Brooks – Designed and coded by hand.</p>
             </div>
          </div>
       </div>
+
+      <!-- SCRIPTS -->
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
    </body>
