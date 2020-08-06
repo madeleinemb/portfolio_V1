@@ -14,18 +14,20 @@
             <!-- my logo -->
             <img id="mylogo" src="assets/images/maddie_logo.png" alt="my logo">
             <!-- nav menu -->
-            <div class = "navigation">
+            <div class="nav-grid">
 
-                  <a href="#">Home</a></li>
-                  <a href="#">About</a></li>
-                  <a href="#">Contact</a></li>
+                  <ul class = "navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
 
             </div>
 
             <!-- app title with prototype button &amp; description -->
             <div class = "header-main-content">
                <h1>DeskSpace</h1>
-               <a href="" class = "btn">prototype</a>
+               <a href="" class = "btn" id="prototype">prototype</a>
                <h3 class = "app-description">A cloud sharing app that allows users to back-up files, organize them, create content, and collaborate.</h3>
             </div>
          </div>
@@ -83,14 +85,20 @@
 
 
                <!-- Answers section -->
-               <div id = "answers-area">
-                  <h3>The Answers</h3>
-                  <h4 class = "ds-mini-section-header">Oversaturation &amp; Complaints</h4>
-                  <p>I expected that people would be familiar with cloud storage, but I was surprised to learn how oversaturated respondents felt with the number of services they use.
+
+               <!-- <h3>The Answers</h3>
+               <h4 class = "ds-mini-section-header">Oversaturation &amp; Complaints</h4> -->
+
+               <div class = "answers-area">
+                 <h3>The Answers</h3>
+                 <h4 class = "ds-mini-section-header">Oversaturation &amp; Complaints</h4>
+                  <div class="answer-takeaways">
+                    <p>I expected that people would be familiar with cloud storage, but I was surprised to learn how oversaturated respondents felt with the number of services they use.
                      Almost half of respondents were using or had used 3 or more storage apps, which came up time and again in the complaints.<br>
                      Top complaints: 1. Not enough free space (44% of complaints); 2. Multiple services &amp; logins confusion (22%) and
                      2. Sharing files with non users (22%); 3. Conerns over who has file permissions (11%).
-                  </p>
+                    </p>
+                  </div>
                   <div class = "analysis-section">
                      <h5 class = "answers-section">Why do respondents use so many services?</h5>
                      <ol>
@@ -101,41 +109,41 @@
                   </div>
                   <h4 class = "ds-mini-section-header">Features &amp; Preferences</h4>
                   <img id="features" src="assets/images/features_graph.png" alt="Features Graph" width="556" height="370">
-                  <p>Respondents indicated that all the features we asked about were important to them. However, they ranked uploading files as the most important
+                  <p id="respondents">Respondents indicated that all the features we asked about were important to them. However, they ranked uploading files as the most important
                      feature and saving content online as the least important. Outside of these rankings, respondents also expressed that they collaborate on a
                      daily basis via their chosen service, so that was clearly important as well.
                   </p>
                   <img id="g-drive" src="assets/images/gdrive_info.png" alt="G Drive Preferred" width="328" height="290">
                   <img id="devices" src="assets/images/survey_device.png" alt="Devices Preference" width="328" height="223">
-                  <p>70% of respondents stated that they prefered G Drive to other options. Upon looking at the open responses as to why users preferred one
+                  <p id="features-descrip">70% of respondents stated that they prefered G Drive to other options. Upon looking at the open responses as to why users preferred one
                      service to another, the most common responses were: 1.  User-friendly UI (35%), 2. Multi-device platform (26%), and
                      3. Wide variety of native programs (22%) tied with 3. Being built on an email platform with an already wide user base (22%).
                   </p>
-               </div>
                <!-- Answers analysis -->
-               <div class = "wrapper">
-                  <div class = "analysis">
-                     <h3>What does this mean for the product?</h3>
-                     <div class = "column1">
-                        <ul>
-                           <li>While having mobile access is extremely important to the average user, having a desktop site for
-                              online storage is an absolute necessity
-                           </li>
-                           <li>The wider the default user base, the better</li>
-                           <li>Minimize obstacles for sharing content with non-users</li>
-                           <li>Offer a user-friendly UI good enough to compete with Google’s</li>
-                           <li>Offer a variety of ways or apps to create all types of content</li>
-                        </ul>
-                     </div>
-                     <div class = "column2">
-                        <ul>
-                           <li>Offer a variety of ways or apps to create all types of content</li>
-                           <li>Give users as much free space as financially viable</li>
-                           <li>Must include features for saving, organizing, uploading, sharing, and creating content</li>
-                           <li>Do not focus on users already invested in a system tied to their device</li>
-                        </ul>
-                     </div>
-                  </div>
+                   <div class = "wrapper">
+                      <div class = "analysis">
+                         <h3>What does this mean for the product?</h3>
+                         <div class = "column1">
+                            <ul>
+                               <li>While having mobile access is extremely important to the average user, having a desktop site for
+                                  online storage is an absolute necessity
+                               </li>
+                               <li>The wider the default user base, the better</li>
+                               <li>Minimize obstacles for sharing content with non-users</li>
+                               <li>Offer a user-friendly UI good enough to compete with Google’s</li>
+                               <li>Offer a variety of ways or apps to create all types of content</li>
+                            </ul>
+                         </div>
+                         <div class = "column2">
+                            <ul>
+                               <li>Offer a variety of ways or apps to create all types of content</li>
+                               <li>Give users as much free space as financially viable</li>
+                               <li>Must include features for saving, organizing, uploading, sharing, and creating content</li>
+                               <li>Do not focus on users already invested in a system tied to their device</li>
+                            </ul>
+                         </div>
+                      </div>
+                   </div>
                </div>
             </section>
             <!-- user personas section -->
@@ -162,19 +170,22 @@
             </section>
             <!-- competitive analysis section -->
             <section id = "competitive">
+              <div class="category-heading-div">
+                <h2>Competitive Analysis</h2>
+              </div>
                <a href="https://docs.google.com/document/d/1bvA67_OfNju5xqgsiXtGBJ-rdhCHuGUQi2fUVruQYu8/edit?usp=sharing" class="btn">Full Analysis</a>
-               <h2 class="category-heading">Competitive Analysis</h2>
-               <div class = "competitors">
+
+
                   <div id="company1">
                      <img class = "logo" src="assets/images/gdrive_logo.png" alt="G Drive Logo" width="97" height="97">
                      <h3 class="company-name">G Drive</h3>
-                     <img src="assets/images/gdrive_summary.png" alt="G Drive messaging">
+                     <img id="g-drive-summary-image" src="assets/images/gdrive_summary.png" alt="G Drive messaging">
                      <p class="company-points">15 GB Free &amp;#x95; Anything you want to store or create &amp;#x95; Power of Google</p>
                   </div>
                   <div id="company2">
                      <img class = "logo" src="assets/images/dropbox_logo.png" alt="Dropbox Logo" width="97" height="97">
                      <h3 class="company-name">Dropbox</h3>
-                     <img src="assets/images/dropbox_info.png" alt="Dropbox messaging">
+                     <img id="dropbox-summary-image" src="assets/images/dropbox_info.png" alt="Dropbox messaging">
                      <p class="company-points">2 GB Free &amp;#x95; TEAM, TEAM, TEAM &amp;#x95; Do work together, securely</p>
                   </div>
                   <div id="opportunities">
@@ -184,7 +195,7 @@
                         files across multiple apps.
                      </p>
                   </div>
-               </div>
+
             </section>
             <!-- end of Discovery Section -->
          </section>
@@ -196,9 +207,11 @@
          <section class = "info-content">
             <!-- user stories section -->
             <section id="user-stories">
+              <div class="category-heading-div">
+                <h2>User Stories</h2>
+              </div>
                <!--user stories button -->
                <a href="https://docs.google.com/spreadsheets/d/1VHeU5aOHu4iFuP_dCgjgUqPlJSuOqNH9e1IlnYu6Qjo/edit?usp=sharing" class="btn">User Stories</a>
-               <h2 class="category-heading">User Stories</h2>
                <!-- user stories images -->
                <img src="assets/images/sticky_notes.jpg" alt="User stories on sticky notes">
                <img src="assets/images/user_stories_chart.png" alt="User stories chart" width="327" height="596">
