@@ -8,9 +8,10 @@
       <link rel="stylesheet" href="styles/style.css">
    </head>
    <body>
-      <div id = "deskspace" class="grid">
+     <div id = "deskspace">
+
          <!-- entire header section -->
-         <div class ="header">
+         <div class ="header" class = "grid-no-margin full-width">
             <!-- my logo -->
             <img id="mylogo" src="assets/images/maddie_logo.png" alt="my logo">
             <!-- nav menu -->
@@ -30,7 +31,8 @@
          </div>
          <!-- end of header -->
          <!-- Preview Image and Project Details -->
-         <section id = "preview-details" class="grid full-width">
+         <section id = "preview-details">
+           <div class="grid">
             <img id="deskspace-preview-image" class="image-fit" src="assets/images/ds_preview.png" alt="Deskspace Screen">
             <div id= "specs">
                <h2 class ="bold">Project Specs</h2>
@@ -43,7 +45,7 @@
             </div>
          </section>
          <!-- problem and solutions and screens separated visually -->
-         <section id = "problem-solution" class = "grid full-width">
+         <section id = "problem-solution">
             <div id="problem" class = "grid full-width">
             <div id = "problem-wrapper">
                <h2>The Problem</h2>
@@ -70,16 +72,16 @@
          </div>
          <!-- preview image for solution -->
          <div id = "solution-screens" class = "grid full-width">
-            <img id="getting-started" class = "image-fit" src="assets/images/getting_started.png" alt="Getting Started Screen" width="1130" height="780">
-            <img id="clean-up" class = "image-fit" src="assets/images/clean_up_screen.png" alt="Clean Up Screen" width="1130" height="780">
+            <img id="preview-screens" class = "image-fit" src="assets/images/combined_preview_screens.png" alt="Preview of Desktop Pages">
          </div>
+       </div>
          <!-- end of overview  -->
          <!-- Table of Contents animated -->
          <div class = "table-of-contents" id = "discovery-table">
            <p> A Tale of Contents goes here - hence tons of space </p>
          </div>
          <!-- Discovery Content Begins -->
-         <section id = "discovery-content" class="grid full-width">
+         <section id = "discovery-content">
             <!-- user surveys sub-section -->
             <div class="category-heading-div">
                <h2>User Surveys</h2>
@@ -141,32 +143,33 @@
                   service to another, the most common responses were: 1.  User-friendly UI (35%), 2. Multi-device platform (26%), and
                   3. Wide variety of native programs (22%) tied with 3. Being built on an email platform with an already wide user base (22%).
                </p>
+             </div>
                <!-- Answers analysis -->
-               <div class = "wrapper">
-                  <div id = "analysis" class = "grid">
-                     <h3>What does this mean for the product?</h3>
-                     <div class = "column1">
-                        <ul>
-                           <li>While having mobile access is extremely important to the average user, having a desktop site for
-                              online storage is an absolute necessity
-                           </li>
-                           <li>The wider the default user base, the better</li>
-                           <li>Minimize obstacles for sharing content with non-users</li>
-                           <li>Offer a user-friendly UI good enough to compete with Google’s</li>
-                           <li>Offer a variety of ways or apps to create all types of content</li>
-                        </ul>
-                     </div>
-                     <div class = "column2">
-                        <ul>
-                           <li>Offer a variety of ways or apps to create all types of content</li>
-                           <li>Give users as much free space as financially viable</li>
-                           <li>Must include features for saving, organizing, uploading, sharing, and creating content</li>
-                           <li>Do not focus on users already invested in a system tied to their device</li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
+             <div class = "wrapper full-width">
+                <div id = "analysis" class = "grid">
+                   <h3>What does this mean for the product?</h3>
+                   <div class = "column1">
+                      <ul>
+                         <li>While having mobile access is extremely important to the average user, having a desktop site for
+                            online storage is an absolute necessity
+                         </li>
+                         <li>The wider the default user base, the better</li>
+                         <li>Minimize obstacles for sharing content with non-users</li>
+                         <li>Offer a user-friendly UI good enough to compete with Google’s</li>
+                         <li>Offer a variety of ways or apps to create all types of content</li>
+                      </ul>
+                   </div>
+                   <div class = "column2">
+                      <ul>
+                         <li>Offer a variety of ways or apps to create all types of content</li>
+                         <li>Give users as much free space as financially viable</li>
+                         <li>Must include features for saving, organizing, uploading, sharing, and creating content</li>
+                         <li>Do not focus on users already invested in a system tied to their device</li>
+                      </ul>
+                   </div>
+                </div>
+             </div>
+            </section>
             <!-- </section> -->
             <!-- user personas section -->
             <section id = "user-personas" class = "grid full-width">
@@ -302,8 +305,8 @@
               <p> A Tale of Contents goes here - hence tons of space </p>
          </div>
          <!-- Visual content begins -->
-         <section id = "visual-content" class="grid full-width">
-            <div id = "brand-guidelines" class = "grid full-width">
+         <section id = "visual-content">
+            <div id = "brand-guidelines">
                <!-- <img src="assets/images/beach.jpg" alt="beach background" width="1132" height="572"> -->
                <a href="https://www.dropbox.com/s/w8rqqezss072rvb/DeskSpace%20Style%20Guide%20Final_Portfolio.pdf?dl=0" class="btn full-width">Brand Guidelines</a>
             </div>
@@ -390,7 +393,7 @@
               <p> A Tale of Contents goes here - hence tons of space </p>
          </div>
          <!-- prototype content begins -->
-         <section id = "prototype-content" class = "grid full-width">
+         <section id = "prototype-content">
             <!-- Usability Tests section -->
             <section id="usability-tests" class = "grid full-width">
                <div class="category-heading-div">
@@ -467,7 +470,7 @@
          </section>
          <!-- end of Prototype content -->
          <!-- ********* CONCLUSION ****** -->
-         <section id = "conclusion" class = "grid full-width">
+         <section id = "conclusion">
             <h2 id="conclusion-heading">Conclusion</h2>
             <p>
                <strong class = "conc">It wasn’t surprising</strong> that users want as much free space as they can get and want files to upload and download as fast as possible;
@@ -531,6 +534,7 @@
             </div>
          </div>
       </div>
+
       <!-- SCRIPTS -->
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
    </body>

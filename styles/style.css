@@ -357,15 +357,20 @@ ion-icon {
 	display: grid;
 	grid-template-columns: repeat(12, minmax(50px, 1fr));
 	grid-column-gap: 18px;
-	margin: 0px 0px 40px 0px;
+	margin: 0px 30px 40px 30px;
+}
+
+.grid-no-margin {
+	display: grid;
+	grid-template-columns: repeat(12, minmax(50px, 1fr));
+	grid-column-gap: 18px;
 }
 
 				/* setting grid item width to full page */
 .full-width,
-.wrapper,
 #answers-area h3,
 #analysis h3,
-#wireframes h3{
+#wireframes h3 {
 	grid-column: 1 / -1;
 }
 
@@ -442,14 +447,8 @@ ion-icon {
 	grid-template-rows: 300px 700px;
 }
 
-#getting-started {
-	grid-column: 3 / 10;
-	grid-row: 1 / 2;
-}
-
-#clean-up {
-	grid-column: 4 / 11;
-	grid-row: 2 / 3;
+#preview-screens {
+	grid-column: 2 / 12;
 }
 
 #connected-heading {
@@ -522,10 +521,12 @@ ion-icon {
 	grid-column: 8 / span 4;
 }
 
+.wrapper {
+		border: 5px red solid;
+}
 
 #analysis {
 	grid-column: 2/12;
-	border: 5px red solid;
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
 }
@@ -685,7 +686,7 @@ ion-icon {
 }
 
 #brand-guidelines .btn {
-	justify-self: center;
+	margin: 0;
 }
 
 #concept {
