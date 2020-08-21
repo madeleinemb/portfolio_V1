@@ -406,7 +406,7 @@ ion-icon {
 #wireframes .btn,
 #font .btn {
 	grid-column: 2 / -1;
-	margin: 0px 0px 40px 0px;
+	margin: 40px 0px 40px 0px;
 	justify-self: start;
 	align-self: center;
 }
@@ -572,7 +572,7 @@ ion-icon {
 #analysis {
 	grid-column: 2/12;
 	display: grid;
-	grid-template-columns: 1fr 3fr 1fr 3fr 1fr;
+	grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
 	padding-top: 40px;
 }
 
@@ -582,6 +582,7 @@ ion-icon {
 
 .column {
 	padding: 40px 0px 40px 0px;
+	line-height: 1.9;
 }
 
 .column ul {
@@ -709,13 +710,12 @@ ion-icon {
 
 #digital-wireframes-image {
 	grid-column: 2 / 9;
-	grid-row-start: 3;
+	grid-row-start: 2;
 }
 
 #digital-description {
-	padding-top: 40px;
 	grid-column: 8 / 12;
-	grid-row: 3 / 4;
+	grid-row: 2 / 3;
 }
 
 #wireframe-testing-description {
@@ -739,15 +739,10 @@ ion-icon {
 
 
 #wireframe-testing-image {
-	margin-top: 60px;
+	margin: 60px 0px 60px 0px;
 	grid-column: 2 / 12;
 }
 
-#brand-guidelines {
-	background-image: url("../assets/images/beach.jpg");
-	background-size: cover;
-	padding: 300px 0px 300px 0px;
-}
 
 #brand-guidelines .btn {
 	justify-self: center;
@@ -791,9 +786,13 @@ ion-icon {
 	grid-column: 7 / 12;
 }
 
-#preference-testing p {
+.two_to_five {
 	grid-column: 2 / 5;
 	align-self: center;
+}
+
+#preference-visuals .caption {
+	grid-column: 2 / span 6;
 }
 
 #branding-sketches {
@@ -944,7 +943,7 @@ ion-icon {
 
 
 .preference-image {
-	margin: 40px 0px 40px 0px;
+	margin: 40px 0px 0px 0px;
 	padding: 40px;
 	border-radius: 25px;
 	box-shadow: 0 4px 8px 0 rgba(123, 193, 195, .6);
@@ -1037,7 +1036,6 @@ ion-icon {
 #jenna {
 	border-radius: 50%;
 	object-fit: cover;
-	height: 100%;
 	grid-column: span 5;
 }
 
