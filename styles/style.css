@@ -18,9 +18,8 @@ body {
 	font-weight: 400;
 }
 
-body p{
+p {
   line-height: 2;
-	color: #242424;
 }
 
 .btn {
@@ -43,11 +42,6 @@ body p{
   margin-bottom: 40px;
 }
 
-.header {
-	grid-column: 1 / -1;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-}
 
 #myBtn {
   position: fixed;
@@ -76,20 +70,22 @@ body p{
 	display: inline-block;
 }
 
+/*footer icons */
 #icons li {
 	list-style: none;
 	display: inline;
 	padding: 20px;
 }
 
+i {
+	font-style: italic;
+}
+
 .footer {
-	grid-column: 1 / -1;
 	text-align: center;
   line-height: 1.4;
   padding-top: 30px;
 }
-
-/* navigation within header */
 
 .nav-grid {
 	grid-column-start: 10;
@@ -102,8 +98,8 @@ body p{
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
 	font-weight: 600;
-	/* spacing */
 
+	/* spacing */
 	align-items: center;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -121,10 +117,8 @@ ul, ol {
 }
 
 /* erasing typical ul, href, and nav formatting */
-.navigation a,
-.table-of-contents a,
-.footer a,
-.footer ul {
+a,
+ul {
 	text-decoration: none;
 }
 
@@ -135,41 +129,69 @@ ul, ol {
 /* ----- TYPOGRAPHY ------ */
 /* Headings */
 
-h1 {
+h1, h2, h3, h4, h5 {
 	font-family: 'Poppins', sans-serif;
+	color: #242424;
+}
+
+h1 {
 	font-size: 48px;
 	font-weight: 600;
 	text-align: center;
 }
 
 h2 {
-	font-family: 'Poppins', sans-serif;
 	font-size: 36px;
 	font-weight: 600;
 }
 
 h3 {
-  font-family: 'Poppins', sans-serif;;
   font-size: 32px;
   font-weight: 600;
 }
 
-h4 {
-	font-family: 'Poppins', sans-serif;
+h4, h5 {
 	font-size: 20px;
 	font-weight: 600;
 }
 
-h5 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+.caption {
+	font-size: 14px;
 }
 
-/* other */
-.caption {
-	font-size: 12px;
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, minmax(50px, 1fr));
+	grid-column-gap: 18px;
+	grid-row-gap: 20px;
+	margin: 0px 30px 40px 30px;
 }
+
+.grid-no-margin {
+	display: grid;
+	grid-template-columns: repeat(12, minmax(50px, 1fr));
+	grid-column-gap: 18px;
+}
+
+/* standard row gap */
+.row {
+	grid-row-gap: 80px;
+}
+
+/* setting grid item width to full page */
+.full-width {
+	grid-column: 1 / -1;
+}
+
+/*standard margin & padding */
+.margin {
+	margin: 40px 0px 40px 0px;
+}
+
+.padding {
+	padding: 40px 0px 40px 0px;
+}
+
 
 /* ********************************** */
 /* ----END OF GENERAL SECION----- */
@@ -205,9 +227,7 @@ h5 {
 
 /* Line separator between cases */
 .container .divider {
-  /* grid position */
   grid-column: 4/10;
-  /* color */
   background-color: #CC0E74;
   opacity: 40%;
 }
@@ -215,23 +235,20 @@ h5 {
 /* images in previews for case studies */
 
 .imagepreview {
-	grid-column: span 8;
+	grid-column: auto / span 7;
 	object-fit: cover;
 	width: 100%;
 }
 
-/* hover state for preview images */
-.imagepreview:hover {}
-
 /* preview image positioning */
 
 #water {
-	grid-column: 5/12;
+	grid-column-start: 5;
 }
 
 #fire,
 #deskspacepreview {
-	grid-column: 2/9;
+	grid-column-start: 2;
 }
 
 /* Summary for first and third case studies grid positioning */
@@ -254,11 +271,19 @@ h5 {
 
 /* --- FOOTER ---- */
 /* footer formatting */
-.container .footer {
+#home .footer {
 	background-color: #03256C;
 	color: #FFF;
   line-height: 1.4;
   padding-top: 30px;
+}
+
+#home .footer h2 {
+	color: inherit;
+}
+
+#home .footer p {
+	color: #FFF;
 }
 
 /* footer icon customizations from ion */
@@ -267,30 +292,19 @@ ion-icon {
 	font-size: 40px;
 }
 
-/* --- GRID ---- */
-/* CSS GRID set up for Homepage */
-.container {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-row-gap: 80px;
-}
 
 /* --- HEADER ---- */
 /* setting header background color */
 .container .header {
   background: linear-gradient( rgba(0, 214, 255, 0.4), rgba(0, 214, 255, 0.4));
   padding: 20px 40px 100px 40px;
-  grid-row-gap: 80px;
 }
 
 /* hero styles in header */
 .hero {
-	/* formatting */
 	line-height: 1.6;
-	/* display: grid; */
-	/* spacing */
 	grid-column: 3 / span 8;
+	padding: 80px 0px 80px 0px;
 }
 
 
@@ -351,7 +365,7 @@ ion-icon {
 	font-weight: 500;
 }
 
-#deskspace .btn {
+.deskspace .btn {
   background-color: #4B7B7D;
 	color: white;
 }
@@ -362,7 +376,7 @@ ion-icon {
 
 /* FOOTER ------------ */
 /* footer formatting */
-#deskspace .footer {
+.deskspace .footer {
 	background-color: #F8A59A;
 	color: #242424;
   line-height: 1.4;
@@ -370,36 +384,14 @@ ion-icon {
 }
 
 /* footer icon customizations from ion */
-#deskspace ion-icon {
+.deskspace ion-icon {
 	color: #242424;
 	font-size: 40px;
 }
 
 /* --- GRID ---- */
-/* CSS GRID set up for Deskspace Case study */
 
 /* setting general grid areas*/
-
-.grid {
-	display: grid;
-	grid-template-columns: repeat(12, minmax(50px, 1fr));
-	grid-column-gap: 18px;
-	grid-row-gap: 20px;
-	margin: 0px 30px 40px 30px;
-}
-
-.grid-no-margin {
-	display: grid;
-	grid-template-columns: repeat(12, minmax(50px, 1fr));
-	grid-column-gap: 18px;
-}
-
-/* setting grid item width to full page */
-.full-width,
-#analysis h3,
-#wireframes h3 {
-	grid-column: 1 / -1;
-}
 
 #competitive .btn,
 #user-stories .btn,
@@ -411,18 +403,10 @@ ion-icon {
 	align-self: center;
 }
 
-#deskspace {
-  grid-row-gap: 80px;
-}
 
 #specs {
   grid-column: 9/12;
   align-self: center;
-}
-
-#specs p {
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 #project-details {
@@ -447,17 +431,9 @@ ion-icon {
 	padding: 20px 0px 20px 0px;
 }
 
-/* .span-4 {
-	grid-column: span 4;
-} */
-
-
 
 #question-area {
   grid-template-rows: repeat(8, minmax(auto, 70px));
-  margin-top: 40px;
-  margin-bottom: 40px;
-	/* border-top: solid 5px #C23B23; */
 }
 
 #solution-screens {
@@ -532,11 +508,10 @@ ion-icon {
   font-family: Poppings, sans-serif;
 }
 
-.list-heading {
+.list-heading,
+#analysis h3 {
 	text-align: center;
-
 }
-
 
 #features {
 	grid-column: 2 / span 4;
@@ -576,13 +551,9 @@ ion-icon {
 	padding-top: 40px;
 }
 
-#analysis h3 {
-	text-align: center;
-}
-
 .column {
-	padding: 40px 0px 40px 0px;
 	line-height: 1.9;
+	padding: 40px 0px 40px 0px;
 }
 
 .column ul {
@@ -605,6 +576,7 @@ ion-icon {
 	border-radius: 25px;
 	box-shadow: 0 4px 8px 0 rgba(123, 193, 195, .6);
 	display: grid;
+	grid-template-columns: repeat(5, minmax(20px, 1fr));
 	grid-template-rows: repeat(4, auto);
 	grid-row-gap: 40px;
 	justify-items: center;
@@ -612,10 +584,8 @@ ion-icon {
 }
 
 .persona-heading,
-.persona-text,
 #user-personas .btn {
 	grid-column: span 5;
-	/* justify-self: center; */
 }
 
 #chris-div {
@@ -626,8 +596,13 @@ ion-icon {
 	grid-column: 7 / span 5;
 }
 
-#competitive .btn {
-	margin-bottom: 40px
+.persona-text {
+	grid-column: 2 / 5;
+	font-family: Lato;
+}
+
+.persona-heading {
+	font-weight: 600;
 }
 
 .company {
@@ -662,9 +637,6 @@ ion-icon {
 	grid-column: 2 / 12;
 }
 
-/* #stories-chart {
-	grid-column: 10 / span 2;
-} */
 
 #user-flows {
 	grid-template-rows: repeat(8, minmax(auto, 70px));
@@ -688,19 +660,10 @@ ion-icon {
 	align-self: center;
 }
 
-#wireframes-testing {
-	grid-column: 1 / 13;
-	display: grid;
-	grid-template-columns: repeat(12, 1fr);
-	grid-column-gap: 18px;
-	padding: 40px 0px 40px 0px;
-}
-
 #wireframe-sketches-images {
 	grid-column: 6 / 12;
 	object-fit: cover;
 	width: 100%;
-	/* justify-self: center; */
 }
 
 #wireframe-sketch-description {
@@ -743,23 +706,12 @@ ion-icon {
 	grid-column: 2 / 12;
 }
 
-
-#brand-guidelines .btn {
-	justify-self: center;
-}
-
 #concept {
 	grid-template-rows: 1fr;
 }
 
-#wireframes h3,
-#name-logo h3,
-#preference-testing h3,
-#preference-visuals h3,
-#concept h3 {
-	grid-column: 2 / -1;
-	padding: 40px 0px 40px 0px;
-	justify-self: start;
+#connected-heading .ds-subsection-header {
+	padding: 0px 0px 0px 0px;
 }
 
 #brand-concept-image {
@@ -809,10 +761,6 @@ ion-icon {
 	grid-row: 1 / 2;
 }
 
-.visual-label {
-	grid-column: 1 / -1;
-}
-
 #final-logo-text {
 	grid-row: 6;
 	align-self: end;
@@ -844,11 +792,6 @@ ion-icon {
 
 #typography {
 	grid-column: 3 / 11;
-}
-
-#font .btn {
-	margin-top: 40px;
-	grid-column: 2 / -1;
 }
 
 #buttons {
@@ -891,7 +834,6 @@ ion-icon {
 	grid-row: 1;
 	padding: 20px;
 	border: solid 7px #4DACAE;
-	margin: 40px 0px 40px 0px;
 }
 
 #plus {
@@ -994,7 +936,7 @@ ion-icon {
 }
 
 /* --- HEADER ---- */
-#deskspace .header {
+.deskspace .header {
   background: linear-gradient( rgba(77, 172, 174, .9), rgba(77, 172, 174, .9));
   padding: 20px 30px 100px 30px;
   grid-row-gap: 40px;
@@ -1054,44 +996,40 @@ ion-icon {
 	grid-column: 1/2;
 }
 
-/* #wireframe-sketches-images img {
-	padding: 0px 10px 0px 10px;
-} */
-
 
 
 /* -------- LINKS ------------ */
 /*HEADER LINKS*/
 /* header, UNVISITED link */
-#deskspace .navigation a:link,
-#deskspace .navigation a:visited {
+.deskspace .navigation a:link,
+.deskspace .navigation a:visited {
 	color: #242424;
 }
 
 /* header, HOVER over link */
-#deskspace .navigation a:hover {
+.deskspace .navigation a:hover {
 	color: #C23B23;
 }
 
 /* header, SELECTED link */
-#deskspace .navigation a:active {
+.deskspace .navigation a:active {
 	color: white;
 }
 
 /*FOOTER LINKS */
 /* footer, UNVISITED & VISITED link */
-#deskspace .footer a:link,
-#deskspace .footer a:visited {
+.deskspace .footer a:link,
+.deskspace .footer a:visited {
 	color: #242424;
 }
 
 /* footer, HOVER link */
-#deskspace .footer a:hover {
+.deskspace .footer a:hover {
 	color: #3B7D7E;
 }
 
 /* footer, SELECTED link */
-#deskspace .footer a:active {
+.deskspace .footer a:active {
 	color: #06BEE1;
 }
 
@@ -1202,7 +1140,9 @@ ion-icon {
 }
 
 .ds-subsection-header {
-	grid-column: 2 / span 3;
+	grid-column: 2 / -1;
+	padding: 40px 0px 40px 0px;
+	justify-self: start;
 	text-transform: uppercase;
 }
 
@@ -1215,6 +1155,9 @@ ion-icon {
 	font-family: 'Nunito', sans-serif;
 	font-size: 20px;
 	font-weight: 600;
+}
+
+.concept-quote {
 	color: #3B7D7E;
 }
 
@@ -1242,19 +1185,19 @@ ion-icon {
 	margin-bottom: 80px;
 }
 
-#project-details h2,
-#problem-solution h2 {
-	color: #242424;
-}
 
-#deskspace .header h3 {
+.deskspace .header h3 {
 	font-family: 'Nunito', sans-serif;
 	color: #242424;
 }
 
-#deskspace h3 {
+.deskspace h3 {
 	font-size: 32px;
 	font-weight: 500;
+}
+
+.deskspace p {
+	font-family: 'Nunito', sans-serif;
 }
 
 #project-details strong {
@@ -1272,4 +1215,12 @@ ion-icon {
 
 .user-quotes {
 	color: white;
+}
+
+/************************* TABLET *********************/
+
+@media screen and (min-width: 575px) {
+
+
+
 }
