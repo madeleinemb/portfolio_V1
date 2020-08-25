@@ -8,10 +8,10 @@
       <link rel="stylesheet" href="styles/style.css">
    </head>
    <body>
-     <div class = "deskspace row ">
+     <div class = "deskspace">
 
          <!-- entire header section -->
-         <div class ="header grid-no-margin full-width">
+         <div class ="header grid-no-margin">
             <!-- my logo -->
             <img id="mylogo" src="assets/images/maddie_logo.png" alt="my logo">
             <!-- nav menu -->
@@ -23,9 +23,9 @@
                </ul>
             </div>
             <!-- app title with prototype button &amp; description -->
-            <div class = "header-main-content">
+            <div class = "header-main-content grid-no-margin full-width">
                <h1>DeskSpace</h1>
-               <a id="prototype-button" href="https://www.figma.com/proto/F4c5q9e1Ufy9gDKAg6gUvH/DeskSpace-Prototype-Final-and-Clean?node-id=0%3A1" target="_blank">prototype</a>
+               <a class="prototype-btn" href="https://www.figma.com/proto/F4c5q9e1Ufy9gDKAg6gUvH/DeskSpace-Prototype-Final-and-Clean?node-id=0%3A1" target="_blank">prototype</a>
                <h3 class = "app-description">A cloud sharing app that allows users to back-up files, organize them, create content, and collaborate.</h3>
             </div>
          </div>
@@ -41,20 +41,20 @@
             <img id="deskspace-preview-image" class="image-fit" src="assets/images/ds_preview.png" alt="Deskspace Screen">
             <div id= "specs">
                <h2>Project Specs</h2>
-               <p class = "margin"><strong class = "details">  Duration </strong>   5 weeks</p>
-               <p class = "margin"><strong class = "details">  Design Roles </strong>   UX Researcher, UX Designer, &amp; Graphic Designer</p>
-               <p class = "margin"><strong class = "details">  Deliverables </strong>   User Surveys, User Personas, Competitive Analysis, User Stories &amp; Flows,
+               <p><strong class = "details">  Duration </strong>   5 weeks</p>
+               <p><strong class = "details">  Design Roles </strong>   UX Researcher, UX Designer, &amp; Graphic Designer</p>
+               <p><strong class = "details">  Deliverables </strong>   User Surveys, User Personas, Competitive Analysis, User Stories &amp; Flows,
                   Brand Personality &amp; Messaging, Wireframes, User Testing, Custom Graphics, Brand Guidelines, Clickable Prototype
                </p>
-               <p class = "margin"><strong class = "details">  Tools  </strong>   Google Forms; Draw.io; Figma; Adobe Photoshop, Illustrator, and XD</p>
+               <p><strong class = "details">  Tools  </strong>   Google Forms; Draw.io; Figma; Adobe Photoshop, Illustrator, and XD</p>
             </div>
          </section>
          <!-- problem and solutions and screens separated visually -->
          <section id = "problem-solution">
-            <div id="problem" class = "grid">
+            <div class = "grid">
 
-               <h2 class = "left">The Problem</h2>
-               <h2 class = "right">The Solution</h2>
+               <h3 class = "left" id="prob">The Problem</h3>
+               <h3 class = "right" id="solu">The Solution</h3>
                <p class = "problem">A company wants to get into the cloud storage industry - what do consumers already get from their cloud storage options,
                   what users should they target, what do those users wish they had, how can you build it, and what type of brand should deliver it?
                </p>
@@ -144,7 +144,8 @@
 
                   <div id = "answers-area" class="grid full-width">
                      <h3 class = "ds-subsection-header black">The Answers</h3>
-                     <h4 class = "ds-mini-section-header">Oversaturation &amp; Complaints</h4>
+                     <h3 class = "alt-heading">What they said...</h3>
+                     <h5 class = "ds-mini-section-header">Oversaturation &amp; Complaints</h5>
 
                      <div class="answer-takeaways">
                         <p>I expected that people would be familiar with cloud storage, but I was surprised to learn how oversaturated respondents felt with the number of services they use.
@@ -163,9 +164,10 @@
                         </ol>
                      </div>
 
-                     <h4 class = "ds-mini-section-header">Features &amp; Preferences</h4>
+                     <h5 class = "ds-mini-section-header">Features &amp; Preferences</h5>
 
-                     <img id="features" src="assets/images/features_graph.png" alt="Features Graph" width="556" height="370">
+                     <img id="features" src="assets/images/features_graph.png" alt="Features Graph">
+                     <p class = "caption">Takeaway: all the features are important to users</p>
                      <p id="respondents">Respondents indicated that all the features we asked about were important to them. However, they ranked uploading files as the most important
                         feature and saving content online as the least important. Outside of these rankings, respondents also expressed that they collaborate on a
                         daily basis via their chosen service, so that was clearly important as well.
@@ -185,9 +187,10 @@
                    <div class = "grid-no-margin wrapper">
 
                      <!-- defining grid with margin for content -->
-                      <div id = "analysis" class = "grid">
-                         <h3 class = "full-width">What does this mean for the product?</h3>
-                         <div id = "column1" class = "column">
+
+                     <h3 id = "desktop" class = "list-heading full-width">What does this mean for the product?</h3>
+                     <h3 id = "mobile" class = "list-heading">TL;DR</h3>
+                       <div id = "analysis">
                             <ul>
                                <li>While having mobile access is extremely important to the average user, having a desktop site for
                                   online storage is an absolute necessity
@@ -196,17 +199,12 @@
                                <li>Minimize obstacles for sharing content with non-users</li>
                                <li>Offer a user-friendly UI good enough to compete with Google’s</li>
                                <li>Offer a variety of ways or apps to create all types of content</li>
-                            </ul>
-                         </div>
-                         <div id = "column2" class = "column">
-                            <ul>
                                <li>Offer a variety of ways or apps to create all types of content</li>
                                <li>Give users as much free space as financially viable</li>
                                <li>Must include features for saving, organizing, uploading, sharing, and creating content</li>
                                <li>Do not focus on users already invested in a system tied to their device</li>
                             </ul>
-                         </div>
-                      </div>
+                        </div>
 
                   <!-- end of grid without margin & wrapper -->
                    </div>
@@ -285,7 +283,7 @@
 
                    <!-- opportunities for Deskspace brand -->
                    <div id="opportunities">
-                      <h4 class = "ds-mini-section-header">Opportunities in the Market</h4>
+                      <h5 class = "ds-mini-section-header">Opportunities in the Market</h5>
                       <p>The brand can target consumers using <i>both</i> apps (or more), and position the product as the “best of both worlds”
                          by offering the same features <strong class = "comp"><i>AND</i></strong> letting users make the most of their free space by getting rid of superfluous
                          files across multiple apps.
@@ -644,8 +642,8 @@
                 </p>
 
                 <div class="quote">
-                   <p>"...realizing I could use design to alleviate the 'free space' issue by helping users make the most of the
-                      space they have."
+                   <p><strong>"</strong>...realizing I could use design to alleviate the 'free space' issue by helping users make the most of the
+                      space they have.<strong>"</strong>
                    </p>
                 </div>
 
