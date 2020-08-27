@@ -13,7 +13,7 @@
          <!-- entire header section -->
          <div class ="header grid-no-margin">
             <!-- my logo -->
-            <img id="mylogo" src="assets/images/maddie_logo.png" alt="my logo">
+            <a href="index.html"><img id="mylogo" src="assets/images/maddie_logo.png" alt="my logo"></a>
             <!-- nav menu -->
             <div class="nav-grid">
                <ul class = "navigation">
@@ -40,7 +40,7 @@
 
             <img id="deskspace-preview-image" class="image-fit" src="assets/images/ds_preview.png" alt="Deskspace Screen">
             <div id= "specs">
-               <h2>Project Specs</h2>
+               <h2 class = "desktop-only">Project Specs</h2>
                <p><strong class = "details">  Duration </strong>   5 weeks</p>
                <p><strong class = "details">  Design Roles </strong>   UX Researcher, UX Designer, &amp; Graphic Designer</p>
                <p><strong class = "details">  Deliverables </strong>   User Surveys, User Personas, Competitive Analysis, User Stories &amp; Flows,
@@ -53,8 +53,8 @@
          <section id = "problem-solution">
             <div class = "grid">
 
-               <h3 class = "left" id="prob">The Problem</h3>
-               <h3 class = "right" id="solu">The Solution</h3>
+               <h2 id="prob" class = "left">The Problem</h2>
+               <h2 id="solu" class = "right">The Solution</h2>
                <p class = "problem">A company wants to get into the cloud storage industry - what do consumers already get from their cloud storage options,
                   what users should they target, what do those users wish they had, how can you build it, and what type of brand should deliver it?
                </p>
@@ -82,16 +82,17 @@
            <div id = "discovery-table" class = "table-of-contents">
               <ul>
                 <li class = "d"><a href="#discovery">Discovery &amp; Research</a></li>
-                <div class="vl"></div>
+                <li class = "vl"></li>
                 <li class = "i"><a href="#info">Informational Architecture</a></li>
-                <div class="vl"></div>
+                <li class = "vl"></li>
                 <li class = "v"><a href="#visual">Visual Design</a></li>
-                <div class="vl"></div>
-                <li  class = "p"><a href="#prototype">Prototype &amp; Testing</a></li>
+                <li class = "vl"></li>
+                <li class = "p"><a href="#prototype">Prototype &amp; Testing</a></li>
               </ul>
            </div>
 
-
+         <!-- divider for mobile -->
+          <div class ="blue-bg divider mobile-only"></div>
 
          <!-- Discovery Content Begins -->
          <section id = "discovery-content">
@@ -107,44 +108,47 @@
                   <!-- H2 Category heading div for establishing grid items for alignment -->
                   <div class = "grid-no-margin">
                     <h2 class = "ds-category-heading">User Surveys</h2>
-                  </div>
+
 
                     <!-- margined grid-->
-                  <div id = "question-area" class = "grid full-width margin">
+                    <div id = "question-area" class = "full-width">
 
-                    <!-- <h2 class = "ds-category-heading">User Surveys</h2> -->
+                      <!-- <h2 class = "ds-category-heading">User Surveys</h2> -->
 
-                  <!-- special div heading for background and border decorating -->
-                     <div id = "connected-heading">
-                        <h3 class = "ds-subsection-header black">The Questions</h3>
-                     </div>
+                    <!-- special div heading for background and border decorating -->
+                       <div id = "connected-heading" class="desktop-only">
+                          <h3 class = "ds-subsection-header black">The Questions</h3>
+                       </div>
 
-                     <!-- Card of Question breakdown attached to heading -->
+                       <!-- Card of Question breakdown attached to heading -->
 
-                     <div class = "question-breakdown">
-                        <h5>Current Usage</h5>
-                        <p>What cloud services are people currently using and why?</p>
-                        <h5>Features</h5>
-                        <p>How users prioritize features such as: Uploading, Creating content, Organizing, &amp; Saving content online?</p>
-                        <h5>Money</h5>
-                        <p>What are users willing to pay for &amp; what are they already paying?</p>
-                        <h5>Collaboration</h5>
-                        <p>Are/could users be motivated to share and collaborate with non-users?</p>
-                        <h5>Respondents</h5>
-                        <p>What are the demographics of potential users &amp; their overall fluency with technology?</p>
-                        <h5>Devices</h5>
-                        <p>How users access these features (mobile vs web)</p>
-                     </div>
-                     <!-- Questionnaire button -->
-                     <a class="btn" href="https://docs.google.com/document/d/1TEJP3ois44Khwo63D6coW1SJqJbbfFDbZTu1Spb40pM/edit?usp=sharing" target="_blank">Questionnaire</a>
+                       <div class = "question-breakdown">
+                          <h5>Current Usage</h5>
+                          <p>What cloud services are people currently using and why?</p>
+                          <h5>Features</h5>
+                          <p>How users prioritize features such as: Uploading, Creating content, Organizing, &amp; Saving content online?</p>
+                          <h5>Money</h5>
+                          <p>What are users willing to pay for &amp; what are they already paying?</p>
+                          <h5>Collaboration</h5>
+                          <p>Are/could users be motivated to share and collaborate with non-users?</p>
+                          <h5>Respondents</h5>
+                          <p>What are the demographics of potential users &amp; their overall fluency with technology?</p>
+                          <h5>Devices</h5>
+                          <p>How users access these features (mobile vs web)</p>
+                       </div>
+                       <!-- Questionnaire button -->
+
+                         <a class="btn" href="https://docs.google.com/document/d/1TEJP3ois44Khwo63D6coW1SJqJbbfFDbZTu1Spb40pM/edit?usp=sharing" target="_blank">Questionnaire</a>
+
+                    </div>
                   </div>
 
 
             <!-- Answers section -->
 
                   <div id = "answers-area" class="grid full-width">
-                     <h3 class = "ds-subsection-header black">The Answers</h3>
-                     <h3 class = "alt-heading">What they said...</h3>
+                     <h3 class = "ds-subsection-header black desktop-only">The Answers</h3>
+                     <h3 class = "alt-heading mobile-only">What they said...</h3>
                      <h5 class = "ds-mini-section-header">Oversaturation &amp; Complaints</h5>
 
                      <div class="answer-takeaways">
@@ -166,14 +170,14 @@
 
                      <h5 class = "ds-mini-section-header">Features &amp; Preferences</h5>
 
-                     <img id="features" src="assets/images/features_graph.png" alt="Features Graph">
-                     <p class = "caption">Takeaway: all the features are important to users</p>
-                     <p id="respondents">Respondents indicated that all the features we asked about were important to them. However, they ranked uploading files as the most important
+                     <img id="features" class = "image-fit" src="assets/images/features_graph.png" alt="Features Graph">
+                     <p class = "caption mobile-only">Takeaway: all the features are important to users</p>
+                     <p id="respondents" class="desktop-only">Respondents indicated that all the features we asked about were important to them. However, they ranked uploading files as the most important
                         feature and saving content online as the least important. Outside of these rankings, respondents also expressed that they collaborate on a
                         daily basis via their chosen service, so that was clearly important as well.
                      </p>
-                     <img id="g-drive" src="assets/images/gdrive_info.png" alt="G Drive Preferred" width="328" height="290">
-                     <img id="devices" src="assets/images/survey_device.png" alt="Devices Preference" width="328" height="223">
+                     <img id="g-drive" class = "desktop-only" src="assets/images/gdrive_info.png" alt="G Drive Preferred" width="328" height="290">
+                     <img id="devices" class = "desktop-only" src="assets/images/survey_device.png" alt="Devices Preference" width="328" height="223">
                      <p id="features-descrip">70% of respondents stated that they prefered G Drive to other options. Upon looking at the open responses as to why users preferred one
                         service to another, the most common responses were: 1.  User-friendly UI (35%), 2. Multi-device platform (26%), and
                         3. Wide variety of native programs (22%) tied with 3. Being built on an email platform with an already wide user base (22%).
@@ -188,8 +192,8 @@
 
                      <!-- defining grid with margin for content -->
 
-                     <h3 id = "desktop" class = "list-heading full-width">What does this mean for the product?</h3>
-                     <h3 id = "mobile" class = "list-heading">TL;DR</h3>
+                     <h3 id="desktop" class = "list-heading full-width desktop-only">What does this mean for the product?</h3>
+                     <h3 id="mobile" class = "list-heading full-width mobile-only">TL;DR</h3>
                        <div id = "analysis">
                             <ul>
                                <li>While having mobile access is extremely important to the average user, having a desktop site for
@@ -221,17 +225,20 @@
               </div>
 
               <!-- margined grid for content -->
-              <div class = "grid full-width">
+              <div class = "grid">
 
                <!-- Chris' user persona -->
                  <div class="persona" id="chris-div">
-                    <img id="chris" src="assets/images/chris.jpg" alt="Chris Persona" width="211" height="211">
+                    <img id="chris" src="assets/images/chris.jpg" alt="Chris Persona">
                     <p class = "persona-heading">Chris &#8226; <i>On-the-go Professional</i> &#8226; 32</p>
                     <p class = "persona-text">“I have a stressful job and a lot of social commitments, so anything that helps me stay on top of it
                        without having to think is amazing.”
                     </p>
                     <a class="btn" href="https://www.dropbox.com/s/g9kckhqxod1jx13/Chris%20Cloud%20Persona.pdf?dl=0" target="_blank">Chris Persona</a>
                  </div>
+
+                <!-- divider for mobile -->
+                 <div class ="coral-bg divider mobile-only"></div>
 
                  <!-- Jenna's user persona -->
                  <div class="persona" id="jenna-div">
@@ -265,24 +272,25 @@
 
                     <!-- Google Analysis -->
                    <div class="company" id="company1">
-                      <img id="gdrive-logo" class = "image-fit" src="assets/images/gdrive_logo.png" alt="G Drive Logo" width="97" height="97">
-                      <h3 class="company-name">G Drive</h3>
-                      <img id="g-drive-summary-image" src="assets/images/gdrive_summary.png" alt="G Drive messaging">
+                      <img class="co-logo image-fit" src="assets/images/gdrive_logo.png" alt="G Drive Logo">
+                      <h3 class="company-name desktop-only">G Drive</h3>
+                      <img id="g-drive-summary-image" class="co-summary image-fit" src="assets/images/gdrive_summary.png" alt="G Drive messaging">
                       <p class="company-points">15 GB Free &#8226; Anything you want to store or create &#8226; Power of Google</p>
                    </div>
 
-                   <div class="company-vl"></div>
+                   <div class="company-vl desktop-only"></div>
+                   <div class="divider coral-bg mobile-only"></div>
 
                    <!-- Dropbox Analysis -->
                    <div class="company" id="company2">
-                      <img class = "logo" src="assets/images/dropbox_logo.png" alt="Dropbox Logo" width="97" height="97">
-                      <h3 class="company-name">Dropbox</h3>
-                      <img id="dropbox-summary-image" src="assets/images/dropbox_info.png" alt="Dropbox messaging">
+                      <img class = "co-logo image-fit" src="assets/images/dropbox_logo.png" alt="Dropbox Logo" width="97" height="97">
+                      <h3 class="company-name desktop-only">Dropbox</h3>
+                      <img id="dropbox-summary-image" class="co-summary image-fit" src="assets/images/dropbox_info.png" alt="Dropbox messaging">
                       <p class="company-points">2 GB Free &#8226; TEAM, TEAM, TEAM &#8226; Do work together, securely</p>
                    </div>
 
                    <!-- opportunities for Deskspace brand -->
-                   <div id="opportunities">
+                   <div id="opportunities" class = "desktop-only">
                       <h5 class = "ds-mini-section-header">Opportunities in the Market</h5>
                       <p>The brand can target consumers using <i>both</i> apps (or more), and position the product as the “best of both worlds”
                          by offering the same features <strong class = "comp"><i>AND</i></strong> letting users make the most of their free space by getting rid of superfluous
@@ -309,12 +317,12 @@
          <div id = "info-table" class = "table-of-contents">
            <ul>
              <li class = "d"><a href="#discovery">Discovery &amp; Research</a></li>
-             <div class="vl"></div>
+             <li class = "vl"></li>
              <li class = "i"><a href="#info">Informational Architecture</a></li>
-             <div class="vl"></div>
+             <li class = "vl"></li>
              <li class = "v"><a href="#visual">Visual Design</a></li>
-             <div class="vl"></div>
-             <li  class = "p"><a href="#prototype">Prototype &amp; Testing</a></li>
+             <li class = "vl"></li>
+             <li class = "p"><a href="#prototype">Prototype &amp; Testing</a></li>
            </ul>
          </div>
 
@@ -348,13 +356,15 @@
 
               <!-- defining margined grid -->
               <div id = "user-flow-bg" class= "grid-no-margin">
-               <!--user flows button -->
-               <a class="btn" href="https://drive.google.com/file/d/1bLH5HLX2Fi7N_QDnANWfJRLDzn6w8AnP/view?usp=sharing" target="_blank">User Flows</a>
-               <!-- user flows preview image -->
-               <img id="user-flow-image" class = "image-fit" src="assets/images/colorful_user_flow.png" alt="User flow preview image">
+                <div id = "user-flow-image-grid" class = "full-width grid">
+                 <!--user flows button -->
+                 <a class="btn" href="https://drive.google.com/file/d/1bLH5HLX2Fi7N_QDnANWfJRLDzn6w8AnP/view?usp=sharing" target="_blank">User Flows</a>
+                 <!-- user flows preview image -->
+                 <img id = "user-flow-image" class = "image-fit" src="assets/images/colorful_user_flow.png" alt="User flow preview image">
+               </div>
              </div>
 
-            </section>
+           </section>
 
             <!-- Wireframe section -->
             <section id = "wireframes">
@@ -372,14 +382,15 @@
                      dashboard didn’t need a nav menu, which led to the second image. However, in the last iteration I included buttons for common
                      tasks that people have struggled with per user surveys and a couple of tasks that differentiate DeskSpace from its competitors like an “organize” button.
                   </p>
-                  <img id = "wireframe-sketches-images" src="assets/images/wireframe_sketches.jpg" alt="Wireframe sketches">
+                  <img id = "wireframe-sketches-images" class="image-fit" src="assets/images/wireframe_sketches.jpg" alt="Wireframe sketches">
               </div>
 
                 <!-- wireframe subcategory of digital with margins -->
               <div id = "digital-wireframes" class = "grid full-width">
                    <h3 class = "ds-subsection-header blue full-width">digital</h3>
 
-                    <img id="digital-wireframes-image" src="assets/images/wireframes_combined.png" alt="Digital Wireframes">
+                    <img id="digital-wireframes-image" class = "desktop-only" src="assets/images/wireframes_combined.png" alt="Digital Wireframes">
+                    <img id="mobile-wireframe-image" class="image-fit mobile-only" src="assets/images/getting_started_wireframe.jpg" alt="Digital Wireframe">
                     <p id = "digital-description">In bringing the sketches to life on the screen, I was able to flesh out the proportions between buttons, menus, icons etc.
                        I also got clearer ideas of how graphics and terminology would communicate the intended, concise user flows to new users as
                        I connected pages and symbols in the prototype.
@@ -407,7 +418,7 @@
                          the integrated apps through the ‘new’ button and the sidebar.
                       </p>
 
-                      <img id="wireframe-testing-image" class = "image-fit" src="assets/images/wireframe-testing-takeaways.png" alt="Changes from Wireframe Testing">
+                      <img id="wireframe-testing-image" class = "image-fit desktop-only" src="assets/images/wireframe-testing-takeaways.png" alt="Changes from Wireframe Testing">
 
                    </div>
 
@@ -427,12 +438,12 @@
          <div id = "visual-table" class = "table-of-contents">
            <ul>
              <li class = "d"><a href="#discovery">Discovery &amp; Research</a></li>
-             <div class="vl"></div>
+             <li class = "vl"></li>
              <li class = "i"><a href="#info">Informational Architecture</a></li>
-             <div class="vl"></div>
+             <li class = "vl"></li>
              <li class = "v"><a href="#visual">Visual Design</a></li>
-             <div class="vl"></div>
-             <li  class = "p"><a href="#prototype">Prototype &amp; Testing</a></li>
+             <li class = "vl"></li>
+             <li class = "p"><a href="#prototype">Prototype &amp; Testing</a></li>
            </ul>
          </div>
 
@@ -455,13 +466,13 @@
                   <div id = "concept-text">
                      <p>The guidelines for our identity based on our personas and data boiled down to:</p>
 
-                      <p class = "concept-quote">“Your desk is wherever you are while you balance the personal and the professional lives you lead, aided by how easy DeskSpace is.”</p>
+                      <p class = "concept-quote">“Your desk is wherever you are while you balance the personal and professional lives you lead, aided by how easy DeskSpace is.”</p>
 
                      <p>I moodboarded attainably beautiful and organized home offices as well as organization websites, which ultimately guided everything
                         from the choice of photography, to typography, to the shapes of buttons and cards.
                      </p>
                   </div>
-                  <img id = "brand-concept-image" src="assets/images/brand_concept.png" alt="brand concept page">
+                  <img id = "brand-concept-image" class="image-fit" src="assets/images/brand_concept.png" alt="brand concept page">
                </div>
 
                <!-- name & logo subcategory -->
@@ -494,9 +505,7 @@
                   <p class = "two_to_five">I showed some very rough sketches of various logos and product name combinations to five respondents. The concept of
                      ‘desk space’ with a recognizable desk, while my first idea, was actually preferred by all respondents.
                   </p>
-                  <div id = "branding-sketches">
-                     <img id="logo-sketches" class = "image-fit" src="assets/images/logo_sketches.png" alt="logo sketches">
-                  </div>
+                  <img id="branding-sketches" class = "image-fit" src="assets/images/logo_sketches.png" alt="logo sketches">
                </div>
             </section>
 
@@ -512,7 +521,9 @@
 
               <p id = "color-description">I chose a beachy color palette to amplify the feeling of calm that users often lack in their busy lives.</p>
 
-              <img id = "visuals-comp" class = "image-fit" src="assets/images/visuals_combined.png" alt="logo and color palette">
+              <img id = "visuals-comp" class = "image-fit desktop-only" src="assets/images/visuals_combined.png" alt="logo and color palette">
+              <img class = "image-fit mobile-only" src="assets/images/color_palette.jpg" alt ="deskspace color palette">
+              <img class = "image-fit mobile-only" src="assets/images/final_logo.png" alt="deskspace logo">
 
             </section>
 
@@ -526,7 +537,9 @@
             <!-- Font & Interactivity section -->
             <section id="font" class = "grid full-width">
 
-               <img id = "typography" class = "image-fit" src="assets/images/fonts_and_buttons.png" alt="fonts and buttons">
+               <img id = "typography" class = "image-fit desktop-only" src="assets/images/fonts_and_buttons.png" alt="fonts and buttons">
+               <img class = "image-fit mobile-only" src="assets/images/ds_fonts.png" alt="fonts">
+               <img class = "image-fit mobile-only" src="assets/images/buttons.png" alt="interactivity buttons and features">
                <a class="btn" href="https://www.dropbox.com/s/w8rqqezss072rvb/DeskSpace%20Style%20Guide%20Final_Portfolio.pdf?dl=0" target="_blank">Brand Guidelines</a>
 
             </section>
@@ -540,12 +553,12 @@
          <div id = "prototype-table" class = "table-of-contents">
            <ul>
              <li class = "d"><a href="#discovery">Discovery &amp; Research</a></li>
-             <div class="vl"></div>
+             <li class = "vl"></li>
              <li class = "i"><a href="#info">Informational Architecture</a></li>
-             <div class="vl"></div>
+             <li class = "vl"></li>
              <li class = "v"><a href="#visual">Visual Design</a></li>
-             <div class="vl"></div>
-             <li  class = "p"><a href="#prototype">Prototype &amp; Testing</a></li>
+             <li class = "vl"></li>
+             <li class = "p"><a href="#prototype">Prototype &amp; Testing</a></li>
            </ul>
          </div>
 
@@ -562,7 +575,7 @@
             <section id="usability-tests">
 
               <div class = "grid full-width">
-               <div id = "tested-tasks-2" class = "margin">
+               <div id = "tested-tasks-2">
                   <h5 class = "list-heading">Tested Tasks</h5>
                   <ol id="tasks-2" class = "numbered-list">
                      <li>Sign Up for an account</li>
@@ -572,11 +585,11 @@
                   </ol>
                   <!-- graphic for user test success rate -->
                </div>
-               <img id = "hundred-percent" src="assets/images/user_success.png" alt="graphic for user success on tests">
+               <img id = "hundred-percent" class="desktop-only" src="assets/images/user_success.png" alt="graphic for user success on tests">
                <p id = "usability-test-description">After bringing the wireframes to life in Figma and after fixing a few bugs within the various click behaviors of the prototype,
                   I asked new users to narrate their experiences and perform the same three tasks as before, plus one a new one that involved the
                   ‘new feature’: deleting duplicates. The users were able to perform all four tasks, this time with even less hesitation. They
-                  said the interface was easy to understand and reminded them of Google Drive.<br>
+                  said the interface was easy to understand and reminded them of Google Drive.<br><br>
                   The improvements that I needed to make to the design were identified during the users’ narration phase of the usability tests.
                   They were:
                </p>
@@ -585,17 +598,34 @@
                <!-- visual depiction of changes from usability tests -->
                <section id = "usability-visuals">
 
-                  <div id ="usability1" class = "usability grid full-width">
-                     <img id = "usability-1-image" src="assets/images/comparison1_b.png" alt="menu version comparisons">
+                  <div class = "usability grid full-width">
+                     <img class = "desktop-only image-fit" id = "usability-1-image" src="assets/images/comparison1_b.png" alt="menu version comparisons">
+                     <img class = "mobile-only image-fit" src="assets/images/comparison_1b.png" alt="menu version comparisons">
+                     <p class = "mobile-only">Having text next to a symbol was confusing, and users intuitively understood this was the button to return to the dashboard.</p>
                   </div>
-                  <div id ="usability2" class = "usability grid full-width">
-                     <img id = "usability-2-image" src="assets/images/comparison2_b.png" alt="log in comparisons">
+                  <div class ="coral-bg divider mobile-only"></div>
+                  <div class = "usability grid full-width">
+                     <img class = "desktop-only image-fit" id = "usability-2-image" src="assets/images/comparison2_b.png" alt="log in comparisons">
+                     <img class = "image-fit mobile-only" src="assets/images/comparison_2b.png" alt="log in comparisons">
+                     <p class = "mobile-only">I strongly recommended signing up with an email because my intent was to have the product available directly within an email account, similar to how G Drive is at the click of a button within Gmail, something users loved per surveys.  However, I realized users were tripping up on this page. As I studied the page setup and asked follow-up questions, I realized that A) this page diverged too much from the industry norm B) it wasn’t useful for the login page, as opposed to the activating account page, and C) having an extra click to log in with a non-Gmail, non-Outlook, or non-Facebook account was punishing those users unintentionally. Hence why I replaced the ‘other’ button with the email & password input fields.
+                     </p>
                   </div>
-                  <div id ="usability3" class = "usability grid full-width">
-                     <img id = "usability-3-image" src="assets/images/comparison3_b.png" alt="sign in comparisons">
+                  <div class ="coral-bg divider mobile-only"></div>
+                  <div class = "usability grid full-width">
+                     <img class = "desktop-only image-fit" id = "usability-3-image" src="assets/images/comparison3_b.png" alt="sign in comparisons">
+                     <img class = "image-fit mobile-only" src="assets/images/comparison_3b.png" alt="sign in comparisons">
+                     <p class = "mobile-only">Similarly to the above, on the activating page, I realized that there just weren’t enough AOL & Yahoo users to warrant having two extra buttons for them. Instead, those users could use the “other” button. Plus, Facebook’s button was oddly placed and strange in proportion to the others.
+                     </p>
                   </div>
-                  <div id ="usability4" class = "usability grid full-width">
-                     <img id = "usability-4-image" src="assets/images/comparison4_b.png" alt="sync images">
+                  <div class ="coral-bg divider mobile-only"></div>
+                  <div class = "usability grid full-width">
+                     <img class = "desktop-only image-fit" id = "usability-4-image" src="assets/images/comparison4_b.png" alt="sync images">
+                     <img class = "image-fit mobile-only" src="assets/images/comparison4b_a.png" alt="sync comparisons old version">
+                     <p class = "mobile-only">Since the idea of syncing files between cloud accounts is somewhat novel, users were having to guess what the sync button did.
+                     </p>
+                     <img class = "image-fit mobile-only" src="assets/images/comparison4b_b.png" alt="sync comparisons new version">
+                     <p class = "mobile-only">When I added a dropdown menu that showed the cloud accounts you could sync with DeskSpace, users were much more certain of what the intent of this feature was.
+                     </p>
                   </div>
 
                 <!-- end of usability images -->
@@ -606,9 +636,10 @@
 
             <!-- preference testing subsection -->
             <section id="preference-visuals" class = "grid full-width">
-               <h3 class = "ds-subsection-header">Preference Testing (Round 2)</h3>
+               <h3 class = "ds-subsection-header orange">Preference Testing (Round 2)</h3>
                <div id = "preference1">
-                 <img class = "preference-image" src="assets/images/preference1.png" alt="getting started page menu button comparisons">
+                 <img class = "preference-image desktop-only" src="assets/images/preference1.png" alt="getting started page menu button comparisons">
+                 <img class = "preference-image mobile-only" src="assets/images/preference1_b.png" alt="getting started page menu button comparisons">
                   <p class = "caption">Color of buttons on Getting Started page</p>
                </div>
 
@@ -616,11 +647,13 @@
                <p class = "preference-text">All user testing was unanimous, so all the changes were implemented!</p>
                <!-- back to images of preference testing -->
               <div id = "preference2">
-                 <img class = "preference-image" src="assets/images/preference2.png" alt="mobile device clean up icon comparisons">
+                 <img class = "preference-image desktop-only" src="assets/images/preference2.png" alt="mobile device clean up icon comparisons">
+                 <img class = "preference-image mobile-only" src="assets/images/preference2_b.png" alt="getting started page menu button comparisons">
                  <p class = "caption">Different 'clean up' icons</p>
               </div>
               <div id = "preference3">
-               <img class = "preference-image" src="assets/images/preference3.png" alt="sync drodown menu comparisons">
+               <img class = "preference-image desktop-only" src="assets/images/preference3.png" alt="sync drodown menu comparisons">
+               <img class = "preference-image mobile-only" src="assets/images/preference3_b.png" alt="sync drodown menu comparisons">
                <p class = "caption">Hover color on dropdown menus</p>
              </div>
             </section>
@@ -647,7 +680,7 @@
                    </p>
                 </div>
 
-                <img id = "venn5" class = "image-fit" src="assets/images/venn5.png" alt="revelation illustration">
+                <img id = "venn5" class = "image-fit desktop-only" src="assets/images/venn5.png" alt="revelation illustration">
 
                  <p class = "left">At first, I considered free space and upload times purely technical
                     issues. My breakthrough was realizing I could use design to alleviate
@@ -696,7 +729,7 @@
                      </a>
                   </li>
                </ul>
-               <p>&copy; 2020 Madeleine Brooks – Designed and coded by hand.</p>
+               <p class="caption">&copy; 2020 Madeleine Brooks – Designed and coded by hand.</p>
             </div>
 
         <!-- end of footer -->
@@ -707,12 +740,12 @@
 
       <!-- SCRIPTS -->
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-      <script
+      <script>
 
-            <!-- Get My button from html -->
+            // Get My button from html
             var mybutton = document.getElementById("myBtn");
 
-            <!-- // When the user scrolls down 20px from the top of the document, show the button // -->
+            // When the user scrolls down 20px from the top of the document, show the button // -->
             window.onscroll = function() {scrollFunction()};
 
             function scrollFunction() {
