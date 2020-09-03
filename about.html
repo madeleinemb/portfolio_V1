@@ -11,40 +11,62 @@
     <div class = "about">
 
       <div class = "header">
+          <div class = "desktop-only" id = "logo2"><a href="index.html"><img id="about-my-logo" src="assets/images/maddie_logo.png" alt="my logo"></a></div>
 
           <ul class="navigation">
-            <li class = "item" id = "logo2"><a href="index.html"><img id="about-my-logo" src="assets/images/maddie_logo.png" alt="my logo"></a></li>
-            <li class = "item"><a href="tel:+18173084930"><ion-icon name="call-outline"></ion-icon></a></li>
-            <li class = "item"><a href="mailto:madeleineut@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
-            <li class = "item"><a href="#">Home</a></li>
+            <li class = "item mobile-only" id = "logo2_mobile"><a href="index.html"><img id="about-my-logo" src="assets/images/maddie_logo.png" alt="my logo"></a></li>
+            <li class = "item mobile-only"><a href="tel:+18173084930"><ion-icon name="call-outline"></ion-icon></a></li>
+            <li class = "item mobile-only"><a href="mailto:madeleineut@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></li>
             <li class = "item"><a href="about.html">About</a></li>
             <li class = "item"><a href="contact.html">Contact</a></li>
           </ul>
 
       </div>
 
-      <div id = "backBtn" class = "mobile-only"></div>
 
-      <h1 class = "heading">"Hi! I'm Madeleine."</h1>
-      <h2 class = "hero subtitle">Narrator: She waves enthusiastically.</h2>
+      <img id = "backBtn" onclick="goBack()" class = "mobile-only" src = "assets/images/back_button_pink.png" alt="back button">
 
-      <div class = "margin">
-            <img id = "profile-pic" class = "image-square" src = "assets/images/maddie_profile_3_cropped.jpg" alt = "my picture">
-            <p><strong>I've always loved</strong> art! As a kid driving back and forth all the time across Texas - which, if it were a country, would rank as the 39th largest in the world! *humming the ‘more you know’ song* -
+
+      <div class = "about-body">
+
+
+          <div class = "images-together desktop-only">
+            <img id = "profile-pic_desktop" class = "column-wide" src = "assets/images/maddie_profile_3_cropped.jpg" alt = "my picture">
+            <img id = "magna-doodle_desktop" class = "column-wide" src = "assets/images/magnadoodle_small.png">
+            <img id = "profile-pic2_desktop" class = "column-wide" src = "assets/images/profile_2.jpg" alt = "my picture">
+            <img id = "belle_desktop" class = "column-wide" src = "assets/images/belle.jpeg" alt = "picture of my dog">
+          </div>
+
+
+
+        <div id = "phone" class = "item desktop-only"><a href="tel:+18173084930"><ion-icon name="call-outline"></ion-icon></a></div>
+        <div id = "email" class = "item desktop-only"><a href="mailto:madeleineut@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></div>
+
+
+        <div id = "header-border">
+          <h1 id = "about-heading">"Hi! I'm Madeleine."</h1>
+        </div>
+
+        <h2 id = "narrator">Narrator: She waves enthusiastically.</h2>
+
+        <div class = "margin mobile-only">
+            <img id = "profile-pic" class = "image-square mobile-only" src = "assets/images/maddie_profile_3_cropped.jpg" alt = "my picture">
+            <p><strong>I've always loved art!</strong> As a kid driving back and forth all the time across Texas - which, if it were a country, would rank as the 39th largest in the world! *humming the ‘more you know’ song* -
               my Magna Doodle kept me sane. As I grew up, the Magna Doodle was replaced by oil on canvas, but I loved it just as much.
               Still, in an Italian-Irish working class family, art was something you did for fun,
               so I never contemplated it as a career. Luckily, this worked out in my favor… eventually.
-              By the time I set my sights on UX Design, I got to roll more than just my love of art into a career. <img id = "magna-doodle" class = "image-square" src = "assets/images/magnadoodle_small.png">I had finally found a profession that could utilize my other interests too: a fascination with
+              By the time I set my sights on UX Design, I got to roll more than just my love of art into a career. <img id = "magna-doodle" class = "image-square mobile-only" src = "assets/images/magnadoodle_small.png">
+              I had finally found a profession that could utilize my other interests too: a fascination with
               psychology, a love of learning and teaching languages, utilizing technology, and a pursuit of efficiency.<br><br>
             </p>
 
             <!-- Back to top button -->
-            <div onclick="topFunction()" id="myBtn" title="Go to top"></div>
+            <div class = "mobile-only" onclick="topFunction()" id="myBtn" title="Go to top"></div>
 
             <!-- divider for mobile -->
-             <div class ="blue-bg divider mobile-only"></div>
+            <div class ="blue divider mobile-only"></div>
 
-            <p>My mom claims she never once had to ask me to do my homework because I was so self-motivated. My test scores earned me
+            <p><br>My mom claims she never once had to ask me to do my homework because I was so self-motivated. My test scores earned me
               financial aid to attend a swanky high school where I met friends with whom I’m still close, but academically I became
               focused on being the best at everything as opposed to finding the thing I wanted to be the best at. In college, I loved
               my psychology classes and assisted in an evolutionary biology psych lab, but my family dissuaded me from either a
@@ -54,14 +76,15 @@
               to inspire me. Luckily, in came a Teach for America recruiter, which changed my life.<br><br>
             </p>
 
+            <div class = "square-border mobile-only">
+              <img id = "profile-pic2" class = "image-square" src = "assets/images/profile_2.jpg" alt = "my picture">
+            </div>
+            <img class = "blue-line-divider mobile-only" src = "assets/images/blue-lines-backward.svg" alt = "line embellishment">
 
-            <img id = "profile-pic2" class = "image-square" src = "assets/images/profile_2.jpg" alt = "my picture">
+            <!-- <div class = "vertical-divider mobile-only"></div>
+            <div class = "blue-bg horizontal-divider mobile-only"></div> -->
 
-
-            <div class = "blue-bg divider mobile-only"></div>
-            <div class = "blue-bg horizontal divider mobile-only"></div>
-
-            <p>In Teach for America (TFA), a two-year AmeriCorps program, I learned I could survive anything including being a teacher
+            <p><br>In Teach for America (TFA), a two-year AmeriCorps program, I learned I could survive anything including being a teacher
               on the first day of preK, which often resembles a war zone (no really, this is only a slight exaggeration), all while
               speaking my second language. I had never been around kids so small, let alone been in charge of 22 lives, and that
               first week was the most challenging week of my life. At each new job, I’ve maintained calm under pressure and there’s no
@@ -79,9 +102,9 @@
               learn and adapt at any age is something I took with me that I think about daily as a designer.<br><br>
             </p>
 
-            <div class = "blue-bg divider mobile-only"></div>
+            <div class ="blue divider mobile-only"></div>
 
-            <p>I decided after TFA to take a big swing (making up for my pragmatic college approach) and I moved out of state for the
+            <p><br>I decided after TFA to take a big swing (making up for my pragmatic college approach) and I moved out of state for the
               first time. I arrived in Los Angeles, hoping to produce shows like those that had inspired me as I grew up; shows with
               strong female leads like “Veronica Mars,” “30 Rock,” and “Parks and Rec.” Despite people telling me it was impossible
               with my lack of entertainment experience, I managed to get a gig as a production assistant and worked my  way up to TV
@@ -90,20 +113,78 @@
               towards design and tech. This time, I took the hint.<br><br>
             </p>
 
-            <div class = "blue-bg horizontal divider mobile-only"></div>
-            <div class = "blue-bg divider mobile-only"></div>
 
-            <img id = "belle" class = "image-square" src = "assets/images/belle.jpeg" alt = "picture of my dog">
-
-            <div class = "conclusion">
-              <p>I told my friend that evening about my epiphany, and lamented that I didn’t know of any jobs where I could use such a
-                road, yet specific set of skills like design, technology, research, and interpersonal communication. I thank my lucky
-                stars that my friend happened to have just caught up with a college friend who had earned her masters in Human-Computer
-                Interaction at Carnegie Mellon. I scheduled my first informational interview with her, then met and discussed UX with her
-                contacts in LA, and enrolled in my first UX class. I haven’t looked back since.
-              </p>
+            <img class = "blue-line-divider mobile-only" src = "assets/images/blue-lines.svg" alt = "line embellishment">
+            <div class = "square-border mobile-only">
+              <img id = "belle" class = "image-square mobile-only" src = "assets/images/belle.jpeg" alt = "picture of my dog">
             </div>
+        </div>
+
+        <!-- special, uninterrupted desktop text -->
+        <div class = "desktop-only bio-text">
+            <p><strong>I've always loved art!</strong> As a kid driving back and forth all the time across Texas - which, if it were a country, would rank as the 39th largest in the world! *humming the ‘more you know’ song* -
+              my Magna Doodle kept me sane. As I grew up, the Magna Doodle was replaced by oil on canvas, but I loved it just as much.
+              Still, in an Italian-Irish working class family, art was something you did for fun,
+              so I never contemplated it as a career. Luckily, this worked out in my favor… eventually.
+              By the time I set my sights on UX Design, I got to roll more than just my love of art into a career.
+              I had finally found a profession that could utilize my other interests too: a fascination with
+              psychology, a love of learning and teaching languages, utilizing technology, and a pursuit of efficiency.<br><br>
+
+              My mom claims she never once had to ask me to do my homework because I was so self-motivated. My test scores earned me
+              financial aid to attend a swanky high school where I met friends with whom I’m still close, but academically I became
+              focused on being the best at everything as opposed to finding the thing I wanted to be the best at. In college, I loved
+              my psychology classes and assisted in an evolutionary biology psych lab, but my family dissuaded me from either a
+              psychology or art degree. I don’t regret it, because this led me to Teach for America.<br><br>
+
+              My Public Relations degree taught me how to write and for that I will always be grateful because it was a hard-won
+              lesson and it has proved important in every profession. However, my PR internships and informational interviews failed
+              to inspire me. Luckily, in came a Teach for America recruiter, which changed my life.<br><br>
+
+              In Teach for America (TFA), a two-year AmeriCorps program, I learned I could survive anything including being a teacher
+              on the first day of preK, which often resembles a war zone (no really, this is only a slight exaggeration), all while
+              speaking my second language. I had never been around kids so small, let alone been in charge of 22 lives, and that
+              first week was the most challenging week of my life. At each new job, I’ve maintained calm under pressure and there’s no
+              doubt it’s in large part due to the resilience I learned here. And, yes, I grew to love those little people!<br><br>
+
+              The second thing I learned was how to ‘backwards plan,’ which was how I wrote an entire curriculum and maintained high
+              standards for my students when the district lacked resources. Backwards planning is setting goals, working backward to
+              create smaller goals and tasks that will lead to the main goals, and measuring students’ progress to make adjustments
+              along the way. This technique is key to any project, and aligns to my work now as a designer in user stories, acceptance
+              criteria, and the iterative process.<br><br>
+
+              Finally, TFA stressed the “eternal student” mindset, or “growth mindset,” and cemented this lesson in monthly learning
+              seminars where I was surrounded by some of the brightest people I’ve ever met while we learned about new technology and
+              research and received constructive criticism. Seeing new ways to work smarter and not harder and the message that you can
+              learn and adapt at any age is something I took with me that I think about daily as a designer.<br><br>
+
+              I decided after TFA to take a big swing (making up for my pragmatic college approach) and I moved out of state for the
+              first time. I arrived in Los Angeles, hoping to produce shows like those that had inspired me as I grew up; shows with
+              strong female leads like “Veronica Mars,” “30 Rock,” and “Parks and Rec.” Despite people telling me it was impossible
+              with my lack of entertainment experience, I managed to get a gig as a production assistant and worked my  way up to TV
+              Development, which is when I had the epiphany that I was more fulfilled during the day creating Google Sheets hacks,
+              researching trends, and creating assets in Photoshop than I was reading TV scripts. Again, my brain was steering back
+              towards design and tech. This time, I took the hint.<br><br></p>
+        </div>
+
+        <div class = "conclusion mobile-only">
+            <p>I told my friend that evening about my epiphany, and lamented that I didn’t know of any jobs where I could use such a
+              broad, yet specific set of skills like design, technology, research, and interpersonal communication. I thank my lucky
+              stars that my friend happened to have just caught up with a college friend who had earned her masters in Human-Computer
+              Interaction at Carnegie Mellon. I scheduled my first informational interview with her, then met and discussed UX with her
+              contacts in LA, and enrolled in my first UX class. I haven’t looked back since.<br>
+            </p>
+        </div>
       </div>
+
+      <div class = "conclusion desktop-only">
+        <p>I told my friend that evening about my epiphany, and lamented that I didn’t know of any jobs where I could use such a
+          broad, yet specific set of skills like design, technology, research, and interpersonal communication. I thank my lucky
+          stars that my friend happened to have just caught up with a college friend who had earned her masters in Human-Computer
+          Interaction at Carnegie Mellon. I scheduled my first informational interview with her, then met and discussed UX with her
+          contacts in LA, and enrolled in my first UX class. I haven’t looked back since.<br>
+        </p>
+      </div>
+
 
       <!-- footer -->
       <div class="footer full-width">
@@ -114,7 +195,7 @@
          </div>
          <!-- clickable social icons -->
          <div class="social">
-            <ul id="icons">
+            <ul class="icons">
                <li class="linkedin">
                   <a href="http://www.linkedin.com/in/madeleinebrooks" target="_blank">
                      <ion-icon name="logo-linkedin"></ion-icon>
@@ -160,6 +241,14 @@
           function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+          }
+
+      </script>
+
+      <script>
+
+          function goBack() {
+            window.history.back();
           }
 
       </script>
