@@ -405,10 +405,6 @@ p {
 	box-shadow: 0 4px 8px 0 rgba(77, 172, 174, 1);
 }
 
-#to-top {
-	margin-left: 1000px;
-}
-
 .deskspace #myBtn:hover {
   box-shadow: 0 4px 8px 0 rgba(242, 99, 75, 1);
 }
@@ -1093,7 +1089,7 @@ p {
 
 				.grid {
 					display: grid;
-					grid-template-columns: repeat(12, minmax(50px, 1fr));
+					grid-template-columns: repeat(12, minmax(40px, 1fr));
 					grid-column-gap: 18px;
 					grid-row-gap: 20px;
 					margin: 0px 30px 40px 30px;
@@ -1101,11 +1097,11 @@ p {
 
 				.grid-no-margin {
 					display: grid;
-					grid-template-columns: repeat(12, minmax(50px, 1fr));
+					grid-template-columns: repeat(12, minmax(40px, 1fr));
 					grid-column-gap: 18px;
 				}
 
-				/* TABLET DESKSPACE */
+				/* DESKSPACE (TABLET) */
 
 				.image-fit {
 					object-fit: contain;
@@ -1278,7 +1274,7 @@ p {
 				}
 
 				#conclusion .grid {
-					grid-template-columns: repeat(12, minmax(50px, 1fr));
+					grid-template-columns: repeat(12, minmax(40px, 1fr));
 					grid-column-gap: 18px;
 					grid-row-gap: 20px;
 					margin: 0px 30px 40px 30px;
@@ -1312,10 +1308,14 @@ p {
 				/* ABOUT PAGE Tablet Adjustments */
 
 				#about-my-logo {
-					width: 50%;
+					max-width: 100%;
 				}
 
 				#backBtn {
+					display: none;
+				}
+
+				#first-div {
 					display: none;
 				}
 
@@ -1323,13 +1323,8 @@ p {
 					margin: 0px 80px;
 				}
 
-				.about .divider {
-
-				}
-
 				.image-square {
 					width: 40%;
-					
 				}
 
 				#narrator {
@@ -1408,6 +1403,10 @@ p {
 
 							.desktop-only {
 								display: inherit;
+							}
+
+							#to-top {
+								margin-left: 1000px;
 							}
 
 							/* DESKTOP HOMEPAGE ************************ */
@@ -2203,7 +2202,7 @@ p {
 
 							.images-together {
 								float: left;
-								margin: 20px 10% 10% 80px;
+								margin: 20px 10% 7% 80px;
 								display: flex;
 								gap: 50px;
 								flex-direction: column;
@@ -2235,7 +2234,7 @@ p {
 
 							.conclusion {
 								margin: 0px;
-								padding: 80px 160px 80px 150px;
+								padding: 80px 200px 80px 150px;
 								grid-auto-flow: row;
 							}
 

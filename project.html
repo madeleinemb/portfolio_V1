@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,14 @@
          <div class ="header grid-no-margin">
             <!-- my logo -->
             <a href="index.html"><img id="mylogo" src="assets/images/maddie_logo.png" alt="my logo"></a>
+
             <!-- nav menu -->
-            <div class="nav-grid">
                <ul class = "navigation">
-                  <li><a href="index.html">Home</a></li>
+                  <!-- <li><a href="index.html">Home</a></li> -->
                   <li><a href="about.html">About</a></li>
                   <li><a href="contact.html">Contact</a></li>
                </ul>
-            </div>
+
             <!-- app title with prototype button &amp; description -->
             <div class = "header-main-content grid-no-margin full-width">
                <h1 class = "full-width">DeskSpace</h1>
@@ -38,9 +38,9 @@
            <!-- margined grid re-start -->
 
 
-            <img id="deskspace-preview-image" class="image-fit" src="assets/images/ds_preview.png" alt="Deskspace Screen">
+            <img id="deskspace-preview-image" class="image-fit full-width" src="assets/images/ds_preview.png" alt="Deskspace Screen">
             <div id= "specs">
-               <h2 class = "desktop-only">Project Specs</h2>
+               <h2 id="specs-heading" class = "desktop-only">Project Specs</h2>
                <p><strong class = "details">  Duration </strong>   5 weeks</p>
                <p><strong class = "details">  Design Roles </strong>   UX Researcher, UX Designer, &amp; Graphic Designer</p>
                <p><strong class = "details">  Deliverables </strong>   User Surveys, User Personas, Competitive Analysis, User Stories &amp; Flows,
@@ -49,7 +49,8 @@
                <p><strong class = "details">  Tools  </strong>   Google Forms; Draw.io; Figma; Adobe Photoshop, Illustrator, and XD</p>
             </div>
          </section>
-         <!-- problem and solutions and screens separated visually -->
+
+
          <section id = "problem-solution">
             <div class = "grid">
 
@@ -65,6 +66,7 @@
 
             </div>
          </section>
+
          <!-- Back to top button -->
 
          <div onclick="topFunction()" id="myBtn" title="Go to top"></div>
@@ -92,11 +94,10 @@
            </div>
 
          <!-- divider for mobile -->
-          <div class ="blue-bg divider mobile-only"></div>
+          <div class ="ds-blue-bg divider mobile-only"></div>
 
          <!-- Discovery Content Begins -->
          <section id = "discovery-content">
-
 
             <!-- user surveys sub-section -->
             <section id = "user-surveys">
@@ -238,7 +239,7 @@
                  </div>
 
                 <!-- divider for mobile -->
-                 <div class ="coral-bg divider mobile-only"></div>
+                 <div class ="ds-coral-bg divider mobile-only"></div>
 
                  <!-- Jenna's user persona -->
                  <div class="persona" id="jenna-div">
@@ -279,11 +280,11 @@
                    </div>
 
                    <div class="company-vl desktop-only"></div>
-                   <div class="divider coral-bg mobile-only"></div>
+                   <div class="divider ds-coral-bg mobile-only"></div>
 
                    <!-- Dropbox Analysis -->
                    <div class="company" id="company2">
-                      <img class = "co-logo image-fit" src="assets/images/dropbox_logo.png" alt="Dropbox Logo" width="97" height="97">
+                      <img class = "co-logo image-fit" src="assets/images/dropbox_logo.png" alt="Dropbox Logo">
                       <h3 class="company-name desktop-only">Dropbox</h3>
                       <img id="dropbox-summary-image" class="co-summary image-fit" src="assets/images/dropbox_info.png" alt="Dropbox messaging">
                       <p class="company-points">2 GB Free &#8226; TEAM, TEAM, TEAM &#8226; Do work together, securely</p>
@@ -376,7 +377,7 @@
 
               <!-- wireframe subcategory of sketches with margins -->
               <div id = "wireframe-sketches" class = "grid full-width">
-               <h3 class = "ds-subsection-header blue full-width">sketches</h3>
+               <h3 class = "ds-subsection-header ds-blue full-width">sketches</h3>
 
                   <p id = "wireframe-sketch-description">While sketching, I went through multiple iterations of several pages such as the user dashboard here. It became clear the user
                      dashboard didn’t need a nav menu, which led to the second image. However, in the last iteration I included buttons for common
@@ -387,7 +388,7 @@
 
                 <!-- wireframe subcategory of digital with margins -->
               <div id = "digital-wireframes" class = "grid full-width">
-                   <h3 class = "ds-subsection-header blue full-width">digital</h3>
+                   <h3 class = "ds-subsection-header ds-blue full-width">digital</h3>
 
                     <img id="digital-wireframes-image" class = "desktop-only" src="assets/images/wireframes_combined.png" alt="Digital Wireframes">
                     <img id="mobile-wireframe-image" class="image-fit mobile-only" src="assets/images/getting_started_wireframe.jpg" alt="Digital Wireframe">
@@ -400,27 +401,27 @@
                     <a class="btn" href="https://www.dropbox.com/s/ws13e3qg4zfj4ih/Wireframe%20Prototype%20Non%20Branded.pdf?dl=0" target="_blank">Wireframes</a>
               </div>
 
-                <!-- wireframe subcategory of testing with margins -->
-                <div id = "wireframe-testing" class = "grid full-width">
-                   <h3 class = "ds-subsection-header blue full-width">wireframe testing</h3>
-                      <div id = "tested-tasks">
-                         <h5 class = "list-heading">Tested Tasks</h5>
-                         <ol id="tasks" class = "numbered-list">
-                            <li>Sign Up for an account</li>
-                            <li>Create a file</li>
-                            <li>Organize a file -- i.e. move it to a new folder</li>
-                         </ol>
-                      </div>
-                      <p id = "wireframe-testing-description">Users felt comfortable navigating most of the site, but as users narrated their experience, I observed there was confusion over
-                         the new features - especially regarding the organize/import button - so I updated the terminology to “clean up” and replaced one
-                         of the buttons with “sync.” Those were words employed by users themselves when guessing what the buttons did and as they
-                         paraphrased explanations I had just given them.  I removed the app button since it was clear that users were able to easily access
-                         the integrated apps through the ‘new’ button and the sidebar.
-                      </p>
+              <!-- wireframe subcategory of testing with margins -->
+              <div id = "wireframe-testing" class = "grid full-width">
+                 <h3 class = "ds-subsection-header ds-blue full-width">wireframe testing</h3>
+                    <div id = "tested-tasks" class = "full-width">
+                       <h5 class = "list-heading">Tested Tasks</h5>
+                       <ol id="tasks" class = "numbered-list">
+                          <li>Sign Up for an account</li>
+                          <li>Create a file</li>
+                          <li>Organize a file -- i.e. move it to a new folder</li>
+                       </ol>
+                    </div>
+                    <p id = "wireframe-testing-description">Users felt comfortable navigating most of the site, but as users narrated their experience, I observed there was confusion over
+                       the new features - especially regarding the organize/import button - so I updated the terminology to “clean up” and replaced one
+                       of the buttons with “sync.” Those were words employed by users themselves when guessing what the buttons did and as they
+                       paraphrased explanations I had just given them.  I removed the app button since it was clear that users were able to easily access
+                       the integrated apps through the ‘new’ button and the sidebar.
+                    </p>
 
-                      <img id="wireframe-testing-image" class = "image-fit desktop-only" src="assets/images/wireframe-testing-takeaways.png" alt="Changes from Wireframe Testing">
+                    <img id="wireframe-testing-image" class = "image-fit desktop-only" src="assets/images/wireframe-testing-takeaways.png" alt="Changes from Wireframe Testing">
 
-                   </div>
+                 </div>
 
 
 
@@ -463,7 +464,7 @@
                <!-- concept subcategory -->
                <div id = "concept" class = "grid full-width">
                   <h3 class = "ds-subsection-header orange">concept</h3>
-                  <div id = "concept-text">
+                  <div id = "concept-text" class = "full-width">
                      <p>The guidelines for our identity based on our personas and data boiled down to:</p>
 
                       <p class = "concept-quote">“Your desk is wherever you are while you balance the personal and professional lives you lead, aided by how easy DeskSpace is.”</p>
@@ -479,7 +480,7 @@
                <div id = "name-logo" class = "grid full-width">
                   <h3 class = "ds-subsection-header orange">name &amp; logo creation</h3>
                   <!-- special quotes area -->
-                  <div id = "quotes-section">
+                  <div id = "quotes-section" class = "full-width">
                     <div class = "quote-group" id = "quote1">
                      <p class = "user-quotes">“Not enough free space…”</p>
                      <p class = "respondent">- Respondent 19</p>
@@ -511,7 +512,7 @@
 
 
 
-            <!-- color palette &amp; logo section -->
+            <!-- color palette & logo section -->
             <!-- H2 Category heading div for establishing grid items for alignment -->
             <div class = "grid-no-margin">
               <h2 class = "ds-category-heading">Color Palette &amp; Logo</h2>
@@ -575,7 +576,7 @@
             <section id="usability-tests">
 
               <div class = "grid full-width">
-               <div id = "tested-tasks-2">
+               <div id = "tested-tasks-2" class = "full-width">
                   <h5 class = "list-heading">Tested Tasks</h5>
                   <ol id="tasks-2" class = "numbered-list">
                      <li>Sign Up for an account</li>
@@ -603,21 +604,21 @@
                      <img class = "mobile-only image-fit" src="assets/images/comparison_1b.png" alt="menu version comparisons">
                      <p class = "mobile-only">Having text next to a symbol was confusing, and users intuitively understood this was the button to return to the dashboard.</p>
                   </div>
-                  <div class ="coral-bg divider mobile-only"></div>
+                  <div class ="ds-coral-bg divider mobile-only"></div>
                   <div class = "usability grid full-width">
                      <img class = "desktop-only image-fit" id = "usability-2-image" src="assets/images/comparison2_b.png" alt="log in comparisons">
                      <img class = "image-fit mobile-only" src="assets/images/comparison_2b.png" alt="log in comparisons">
                      <p class = "mobile-only">I strongly recommended signing up with an email because my intent was to have the product available directly within an email account, similar to how G Drive is at the click of a button within Gmail, something users loved per surveys.  However, I realized users were tripping up on this page. As I studied the page setup and asked follow-up questions, I realized that A) this page diverged too much from the industry norm B) it wasn’t useful for the login page, as opposed to the activating account page, and C) having an extra click to log in with a non-Gmail, non-Outlook, or non-Facebook account was punishing those users unintentionally. Hence why I replaced the ‘other’ button with the email & password input fields.
                      </p>
                   </div>
-                  <div class ="coral-bg divider mobile-only"></div>
+                  <div class ="ds-coral-bg divider mobile-only"></div>
                   <div class = "usability grid full-width">
                      <img class = "desktop-only image-fit" id = "usability-3-image" src="assets/images/comparison3_b.png" alt="sign in comparisons">
                      <img class = "image-fit mobile-only" src="assets/images/comparison_3b.png" alt="sign in comparisons">
                      <p class = "mobile-only">Similarly to the above, on the activating page, I realized that there just weren’t enough AOL & Yahoo users to warrant having two extra buttons for them. Instead, those users could use the “other” button. Plus, Facebook’s button was oddly placed and strange in proportion to the others.
                      </p>
                   </div>
-                  <div class ="coral-bg divider mobile-only"></div>
+                  <div class ="ds-coral-bg divider mobile-only"></div>
                   <div class = "usability grid full-width">
                      <img class = "desktop-only image-fit" id = "usability-4-image" src="assets/images/comparison4_b.png" alt="sync images">
                      <img class = "image-fit mobile-only" src="assets/images/comparison4b_a.png" alt="sync comparisons old version">
@@ -712,7 +713,7 @@
             </div>
             <!-- clickable social icons -->
             <div class="social">
-               <ul id="icons">
+               <ul class="icons">
                   <li class="linkedin">
                      <a href="http://www.linkedin.com/in/madeleinebrooks" target="_blank">
                         <ion-icon name="logo-linkedin"></ion-icon>

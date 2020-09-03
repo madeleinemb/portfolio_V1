@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
    <head>
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
       </div>
 
 
-      <img id = "backBtn" onclick="goBack()" class = "mobile-only" src = "assets/images/back_button_pink.png" alt="back button">
+      <img id = "backBtn" onclick="history.back(-1)" class = "mobile-only" src = "assets/images/back_button_pink.png" alt="back button">
 
 
       <div class = "about-body">
@@ -64,7 +64,7 @@
             <div class = "mobile-only" onclick="topFunction()" id="myBtn" title="Go to top"></div>
 
             <!-- divider for mobile -->
-            <div class ="blue divider mobile-only"></div>
+            <div id = "first-div" class ="blue divider mobile-only"></div>
 
             <p><br>My mom claims she never once had to ask me to do my homework because I was so self-motivated. My test scores earned me
               financial aid to attend a swanky high school where I met friends with whom I’m still close, but academically I became
@@ -81,8 +81,6 @@
             </div>
             <img class = "blue-line-divider mobile-only" src = "assets/images/blue-lines-backward.svg" alt = "line embellishment">
 
-            <!-- <div class = "vertical-divider mobile-only"></div>
-            <div class = "blue-bg horizontal-divider mobile-only"></div> -->
 
             <p><br>In Teach for America (TFA), a two-year AmeriCorps program, I learned I could survive anything including being a teacher
               on the first day of preK, which often resembles a war zone (no really, this is only a slight exaggeration), all while
@@ -245,12 +243,5 @@
 
       </script>
 
-      <script>
-
-          function goBack() {
-            window.history.back();
-          }
-
-      </script>
 
   </body>
