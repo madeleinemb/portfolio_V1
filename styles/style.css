@@ -1875,7 +1875,7 @@ p {
 							#analysis ul {
 								column-count: 2;
 								column-gap: 100px;
-								padding: 0px 300px 0px 300px;
+								padding: 0px 200px 0px 200px;
 								list-style-type: square;
 							}
 
@@ -1920,6 +1920,7 @@ p {
 							}
 
 							.persona-text {
+								margin: 0px;
 								grid-column: 2 / 5;
 								font-family: Lato;
 							}
