@@ -303,9 +303,8 @@ p {
 	height: auto;
 }
 
-#about-my-logo {
-	max-width: 50px;
-	max-width: 100%;
+.about-logo {
+	width: 100%;
 }
 
 .about .margin {
@@ -1046,6 +1045,72 @@ p {
 	padding: 0px 10px 0px 10px;
 }
 
+/*CONTACT ME PAGE *************************************************************************** */
+/* *********************************CONTACT ME PAGE****************************************** */
+
+.contact-me h1 {
+	line-height: 1.6;
+}
+
+.contact-me .header {
+	background-color: rgba(6, 190, 225, 0.6);
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+
+.contact-me .navigation ion-icon {
+	font-size: 40px;
+	color: #242424;
+}
+
+/* special grid for the mobile icons for contact info */
+.contact-me .navigation {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	justify-items: center;
+	align-items: center;
+}
+
+.contact-me .navigation li {
+	padding: 10px;
+}
+
+.contact-initial {
+	margin: 40px 0px 40px 0px;
+}
+
+.contact-secondary {
+	margin-bottom: 20px;
+}
+
+.contact-me form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+}
+
+.contact-me form > * {
+	padding: 10px 0px;
+	margin: 10px 0px;
+}
+
+.contact-me .btn {
+	align-self: center;
+	width: 60%;
+	background-color: #CC0E74;
+	color: white;
+}
+
+.contact-content {
+	background-color:
+}
+
+.contact-text,
+.contact-content .caption {
+	text-align: center;
+}
+
 
 				/* ------------------------------ */
 				/* ------------------------------ */
@@ -1307,8 +1372,8 @@ p {
 
 				/* ABOUT PAGE Tablet Adjustments */
 
-				#about-my-logo {
-					max-width: 100%;
+				.about-logo {
+					max-width: 70%;
 				}
 
 				#backBtn {
@@ -1330,6 +1395,52 @@ p {
 				#narrator {
 					margin-right: 40px;
 					font-size: 28px;
+				}
+
+				/* CONTACT ME PAGE *************************************** */
+				/* ******************************************************* */
+
+				.contact-me form {
+					padding-top: 0px;
+					grid-column: 8 / span 4;
+					display: flex;
+					flex-direction: column;
+					align-self: start;
+				}
+
+				.contact-content {
+					margin-top: 80px;
+				}
+
+				.contact-content {
+					margin-top: 80px;
+				}
+
+				.contact-text {
+					grid-column: 2 / span 6;
+				}
+
+				.contact-content.grid {
+					align-items: start;
+					height: 400px;
+				}
+
+				.contact-me .caption {
+					grid-row: 2;
+					grid-column: 2 / span 5;
+					text-align: left;
+				}
+
+				.contact-initial {
+					margin: 0px;
+					text-align: left;
+					font-size: 40px;
+				}
+
+				.contact-secondary {
+					font-size: 32px;
+					margin-top: 40px;
+					text-align: left;
 				}
 
 				}
@@ -1571,7 +1682,7 @@ p {
 								text-transform: uppercase;
 							}
 
-							#logo2 {
+							.about-logo {
 								display: block;
 							}
 
@@ -2246,4 +2357,61 @@ p {
 							.about .footer ion-icon {
 								color: white;
 							}
+
+							/* ********* CONTACT ME DESKTOP *************** */
+
+							.contact-me .navigation li {
+								padding: 0px;
+							}
+
+							.contact-me .navigation {
+								display: grid;
+								grid-template-columns: 1fr 1fr;
+								grid-column: 11 / span 2;
+							}
+
+							.contact-me .header {
+								display: grid;
+								grid-template-columns: repeat(12, minmax(50px, 1fr));
+								grid-column-gap: 18px;
+								padding: 20px 40px 10px 40px;
+							}
+
+							.contact-me form {
+								padding-top: 0px;
+								grid-column: 8 / span 3;
+								display: flex;
+								flex-direction: column;
+								align-self: start;
+							}
+
+							.contact-content {
+								margin-top: 80px;
+							}
+
+							.contact-text {
+								grid-column: 3 / span 5;
+							}
+
+							.contact-content.grid {
+								align-items: start;
+								height: 400px;
+							}
+
+							.contact-me .caption {
+								grid-row: 2;
+								grid-column: 3 / span 5;
+								justify-self: end;
+								padding-right: 80px;
+							}
+
+							.contact-initial {
+								margin: 0px;
+							}
+
+							.contact-secondary {
+								margin-top: 40px;
+							}
+}
+
 						}
