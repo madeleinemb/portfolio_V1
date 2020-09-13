@@ -2332,6 +2332,7 @@ p {
 								object-fit: contain;
 								width: 100%;
 								margin: 40px 0px;
+								padding: 40px;
 								border-radius: 20%;
 								align-self: center;
 								border: 5px #CC0E74 solid;
@@ -2353,22 +2354,6 @@ p {
 							.bio-text > p {
 								line-height: 2;
 							}
-/*
-							.test1:after {
-								content: ".";
-   							visibility: hidden;
-   							display: block;
-   							height: 0;
-   							clear: both;
-							} */
-
-							.conclusion.desktop-only {
-								/* margin: 0px;
-								display: inline-block;
-
-								padding: 80px 200px 80px 150px; */
-								/* grid-auto-flow: row; */
-							}
 
 							.about ion-icon {
 								color: #233CB9;
@@ -2383,12 +2368,6 @@ p {
 								background-color: #CC0E74;
 
 							}
-
-
-
-							/* .two-columns {
-								column-count: 2;
-							} */
 
 							/* *********************************** */
 							/* CONTACT ME ADJUSTMENTS */
