@@ -632,7 +632,7 @@ p {
 
 .complaint-image {
 	object-fit: contain;
-	width: 100%
+	width: 100%;
 }
 
 .complaint-title {
@@ -803,7 +803,7 @@ p {
 
 #user-flow-image {
 	display: block;
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -879,7 +879,7 @@ p {
 }
 
 #concept p {
-	padding: 30px 40px;
+	margin: 30px 40px;
 }
 
 #brand-concept-image {
@@ -1542,13 +1542,8 @@ p {
 
 				.image-fit {
 					object-fit: contain;
-					grid-column: 1 / -1;
-					justify-self: center;
-					width: 100%;
-				}
-
-				/* exception to the above */
-				#deskspace-preview-image {
+					display: block;
+					margin: 0 auto;
 					width: 100%;
 				}
 
@@ -1681,7 +1676,7 @@ p {
 
 				#complaints {
 					display: flex;
-					padding: 40px 10% 80px 10%;
+					padding: 40px 8% 80px 8%;
 					flex-wrap: wrap;
 					justify-content: center;
 					margin: 0px;
@@ -1697,7 +1692,8 @@ p {
 
 				.complaint {
 					margin: 40px 0px;
-					flex-basis: 1000px;
+					flex-basis: 700px;
+					width: 100vw;
 					display: flex;
 					flex-direction: row;
 					align-items: center;
@@ -1774,15 +1770,39 @@ p {
 					margin: 0px 60px;
 				}
 
+				#stickies {
+					margin: 0 auto;
+				}
+
+				#priorities {
+					width: 40%;
+				}
+
 				#wireframe-sketches-image {
 					width: 50%;
 				}
 
-				#wireframe-sketch-description {
-					margin: 0px 20%;
+				#tested-tasks,
+				#preference-testing,
+				#tested-tasks-2,
+				#wireframe-sketch-description,
+				#color-description {
+					padding: 60px 10%;
 				}
 
+				#concept p,
+				#name-description {
+					margin: 80px 10%;
+				}
 
+				#brand-concept-image {
+					width: 80%;
+				}
+
+				#color-palette {
+					width: 70%;
+					margin: 0 auto;
+				}
 
 				#usability-visuals > .divider {
 					margin: 40px 250px;
@@ -2200,10 +2220,7 @@ p {
 						}
 
 						#deskspace-preview-image {
-							grid-column: 1 / -1;
-							max-width: 800px;
-							justify-self: center;
-							align-self: center;
+							width: 100%;
 						}
 
 						#specs {
