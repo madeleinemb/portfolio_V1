@@ -72,9 +72,6 @@
 
          </section>
 
-         <!-- Back to top button -->
-
-         <div onclick="topFunction()" id="myBtn" title="Go to top"></div>
 
          <!-- end grid with margin -->
          <!-- end of overview  -->
@@ -137,8 +134,9 @@
                         <p>People <span class="emphasis">really</span> like free space.</p>
                      </div>
 
+                     <h3 class="sub-heading">common complaints</h3>
+
                      <div id="complaints" class = "cards">
-                       <h3 class="sub-heading">common complaints</h3>
                             <div id = "space" class = "complaint">
                               <img class = "complaint-image" src = "assets/images/space.png" alt = "out of space icon">
                               <div class = "summ" id="summ1">
@@ -215,37 +213,41 @@
             <!-- user personas section -->
             <section id = "user-personas">
 
-              <h2 class = "ds-category-heading" id="user">User Personas</h2>
+              <div id = "personas">
+
+                      <h2 class = "ds-category-heading" id="user">User Personas</h2>
 
 
-              <!-- margined grid for content -->
-              <div class = "grid">
+                      <!-- margined grid for content -->
+                      <div class = "grid">
 
-               <!-- Chris' user persona -->
-                 <div class="persona" id="chris-div">
-                    <img id="chris" src="assets/images/chris.jpg" alt="Chris Persona">
-                    <p class = "persona-heading">Chris &#8226; <i>On-the-go Professional</i> &#8226; 32</p>
-                    <p class = "persona-text">“I have a stressful job and a lot of social commitments, so anything that helps me stay on top of it
-                       without having to think is amazing.”
-                    </p>
-                    <a class="btn" href="https://www.dropbox.com/s/g9kckhqxod1jx13/Chris%20Cloud%20Persona.pdf?dl=0" target="_blank">See Chris' Persona</a>
-                 </div>
+                       <!-- Chris' user persona -->
+                         <div class="persona" id="chris-div">
+                            <img id="chris" src="assets/images/chris.jpg" alt="Chris Persona">
+                            <p class = "persona-heading">Chris &#8226; <i>On-the-go Professional</i> &#8226; 32</p>
+                            <p class = "persona-text">“I have a stressful job and a lot of social commitments, so anything that helps me stay on top of it
+                               without having to think is amazing.”
+                            </p>
+                            <a class="btn" href="https://www.dropbox.com/s/g9kckhqxod1jx13/Chris%20Cloud%20Persona.pdf?dl=0" target="_blank">See Chris' Persona</a>
+                         </div>
 
-                <!-- divider for mobile -->
-                 <div class ="ds-coral-bg divider mobile-only"></div>
+                        <!-- divider for mobile -->
+                         <div class ="ds-coral-bg divider mobile-only"></div>
 
-                 <!-- Jenna's user persona -->
-                 <div class="persona" id="jenna-div">
-                    <img id="jenna" src="assets/images/jenna.jpg" alt="Jenna Persona" width="211" height="211">
-                    <p class = "persona-heading">Jenna &#8226; <i>Organized Planner</i> &#8226; 28</p>
-                    <p class = "persona-text">“I hate how many different programs and logins I have to use to accomplish the same daily tasks.
-                       Things should be more efficient.”
-                    </p>
-                    <a class="btn" href="https://www.dropbox.com/s/tba2o0ra9gqhmor/Jenna%20Cloud%20Persona.pdf?dl=0" target="_blank">See Jenna's Persona</a>
-                 </div>
+                         <!-- Jenna's user persona -->
+                         <div class="persona" id="jenna-div">
+                            <img id="jenna" src="assets/images/jenna.jpg" alt="Jenna Persona" width="211" height="211">
+                            <p class = "persona-heading">Jenna &#8226; <i>Organized Planner</i> &#8226; 28</p>
+                            <p class = "persona-text">“I hate how many different programs and logins I have to use to accomplish the same daily tasks.
+                               Things should be more efficient.”
+                            </p>
+                            <a class="btn" href="https://www.dropbox.com/s/tba2o0ra9gqhmor/Jenna%20Cloud%20Persona.pdf?dl=0" target="_blank">See Jenna's Persona</a>
+                         </div>
 
-            <!-- end of margined grid -->
-               </div>
+                    <!-- end of margined grid -->
+                       </div>
+
+                </div>
 
             <!-- end of user persona section -->
             </section>
@@ -376,7 +378,7 @@
 
 
                     <div id = "tested-tasks">
-                      <h4 class = "user-testing">User Testing</h4>
+                      <h4 class = "user-testing">User Testing on Wireframes</h4>
                        <h5 class = "list-heading2">Tested Tasks</h5>
                        <ol class = "numbered-list">
                           <li>Sign Up for an account</li>
@@ -390,7 +392,7 @@
                     </p>
                     </div>
 
-                    <img id="wireframe-testing-image" class = "image-fit" src="assets/images/wireframe-testing-takeaways.png" alt="Changes from Wireframe Testing">
+                    <img id="wireframe-testing-image" class = "image-fit desktop-only" src="assets/images/wireframe-testing-takeaways.png" alt="Changes from Wireframe Testing">
 
                  </div>
 
@@ -418,12 +420,12 @@
                <!-- concept subcategory -->
                <div id = "concept">
 
-                    <p>Keeping in mind 'Jenna' &amp; 'Chris' as well as stand-out quotes and relevant statistics from the user surveys,
+                    <p class = "concept-text">Keeping in mind 'Jenna' &amp; 'Chris' as well as stand-out quotes and relevant statistics from the user surveys,
                       I landed on an overall brand concept.</p>
 
                     <img id = "brand-concept-image" class="image-fit" src="assets/images/brand_concept.png" alt="brand concept page">
 
-                    <p>The concept influenced everything from the choice of photography, to typography, to the shapes of buttons and cards.</p>
+                    <p class = "concept-text">The concept influenced everything from the choice of photography, to typography, to the shapes of buttons and cards.</p>
 
                </div>
 
@@ -652,23 +654,26 @@
               <h3 class = "user-testing">Preference Testing (Round 2)</h3>
 
 
-              <h5 class = "pref-title">Color of buttons on Getting Started page</h5>
+
               <div class = "pref-group" id = "preference1">
+                  <h5 class = "pref-title">Color of buttons on Getting Started page</h5>
                   <img class = "preference-image" src="assets/images/preference-menu-buttons-before.png" alt="getting started page menu button before">
                   <img class = "preference-image after" src="assets/images/preference-menu-buttons-after.png" alt="getting started page menu button after">
                   <p class = "pref-description">Unanimous vote!: Users said the colored buttons were easier to distinguish as buttons.</p>
                </div>
 
-              <h5 class = "pref-title">Different mobile 'clean up' icons</h5>
+
               <div class = "pref-group" id = "preference2">
+                  <h5 class = "pref-title">Different mobile 'clean up' icons</h5>
                   <img class = "preference-image" src="assets/images/preference-mobile-tabs-before.png" alt="mobile device clean up icon before">
                   <img class = "preference-image after" src="assets/images/preference-mobile-tabs-after.png" alt="getting started page menu button after">
                   <p class = "pref-description">Unanimous vote!: Users said the deskspace logo icon was more visually appealing than the simplified, empty desk icon.</p>
               </div>
 
 
-              <h5 class = "pref-title">Hover color on dropdown menus</h5>
+
               <div class = "pref-group" id = "preference3">
+                 <h5 class = "pref-title">Hover color on dropdown menus</h5>
                  <img class = "preference-image" src="assets/images/preference-hover-colors-before.png" alt="sync drodown menu before">
                  <img class = "preference-image after" src="assets/images/preference-hover-colors-after.png" alt="sync drodown menu after">
                  <p class = "pref-description">Unanimous vote! (again!): Users said the blue hover color was more pleasing than the orange hover color.</p>
@@ -680,35 +685,32 @@
          </section>
 
          <!-- ********* CONCLUSION ****** -->
-         <section id = "conclusion">
-            <div id= "heading-bg" class = "grid-no-margin">
-                <h2 id="conclusion-heading">Conclusion</h2>
-            </div>
+         <section class = "conclusion">
 
-            <div class = "grid">
+                <h2 class="ds-category-heading">Conclusion</h2>
 
-                <p class = "left"><strong class = "conc">It wasn’t surprising</strong> that users want as much free space as they can get and want files to upload and download as fast as possible;
-                   however, it was surprising that in trying to solve those issues on their own, users created new issues like having too many
-                   forgettable, disorganized accounts and getting confused on who had access to what.
+                <p><strong class = "conc">It wasn’t surprising</strong> that users want as much free space as they can get and want files to upload
+                  and download as fast as possible; however, it was surprising that in trying to solve those issues on their own, users
+                  created new issues like having too many forgettable, disorganized accounts and getting confused on who had access to what.
                 </p>
 
-                <div class="quote">
-                   <p><strong>"</strong>...realizing I could use design to alleviate the 'free space' issue by helping users make the most of the
-                      space they have.<strong>"</strong>
+                <p>At first, I considered free space and upload times purely technical
+                   issues. My breakthrough was realizing I could use design to alleviate
+                   the “free space” issue by helping users make the most of the space
+                   they have. Not only did it address the number one problem among users,
+                   but it also fit perfectly with the needs of our second user persona,
+                   Jenna, who wants her things organized.
+                </p>
+
+                <div  class="quote">
+                   <p id = "conclusion-quote"><img class = "quote-sym" src = "assets/images/open_quotes_blue.png" alt = "quotes">[I realized] I could use design to alleviate the 'free space' issue by helping users make the most of the
+                      space they have.<img class = "quote-sym" src = "assets/images/close_quotes_blue.png" alt = "quotes">
                    </p>
                 </div>
 
-                <img id = "venn5" class = "image-fit desktop-only" src="assets/images/venn5.png" alt="revelation illustration">
+                <img id = "illustration" class = "image-fit desktop-only" src="assets/images/diagram2.png" alt="revelation illustration">
 
-                 <p class = "left">At first, I considered free space and upload times purely technical
-                    issues. My breakthrough was realizing I could use design to alleviate
-                    the “free space” issue by helping users make the most of the space
-                    they have. Not only did it address the number one problem among users,
-                    but it also fit perfectly with the needs of our second user persona,
-                    Jenna, who wants her things organized.
-                 </p>
-
-                 <p class = "right">If given more time, I would create more examples of what onboarding
+                 <p>If given more time, I would create more examples of what onboarding
                     messaging should look like for first-time users so that during
                     usability tests, I would hear more certainty from respondents about
                     what the buttons like “clean up” and “sync” did. As it is, the users
@@ -716,17 +718,18 @@
                     the other tested tasks easily, so the app is on the right track, and I
                     look forward to seeing its successful evolution.
                  </p>
-
           </div>
             <!-- end of conclusion section -->
          </section>
+
+         <a class = "to-top" href="#top">Back to top</a>
 
   </div>
 
          <!-- footer -->
          <div class="footer full-width">
             <div class="footer-content">
-               <a href="#">
+               <a id = "contactme" href="contact.html">
                   <h2>Contact Me</h2>
                </a>
             </div>
@@ -760,28 +763,7 @@
 
       <!-- SCRIPTS -->
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-      <script>
 
-            // Get My button from html
-            var mybutton = document.getElementById("myBtn");
-
-            // When the user scrolls down 20px from the top of the document, show the button // -->
-            window.onscroll = function() {scrollFunction()};
-
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
-            }
-
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-            }
-        </script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEQHKEELR0"></script>

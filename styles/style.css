@@ -90,52 +90,6 @@ ul {
 	text-decoration: none;
 }
 
-/* COLORS ***************/
-
-.blue {
-	background-color: #233CB9;
-}
-
-.ds-light-blue {
-	background-color: #d9eeee;
-}
-
-.ds-med-blue {
-	background-color: #9ed3d4;
-}
-
-.ds-blue {
-	background-color: #63b8ba;
-}
-
-.ds-dark-blue {
-	background-color: #234f50;
-}
-
-.ds-light-orange {
-	background-color: #fdece9;
-}
-
-.ds-med-orange {
-	background-color: #fac3ba;
-}
-
-.ds-orange {
-	background-color: #f1553b;
-}
-
-.ds-dark-orange {
-	background-color: #891c0a;
-}
-
-.ds-grey-one {
-	background-color: #0b0201;
-}
-
-.ds-grey-two {
-	background-color: #091515;
-}
-
 /* ----- TYPOGRAPHY ------ */
 /* Headings Mobile */
 
@@ -268,6 +222,19 @@ p {
 /* padding before bottom of page within footer */
 .social {
 	padding-bottom: 30px;
+}
+
+.to-top {
+	font-size: 16px;
+	position: relative;
+	bottom: 5vh;
+	left: 80%;
+	text-decoration: underline;
+	color: #242424;
+}
+
+.to-top:hover {
+	color: #06BEE1;
 }
 
 
@@ -423,7 +390,7 @@ p {
 	width: 40%;
 }
 
-.conclusion {
+.about .conclusion {
 	margin: 30px 0px 0px 0px;
 	padding: 30px;
 	background-color: #CC0E74;
@@ -529,12 +496,15 @@ p {
 	align-self: center;
 }
 
+.desktop-only {
+	display: none;
+}
 
 .full-mobile-width {
 	grid-column: 1 / -1;
 }
 
-.desktop-only {
+.image-fit.desktop-only {
 	display: none;
 }
 
@@ -821,10 +791,6 @@ p {
 	padding: 40px 0px;
 }
 
-#wireframe-testing-image {
-	display: none;
-}
-
 #brand-head,
 #color-head {
 	margin-top: 0px;
@@ -878,7 +844,7 @@ p {
 	padding: 0px 0px 20px 0px;
 }
 
-#concept p {
+.concept-text {
 	margin: 30px 40px;
 }
 
@@ -896,6 +862,7 @@ p {
 
 #quotes-section {
 	background-color: #d9eeee;
+	color: #234f50;
 	padding: 0px 40px;
 	margin-bottom: 40px;
 }
@@ -1037,21 +1004,21 @@ p {
 }
 
 #usability-test-description {
-	margin: 60px 40px;
+	padding: 60px 40px;
 }
 
 #usability-test-description2 {
-	margin: 40px;
+	padding: 40px;
 }
 
 #menu,
 #sign-in {
-	background-color: #f7f7f7;
+	background-color: #f0f8f8;
 }
 
 #log-in,
 #sync {
-	background-color: #f0f8f8;
+	background-color: #f7f7f7;
 }
 
 .bullets {
@@ -1068,6 +1035,7 @@ p {
 }
 
 .bullets li {
+	color: #242424;
 	padding: 20px;
 }
 
@@ -1080,10 +1048,7 @@ p {
 	margin: 0 auto;
 }
 
-#usability2,
-#usability3,
-#usability4,
-#usability5 {
+.usability .image-fit {
 	width: 85%;
 	margin: 0 auto;
 	padding: 10px;
@@ -1120,22 +1085,39 @@ p {
 
 .after {
 	border: 2px solid #4cacae;
-	/* background-color: rgba(77,172,174,.5); */
 }
 
 .pref-title {
-	padding: 40px 40px 10px 40px;
+	padding: 20px 40px 20px 40px;
+	text-align: center;
+	color: #3B7D7E;
 	line-height: 1.6;
 }
 
-.preference-image {
-
-}
-
 .pref-group {
-	margin: 20px;
+	margin: 20px auto 60px auto;
 	padding: 20px;
 	background-color: white;
+}
+
+.conclusion .ds-category-heading {
+	margin-top: 0px;
+	margin-bottom: 60px;
+	background-color: #891c0a;
+}
+
+.conclusion p {
+	margin: 40px;
+}
+
+#conclusion-quote {
+	margin: 0px;
+	padding: 0px;
+}
+
+.quote-sym {
+	padding: 0px 10px;
+	opacity: 40%;
 }
 
 .pref-description {
@@ -1146,7 +1128,7 @@ p {
 .quote {
 	line-height: 2.5;
 	background-color: rgba(123, 193, 195, .5);
-	margin: 10px;
+	margin: 40px 10%;
 	padding: 30px;
 	border-radius: 30px;
 	align-self: center;
@@ -1197,13 +1179,6 @@ p {
 	color: #06BEE1;
 }
 
-/* TABLE OF CONTENTS */
-
-/* hide table of contents in mobile */
-.table-of-contents {
-	display: none;
-}
-
 /* TYPOGRAPHY for DESKSPACE */
 
 .ds-category-heading {
@@ -1249,11 +1224,6 @@ p {
 	color: #F2634B;
 }
 
-.deskspace h1 {
-	font-size: 32px;
-	font-weight: 600;
-}
-
 .deskspace .header h3 {
 	font-family: 'Poppins', sans-serif;
 	color: #242424;
@@ -1272,12 +1242,6 @@ p {
 
 #project-details p {
 	margin: 20px 0px 20px 0px;
-}
-
-#heading-bg {
-	padding: 20px;
-	background-color: #3B7D7E;
-	margin-bottom: 40px;
 }
 
 #conclusion-heading {
@@ -1505,7 +1469,7 @@ p {
 				}
 
 				h4, h5 {
-					font-size: 18px;
+					font-size: 22px;
 					font-weight: 600;
 				}
 
@@ -1514,7 +1478,7 @@ p {
 				}
 
 				.navigation {
-					font-size: 20px;
+					font-size: 16px;
 					grid-column: 6 / span 3;
 				}
 
@@ -1545,6 +1509,11 @@ p {
 					display: block;
 					margin: 0 auto;
 					width: 100%;
+					grid-column: 1/-1;
+				}
+
+				.image-fit.desktop-only {
+					display: none;
 				}
 
 				.co-summary {
@@ -1665,55 +1634,37 @@ p {
 					text-transform: uppercase;
 				}
 
-				.quote-sym {
-					padding: 10px;
-					opacity: 40%;
-				}
-
 				#complaint-heading {
 					font-size: 28px;
 				}
 
-				#complaints {
-					display: flex;
-					padding: 40px 8% 80px 8%;
-					flex-wrap: wrap;
-					justify-content: center;
-					margin: 0px;
-				}
-
-				#complaints h3 {
-					padding-top: 0px;
-					font-style: normal;
-					text-align: center;
-					width: 100%;
-					margin-bottom: 40px;
-				}
-
-				.complaint {
-					margin: 40px 0px;
-					flex-basis: 700px;
-					width: 100vw;
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-				}
 
 				.complaint-title {
 					font-size: 28px;
 					line-height: 1.6;
 				}
 
+				.cards {
+				  display: flex;
+				  flex-wrap: wrap;
+				  flex-direction: column;
+				  align-items: center;
+				}
+
+				.complaint {
+				  /* padding: 10px 0px; */
+				  display: flex;
+				  align-items: center;
+				}
+
 				.complaint-image {
-					object-fit: contain;
-					width: 100%;
-					flex: 2;
+				  width: 40vw;
+				  margin-left: 3vw;
 				}
 
 				.summ {
-					flex: 1;
-					text-align: left;
-					margin: 0px 8%;
+				  width: 25vw;
+				  margin: 0 5vw;
 				}
 
 				.analysis ul {
@@ -1782,15 +1733,21 @@ p {
 					width: 50%;
 				}
 
+				.user-testing {
+					font-size: 28px;
+				}
+
 				#tested-tasks,
 				#preference-testing,
 				#tested-tasks-2,
 				#wireframe-sketch-description,
-				#color-description {
+				#color-description,
+				#usability-test-description,
+				#usability-test-description2 {
 					padding: 60px 10%;
 				}
 
-				#concept p,
+				.concept-text,
 				#name-description {
 					margin: 80px 10%;
 				}
@@ -1804,75 +1761,74 @@ p {
 					margin: 0 auto;
 				}
 
-				#usability-visuals > .divider {
-					margin: 40px 250px;
-					opacity: 70%;
+				#final-logo {
+					width: 40%;
 				}
 
-				#quote1 {
-					padding-left: 40px;
-				}
-
-				#quote2 {
-					text-align: center;
-					padding-left: 40px;
-				}
-
-				#quote3 {
-					text-align: right;
-					padding-right: 40px;
-					padding-bottom: 20px;
-				}
-
-				#name-description {
-					grid-column: 1 / -1;
+				#buttons {
+					width: 50%;
 				}
 
 				#quotes-section {
 					margin: 0px 80px;
-					padding: 0px 10px;
+					padding: 40px 60px;
 				}
 
-				#font > img {
-					width: 50%;
-					margin: 40px 0px;
+				#usability-visuals li {
+					padding: 20px 15%;
 				}
 
-				#preference-visuals .caption {
-					grid-column: auto;
+				.bullets {
+					margin: 0px;
 				}
 
-				.preference-text {
-					display: none;
+				.usability .image-fit {
+					padding: 30px;
 				}
 
 				#preference-visuals {
-					grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-					justify-items: center;
+					padding: 20px 10%;
 				}
 
-				#conclusion .grid {
-					grid-template-columns: repeat(12, minmax(40px, 1fr));
-					grid-column-gap: 18px;
-					grid-row-gap: 20px;
-					margin: 0px 30px 40px 30px;
+				#preference-visuals .user-testing {
+					padding-top: 40px;
+					padding-bottom: 40px;
 				}
 
-				#heading-bg {
-					margin-bottom: 80px;
+				.pref-group {
+					margin: 20px 40px;
+					padding: 40px 0px;
 				}
 
-				#conclusion-heading {
-					grid-column: 2 / 12;
+				.pref-description {
+					padding-top: 30px;
+					text-align: center;
+					font-style: italic;
 				}
 
-				.quote {
-					grid-column: 8 / 12;
+				.after {
+					border: 5px solid #4cacae;
+				}
+
+				.pref-title {
+					padding: 0px 0px 20px 0px;
+				}
+
+				#preference2 .preference-image {
+					width: 70%;
+				}
+
+				#preference3 .preference-image {
+					width: 50%;
+				}
+
+				.conclusion p {
+					margin: 40px 10%;
 				}
 
 				#venn5 {
-					grid-column: 3 / 11;
-					margin: 20px 0px 60px 0px;
+					margin: 30px auto;
+					width: 80%;
 				}
 
 				.left {
@@ -2010,12 +1966,6 @@ p {
 							margin-bottom: 40px;
 						}
 
-						.image-fit {
-							object-fit: contain;
-							grid-column: auto;
-							width: 100%;
-						}
-
 						.full-mobile-width {
 							grid-column: auto;
 						}
@@ -2025,17 +1975,15 @@ p {
 							padding: 0px;
 						}
 
-						.mobile-only {
-							display: none;
+						.image-fit.desktop-only {
+							display: inherit;
 						}
 
 						.desktop-only {
 							display: inherit;
 						}
 
-						#to-top {
-							margin-left: 1000px;
-						}
+
 
 						/* DESKTOP HOMEPAGE ************************ */
 						/* DESKTOP HOMEPAGE************************ */
@@ -2060,7 +2008,7 @@ p {
 							grid-template-columns: subgrid;
 							grid-column: 10 / span 3;
 							align-self: center;
-							font-size: 20px;
+							font-size: 14px;
 						}
 
 						.about .navigation {
@@ -2175,7 +2123,6 @@ p {
 
 						.deskspace h1 {
 							font-size: 48px;
-
 						}
 
 						.header-main-content {
@@ -2201,18 +2148,6 @@ p {
 
 						.about-logo {
 							display: block;
-						}
-
-						.mobile-only {
-							display: none;
-						}
-
-						.left {
-							grid-column: 2 / 6;
-						}
-
-						.right {
-							grid-column: 8 / 12;
 						}
 
 						#connected-heading .ds-subsection-header {
@@ -2261,7 +2196,6 @@ p {
 
 						.ds-category-heading {
 							font-size: 36px;
-							margin: 40px;
 						}
 
 						.question.btn {
@@ -2345,11 +2279,6 @@ p {
 							font-weight: 600;
 						}
 
-						.quote-sym {
-							padding: 10px;
-							opacity: 40%;
-						}
-
 						.answer .sub-heading {
 							padding: 0px;
 						}
@@ -2381,6 +2310,10 @@ p {
 							display: inherit;
 						}
 
+						#user {
+							margin: 40px 0px 80px 0px;
+						}
+
 						.persona {
 							display: grid;
 							grid-template-columns: repeat(5, minmax(20px, 1fr));
@@ -2398,13 +2331,21 @@ p {
 							padding: 0px 40px;
 						}
 
-						#user-personas {
+						#personas {
 							background-color: #d9eeee;
-							padding: 40px 0px;
 						}
 
-						#competitive {
-							padding: 40px 0px;
+						#personas .grid {
+							padding-bottom: 100px;
+							margin: 0px;
+						}
+
+						#comp-head {
+							margin: 0px;
+						}
+
+						#competitive .grid {
+							padding-top: 40px;
 						}
 
 						.company-vl {
@@ -2455,146 +2396,140 @@ p {
 
 						#user-head {
 							margin-top: 60px;
-							margin-bottom: 20px;
-						}
-
-						#wireframe-sketch-description {
-							grid-column: 2 / 5;
-						}
-
-						#digital-wireframes-image {
-							grid-column: 2 / 9;
-							grid-row-start: 2;
-						}
-
-						#digital-description {
-							grid-column: 8 / 12;
-							grid-row: 2 / 3;
-						}
-
-						#tested-tasks {
-							border: solid 7px #4DACAE;
-							grid-column: 2 / 6;
-							padding: 40px;
 							margin-bottom: 40px;
 						}
 
-						#wireframe-testing-description {
-							grid-column: 8 / 12;
-							grid-row: 2 / 3;
-							align-self: start;
+						#priorities {
+							width: 30%;
+						}
+
+						#wireframe-sketches-image {
+							margin-top: 80px;
+						}
+
+						#digital-wireframes > img {
+							width: 70%;
+						}
+
+						#digital-wireframes1 {
+							margin-bottom: 40px;
+						}
+
+						#tested-tasks,
+						#preference-testing,
+						#tested-tasks-2,
+						#wireframe-sketch-description,
+						#color-description,
+						#usability-test-description,
+						#usability-test-description2 {
+							padding: 60px 20%;
 						}
 
 						#wireframe-testing-image {
-							display: inherit;
-							margin: 60px 0px 60px 0px;
-							grid-column: 2 / 12;
-						}
-
-						#concept-text {
-							grid-column: 2 / 7;
-							padding-top: 40px;
-						}
-
-						.concept-quote {
-							padding: 40px 0px 40px 80px;
-							font-size: 20px;
+							width: 80%;
+							margin: 60px auto 80px auto;
 						}
 
 						#brand-concept-image {
-							grid-column: 8 / 12;
-							object-fit: contain;
-							width: 80%;
+							width: 40%;
 						}
 
 						#quotes-section {
-							grid-column: 2 / 6;
-							grid-row: auto;
+							margin: 20px 20%;
+							padding: 60px 100px;
 						}
 
+						.concept-text,
 						#name-description {
-							grid-column: 7 / 12;
+							margin: 80px 20%;
+						}
+
+						#color-palette {
+							width: 60%;
 						}
 
 						#branding-sketches {
-							grid-column: 6 / 12;
+							padding-bottom: 60px;
 						}
 
-						.two_to_five {
-							grid-column: 2 / 5;
-							align-self: center;
+						#rough-logos {
+							width: 80%;
+						}
+
+						#final-logo {
+							width: 30%;
+							margin-bottom: 120px;
+						}
+
+						#usability1 {
+							width: 60%;
+							margin: 40px auto;
+						}
+
+						.usability .image-fit {
+							width: 75%;
+							margin: 0 auto;
+							padding: 20px;
+						}
+
+						#usability6 {
+							width: 65%;
+							padding: 10px;
+							margin: 0 auto;
+						}
+
+						#usability7 {
+							width: 45%;
+							padding: 10px;
+							margin: 0 auto;
+						}
+
+						#usability-visuals li {
+							padding: 30px 22%;
+						}
+
+						#preference-visuals {
+							padding: 20px 10%;
+						}
+
+						#preference-visuals .user-testing {
+							padding: 80px 0px 40px 10%;
+						}
+
+						.preference-image {
+							padding: 20px 0px;
+						}
+
+						.pref-group {
+							margin: 40px 10%;
+						}
+
+						#preference1,
+						#preference2 {
+							margin-bottom: 80px;
+						}
+
+						#preference3 {
+							margin-bottom: 100px;
 						}
 
 						#color-description {
 							padding-top: 60px;
 						}
 
-						#typography {
-							grid-column: 3 / 11;
+						.conclusion p {
+							margin: 60px 20%;
 						}
 
-						#tested-tasks-2 {
-							grid-column: 2 / 5;
-							grid-row: 1;
+						#illustration {
+							width: 70%;
 						}
 
-						#usability-test-description {
-							grid-column: 7 / 12;
-							padding-top:40px;
+						.quote {
+							margin: 80px 20% 100px 20%;
+							padding: 60px;
 						}
 
-						#quote1 {
-							padding-right: 120px;
-						}
-
-						#quote2 {
-							padding-left: 80px;
-						}
-
-						#usability-1-image {
-							grid-column: 5 / 12;
-						}
-
-						#usability-2-image {
-							grid-column: 2 / 12;
-						}
-
-						#usability-3-image {
-							grid-column: 2 / 12;
-						}
-
-						#usability-4-image {
-							grid-column: 3 / 11;
-						}
-
-						#preference-visuals {
-							grid-template-columns: auto;
-						}
-
-						.preference-image {
-							margin: 40px 0px 0px 0px;
-							padding: 40px;
-							border-radius: 25px;
-						}
-
-						#preference1 {
-							grid-column: 2 / 9;
-						}
-
-						.preference-text {
-							grid-column: 2 / 6;
-							justify-self: center;
-							align-self: center;
-							padding: 40px;
-						}
-
-						#preference2 {
-							grid-column: 7 / 12;
-						}
-
-						#preference3 {
-							grid-column: 2 / 10;
-						}
 
 						/* *********************************** */
 						/* ABOUT ADJUSTMENTS */
@@ -2707,7 +2642,6 @@ p {
 						/* CONTACT ME ADJUSTMENTS */
 						/* *********************************** */
 
-
 						.contact-me .navigation li {
 							padding: 0px;
 						}
@@ -2795,12 +2729,6 @@ p {
 										  margin-bottom: 40px;
 										}
 
-										.image-fit {
-											object-fit: contain;
-											grid-column: auto;
-											width: 100%;
-										}
-
 										.full-mobile-width {
 											grid-column: auto;
 										}
@@ -2814,9 +2742,7 @@ p {
 											display: inherit;
 										}
 
-										#to-top {
-											margin-left: 1000px;
-										}
+
 
 										/* DESKTOP HOMEPAGE ************************ */
 										/* DESKTOP HOMEPAGE************************ */
@@ -2956,7 +2882,6 @@ p {
 
 										.deskspace h1 {
 											font-size: 48px;
-
 										}
 
 										.header-main-content {
@@ -2978,6 +2903,10 @@ p {
 											padding: 40px 0px 40px 0px;
 											justify-self: center;
 											text-transform: uppercase;
+										}
+
+										#deskspace-preview-image {
+											width: 80%;
 										}
 
 										#specs {
@@ -3003,7 +2932,6 @@ p {
 
 										.ds-category-heading {
 											grid-column: 1 / -1;
-										  color: #3B7D7E;
 											font-size: 36px;
 										  font-weight: 600;
 										  padding: 40px 0px 40px 0px;
@@ -3016,12 +2944,6 @@ p {
 										}
 
 										.question-breakdown {
-											grid-row-gap: 0px;
-										  display: grid;
-										  grid-template-columns: 1fr 3fr;
-											grid-template-rows: repeat(6, minmax(70px, auto));
-											align-items: center;
-											background-color: white;
 											padding: 0px 40px 0px 40px;
 											margin: 0px 20%;
 										}
@@ -3041,11 +2963,6 @@ p {
 											padding: 30px 0px 30px 0px;
 										}
 
-										.complaint-image {
-											flex-basis: 500px;
-											flex-grow: 0;
-										}
-
 										.answer-takeaways {
 											margin: 40px 30%;
 										}
@@ -3056,10 +2973,6 @@ p {
 											padding: 40px 300px 60px 300px;
 											text-align: left;
 										}
-
-										/* #comp-head {
-											padding-top: 80px;
-										} */
 
 										.answer {
 											flex-basis: 51%;
@@ -3087,10 +3000,6 @@ p {
 											width: auto;
 										}
 
-										#quotes-section {
-											padding: 0px 40px;
-										}
-
 										.company-vl {
 											border-left: 5px solid #F8A59A;
 										  height: 400px;
@@ -3109,14 +3018,6 @@ p {
 											width: 97px;
 										}
 
-										#company1 {
-											grid-column: 2 / span 5;
-										}
-
-										#company2 {
-											grid-column: 8 / span 5;
-										}
-
 										.company-points {
 											grid-column: 1/5;
 										}
@@ -3127,12 +3028,6 @@ p {
 											width: 80%;
 										}
 
-										.company-name {
-											font-size: 28px;
-											grid-column: auto;
-											align-self: center;
-										}
-
 										#opportunities {
 											margin: 0 30% 20px 30%;
 										}
@@ -3141,42 +3036,32 @@ p {
 											margin: 0 auto;
 										}
 
-
-										#wireframe-sketch-description {
-											grid-column: 2 / 5;
+										#stickies {
+											width: 60%;
 										}
 
-										#digital-wireframes-image {
-											grid-column: 2 / 9;
-											grid-row-start: 2;
+										#priorities {
+											width: 20%;
 										}
 
-										#digital-description {
-											grid-column: 8 / 12;
-											grid-row: 2 / 3;
+										#user-flow-image {
+											width: 80%;
 										}
 
-										#tested-tasks {
-											border: solid 7px #4DACAE;
-											grid-column: 2 / 6;
-											padding: 40px;
-											margin-bottom: 40px;
-										}
-
-										#wireframe-testing-description {
-											grid-column: 8 / 12;
-											grid-row: 2 / 3;
-											align-self: start;
+										#tested-tasks,
+										#preference-testing,
+										#wireframe-sketch-description,
+										#color-description
+										#usability-test-description2 {
+											padding: 60px 20%;
 										}
 
 										#wireframe-testing-image {
 											display: inherit;
-											margin: 60px 0px 60px 0px;
-											grid-column: 2 / 12;
+											margin: 60px auto 60px auto;
 										}
 
 										#concept-text {
-											grid-column: 2 / 7;
 											padding-top: 40px;
 										}
 
@@ -3186,101 +3071,46 @@ p {
 										}
 
 										#brand-concept-image {
-											grid-column: 8 / 12;
-											object-fit: contain;
-											width: 80%;
-										}
-
-										#quotes-section {
-											grid-column: 2 / 6;
-											grid-row: auto;
-										}
-
-										#name-description {
-											grid-column: 7 / 12;
-										}
-
-										#branding-sketches {
-											grid-column: 6 / 12;
-										}
-
-										.two_to_five {
-											grid-column: 2 / 5;
-											align-self: center;
+											width: 45%;
 										}
 
 										#color-description {
-											grid-column: 2 / 6;
-											grid-row: 1 / 2;
 											padding-top: 60px;
 										}
 
-										#typography {
-											grid-column: 3 / 11;
+										#color-palette {
+											width: 50%;
+										}
+
+										#rough-logos {
+											width: 70%;
+										}
+
+										#final-logo {
+											width: 25%;
 										}
 
 										#tested-tasks-2 {
-											grid-column: 2 / 5;
-											grid-row: 1;
+											padding: 40px;
+											margin: 0 35%;
+										}
+
+										#tested-tasks-2 .list-heading2 {
+											text-align: center;
 										}
 
 										#usability-test-description {
-											grid-column: 7 / 12;
 											padding-top:40px;
 										}
 
-										#quote1 {
-											padding-right: 120px;
+										#usability1 {
+											width: 40%;
 										}
 
-										#quote2 {
-											padding-left: 80px;
+										#illustration {
+											width: 60%;
 										}
 
-										#usability-1-image {
-											grid-column: 5 / 12;
-										}
-
-										#usability-2-image {
-											grid-column: 2 / 12;
-										}
-
-										#usability-3-image {
-											grid-column: 2 / 12;
-										}
-
-										#usability-4-image {
-											grid-column: 3 / 11;
-										}
-
-										#preference-visuals {
-											grid-template-columns: auto;
-										}
-
-										.preference-image {
-											margin: 40px 0px 0px 0px;
-											padding: 40px;
-											border-radius: 25px;
-										}
-
-										#preference1 {
-											grid-column: 2 / 9;
-										}
-
-										.preference-text {
-											grid-column: 2 / 6;
-											justify-self: center;
-											align-self: center;
-											padding: 40px;
-										}
-
-										#preference2 {
-											grid-column: 7 / 12;
-										}
-
-										#preference3 {
-											grid-column: 2 / 10;
-										}
 
 										/* *********************************** */
 										/* ABOUT ADJUSTMENTS */
@@ -3464,6 +3294,10 @@ p {
 																	margin: 40px 35%;
 																}
 
+																#deskspace-preview-image {
+																	width: 70%;
+																}
+
 																#problem-solution {
 																	margin: 0px 0px 100px 0px;
 																	padding-left: 120px;
@@ -3486,8 +3320,115 @@ p {
 																	margin: 60px auto 100px auto;
 																}
 
+																#competitive .grid {
+																	padding-top: 80px;
+																}
+
+																#user-flow-image {
+																	width: 70%;
+																	padding: 60px 0px;
+																}
+
+																.co-logo {
+																	height: 140px;
+																	width: 140px;
+																}
+
+																.co-summary {
+																	width: 100%;
+																}
+
+																#company1 {
+																	grid-column: 1 / span 6;
+																	width: 70%;
+																}
+
+																.company-vl {
+																	height: 600px;
+																}
+
+																#stickies {
+																	padding-top: 100px;
+																	width: 40%;
+																}
+
+																#priorities {
+																	padding: 40px 0px;
+																	width: 15%;
+																}
+
 																#devices {
 																	width: 35%;
+																}
+
+																.complaint-image {
+																	width: 30vw;
+																	margin-left: 6vw;
+																}
+
+																.summ {
+																	margin: 0 6vw;
+																}
+
+																#tested-tasks,
+																#preference-testing,
+																#wireframe-sketch-description,
+																#usability-test-description,
+																#color-description,
+																#usability-test-description2,
+																#color-description {
+																	padding: 80px 30%;
+																}
+
+																#wireframe-sketches-images {
+																	width: 40%;
+																}
+
+																#digital-wireframes > img {
+																width: 50%;
+																}
+
+																.concept-text,
+																#name-description {
+																	margin: 100px 30%;
+																}
+
+																#brand-concept-image {
+																	width: 40%;
+																}
+
+																#quotes-section {
+																	margin: 20px 30%;
+																}
+
+																#color-palette {
+																	width: 40%;
+																}
+
+																#buttons {
+																	width: 30%;
+																}
+
+																.usability .image-fit {
+																	width: 60%;
+																}
+
+																.bullets {
+																	margin: 0px 15%;
+																}
+
+																#usability6 {
+																	width: 50%;
+																}
+
+																#usability7 {
+																	width: 35%;
+																}
+
+																#conclusion-quote {
+																	padding: 0px 60px;
+																	text-align: center;
+																	font-size: 20px;
 																}
 
 															}
