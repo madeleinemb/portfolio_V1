@@ -382,7 +382,7 @@ p {
 }
 
 @keyframes pulse {
-	
+
 	0%, 100% {
 		background-color: #06BEE1;
 	}
@@ -2706,6 +2706,22 @@ p {
 
 						.about .divider {
 							margin: 15% 20%;
+						}
+
+						.picture-divider {
+							display: flex;
+						}
+
+						.square-border {
+							display: flex;
+							height: 100%;
+							align-items: center;
+							justify-content: space-around;
+							border-radius: 40px;
+						}
+
+						.blue-line-divider {
+							max-height: 450px;
 						}
 
 					}
