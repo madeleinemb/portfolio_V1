@@ -7,21 +7,36 @@
       <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300">
       <link rel="stylesheet" href="styles/reset.css">
       <link rel="stylesheet" href="styles/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    </head>
    <body class="home">
-      <div class ="container grid-no-margin">
+
+        <div class="topnav mobile-only">
+            <a href="index.html" id="mmb"><img class="mobile-nav-logo" src="assets/images/maddie_logo.png" alt="my logo"></a>
+            <div id="myLinks">
+              <a href="about.html">About</a>
+              <a href="assets/Mbrooks_Resume_20.pdf" target="_blank"><img class="resume-icon" src="assets/images/open_new_win_transparent.png" alt="open in new window">Resume</a>
+              <a href="contact.html">Contact</a>
+            </div>
+            <!-- hamburger icon -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
          <!-- logo and nav menu -->
+
+    <div class ="container grid-no-margin">
+
          <div class ="header grid-no-margin full-width">
 
               <a href="index.html"><img id="mylogo" src="assets/images/maddie_logo.png" alt="my logo"></a>
 
-
               <ul class="navigation">
                 <li><a href="about.html">About</a></li>
-                <li><a href="resume.html">Resume</a></li>
+                <li><a href="assets/Mbrooks_Resume_20.pdf" target="_blank"><img class="resume-icon" src="assets/images/open_new_win_transparent.png" alt="open in new window">Resume</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
-
 
             <!-- hero unit -->
             <section class="hero">
@@ -109,6 +124,17 @@
 
       <!-- SCRIPTS -->
       <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+      <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+      </script>
 
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-JEQHKEELR0"></script>

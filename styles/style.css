@@ -23,21 +23,6 @@ html {
 	font-weight: 500;
 }
 
-#myBtn {
-  position: fixed;
-	background-color: white;
-	background-size: 70% auto;
-	background-repeat: no-repeat;
-	background-position: center;
-  bottom: 20px;
-  right: 40px;
-	height: 60px;
-	width: 60px;
-	border-radius: 30px;
-  cursor: pointer;
-  padding: 15px;
-}
-
 
 /* GENERAL FOOTER *************************** */
 .footer {
@@ -56,23 +41,8 @@ i {
 	font-style: italic;
 }
 
-/* GENERAL NAVIGATION ********************** */
 
-.navigation {
-	/* formatting */
-	font-family: 'Lato', sans-serif;
-	font-weight: 600;
-	font-size: 14px;
-
-	/* spacing */
-	align-items: center;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-column: 2 / 5;
-	justify-items: center;
-}
-
-/* sizing personal logo in header */
+/* sizing personal logo in desktop header */
 #mylogo {
 	max-width: 60%;
 	opacity: 0.8;
@@ -137,13 +107,6 @@ p {
 	font-size: 12px;
 }
 
-.list-heading {
-	margin-bottom: 40px;
-	text-align: center;
-	font-weight: 400;
-	color: #891c0a;
-}
-
 /* setting grid item width to full page */
 .full-width {
 	grid-column: 1 / -1;
@@ -163,7 +126,126 @@ p {
 	border-radius: 20px;
 }
 
+/* --- HEADERS ---- */
+
+
+/* taking off display for desktop navigation & logo for mobile */
+.navigation {
+	display: none;
+}
+
+/* Header Logo Styles for DESKTOP */
+
+#mylogo {
+	display: none;
+}
+
+#mylogo:hover {
+	opacity: .5;
+    transition: opacity .1s ease-out;
+    -moz-transition: opacity .1s ease-out;
+    -webkit-transition: opacity .1s ease-out;
+    -o-transition: opacity .1s ease-out;
+}
+
+/* Header padding for Deskspace and Homepage */
+
+.container .header,
+.deskspace .header {
+	padding: 0px 30px 20px 30px;
+}
+
+.image-fit {
+	object-fit: contain;
+	width: 100%;
+	display: block;
+}
+
+/* hero styles in header */
+.hero {
+	line-height: 1.6;
+	grid-column: 1 / -1;
+	padding: 0px 0px 40px 0px;
+}
+
+
+/* Header Style for Mobile with Hamburger Menu */
+.topnav {
+  overflow: hidden;
+  background-color: #06BEE1;
+  position: relative;
+}
+
+/* Header Logo style for Mobile */
+
+#mmb {
+	text-align: left;
+}
+
+#mmb .mobile-nav-logo {
+	padding-top: 10px;
+}
+
+.mobile-nav-logo {
+	width: 70%;
+	max-width: 80px;
+}
+
+.mobile-nav-logo:hover {
+	color: white;
+}
+
+
+/* hamburger menu doesn't display without selection */
+
+.topnav {
+	padding: 0 5%;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav #myLinks a {
+	padding: 10px 0px;
+}
+
+.topnav a {
+  color: #242424;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+	text-align: right;
+}
+
+.topnav a:hover {
+  color: white;
+}
+
+/* hamburger menu icon styles */
+.topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 20px;
+	font-size: 40px;
+}
+
+/* setting header background color */
+
+.about .header,
+.contact-me .header,
+.topnav {
+  background: linear-gradient( rgba(6, 190, 225, 0.6), rgba(6, 190, 225, 0.6));
+}
+
+
 /* LINKS ***************************** */
+
+.active-link {
+	color: #03256C !important;
+	text-decoration: underline;
+}
 
 .navigation a:link,
 .navigation a:visited {
@@ -237,6 +319,46 @@ p {
 	color: #06BEE1;
 }
 
+/* --- GRID ---- */
+/* setting general grid areas*/
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 16px;
+	grid-row-gap: 20px;
+	margin: 0px 40px 20px 40px;
+}
+
+.grid-no-margin {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(50px, 1fr));
+	grid-column-gap: 16px;
+	grid-row-gap: 20px;
+}
+
+.desktop-only {
+	display: none;
+}
+
+.full-mobile-width {
+	grid-column: 1 / -1;
+}
+
+.image-fit.desktop-only {
+	display: none;
+}
+
+.topnav .resume-icon {
+	width: 20px;
+	padding-right: 5px;
+}
+
+.navigation .resume-icon {
+	width: 20px;
+	padding-right: 5px;
+}
+
 
 /* ********************************** */
 /* ----END OF GENERAL SECION----- */
@@ -255,7 +377,20 @@ p {
   opacity: 40%;
 }
 
-/* ----- CASE STUDIES SECTION ------ */
+.container .header {
+	animation: pulse 10s infinite;
+}
+
+@keyframes pulse {
+	
+	0%, 100% {
+		background-color: #06BEE1;
+	}
+
+	50% {
+		background-color: #6ad8ed;
+	}
+}
 
 /* styling headings for each case study */
 .case-title {
@@ -269,64 +404,106 @@ p {
 	color: white;
 }
 
-
-/* --- HEADER ---- */
-/* setting header background color */
-.container .header,
-.about .header {
-  background: linear-gradient( rgba(6, 190, 225, 0.6), rgba(6, 190, 225, 0.6));
+.case-description {
+		font-size: 16px;
+		line-height: 1.4;
+		font-family: 'Lato', sans-serif;
 }
+
+.case-title {
+		font-weight: 600;
+}
+
+/* images in previews for case studies */
+.imagepreview {
+	margin-top: 10px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.case > * {
+	grid-column: 1 / -1;
+}
+
+.summary,
+.summary2 {
+	display: grid;
+	grid-row-gap: 20px;
+	justify-items: center;
+	text-align: center;
+}
+
+#case2 > .imagepreview {
+	grid-row: 1;
+}
+
+.home .footer h2 {
+	color: inherit;
+}
+
+.footer-heading {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.footer-content p {
+	display: none;
+}
+
+.icons {
+	display: inline-block;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+}
+
+.icons li {
+	padding: 10px;
+}
+
+.container ion-icon {
+	color: white;
+	font-size: 28px;
+}
+
+.footer .caption {
+	padding: 0px 10px 0px 10px;
+}
+
 
 /* ---------------------------------------------------------------------------- */
 /* *************ABOUT******************************************************************************* */
 /* ----------------------------------------------------------------------------- */
 
-/* special size for social media icons */
-.about .navigation ion-icon {
-	font-size: 40px;
-	color: #242424;
-}
-
-/* special grid for the mobile icons for contact info */
-.about .navigation {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	justify-items: center;
-	align-items: center;
-}
-
-.about .navigation li {
-	padding: 10px;
-}
-
-/* TO TOP BUTTON */
-.about #myBtn {
-	background-image: url("../assets/images/to_top_button.png");
-	box-shadow: 0 4px 8px 0 rgba(6, 190, 225, 1);
-}
-
-.about #myBtn:hover {
-  box-shadow: 0 4px 8px 0 rgba(204, 14, 116, 1);
-}
-
-/* Back Button */
-.about #backBtn {
-	padding: 20px 0px 0px 10px;
-	max-width: 12%;
-	height: auto;
-}
-
-.about-logo {
-	width: 100%;
-}
 
 .about .margin {
-	margin: 0px 30px 0px 30px;
+	margin: 0px 40px 0px 40px;
 }
 
 .about h1,
 .about h2 {
 	color: #233CB9;
+}
+
+/* hamburger menu icon styles */
+.about .topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 15px;
+	font-size: 40px;
+}
+
+.about-para {
+	margin: 20px 0px;
+}
+
+.about .divider {
+	border: none;
+	border-radius: 50px;
+	background-color: #CC0E74;
+	padding: 2px 0px 2px 0px;
+	margin: 40px;
+	clear: both;
 }
 
 #magna-doodle {
@@ -338,7 +515,7 @@ p {
 .image-square {
 	border-radius: 15px;
 	float: left;
-	margin: 20px 20px 20px 0px;
+	margin: 20px 10% 20px 0px;
 	width: 50%;
 	height: 50%;
 }
@@ -356,6 +533,7 @@ p {
 	border: solid 5px #CC0E74;
 	border-radius: 15px;
 	padding: 20px;
+	margin: 20px 0px;
 }
 
 #header-border {
@@ -372,7 +550,7 @@ p {
 #narrator {
 	text-align: right;
 	font-weight: 300;
-	margin: 40px 30px 40px 0px;
+	margin: 40px 40px 40px 0px;
 	line-height: 1.4;
 }
 
@@ -380,19 +558,16 @@ p {
 	color: inherit;
 }
 
-.about .icons {
-	padding-top: 10px;
-}
-
 .blue-line-divider {
 	display: inline-block;
 	object-fit: cover;
 	width: 40%;
+	margin: 20px 0px;
 }
 
 .about .conclusion {
 	margin: 30px 0px 0px 0px;
-	padding: 30px;
+	padding: 40px;
 	background-color: #CC0E74;
 	color: #FFFFFF;
 }
@@ -404,6 +579,87 @@ p {
 }
 
 
+/*CONTACT ME PAGE *************************************************************************** */
+/* *********************************CONTACT ME PAGE****************************************** */
+
+.contact-me h1 {
+	line-height: 1.6;
+}
+
+/* hamburger menu icon styles */
+.contact-me .topnav a.icon {
+  display: block;
+  position: absolute;
+  right: 5%;
+  top: 15px;
+	font-size: 40px;
+}
+
+.contact-initial {
+	margin: 40px 0px 40px 0px;
+}
+
+.contact-secondary {
+	margin-bottom: 20px;
+}
+
+.contact-me form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	height: 100%;
+}
+
+.contact-me form > * {
+	padding: 10px 0px;
+	margin: 10px 0px;
+}
+
+.contact-me .btn {
+	align-self: center;
+	width: 60%;
+	background-color: #CC0E74;
+	color: white;
+}
+
+.contact-content {
+	margin: 20px 40px 60px 40px;
+}
+
+.contact-text,
+.contact-content .caption {
+	text-align: center;
+}
+
+
+.contact-me #mmb,
+.about #mmb,
+#phone-call,
+#email {
+	display: inline-block;
+	text-align: left;
+}
+
+#phone-call,
+#email {
+	font-size: 60px;
+	padding: 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------------------------------------------------------------------------- */
 /* *************Deskspace******************************************************************************* */
@@ -411,17 +667,8 @@ p {
 
 /* BUTTONS */
 
-	/* TO TOP BUTTON */
-.deskspace #myBtn {
-	background-image: url("../assets/images/arrow_icon_thick.png");
-	box-shadow: 0 4px 8px 0 rgba(77, 172, 174, 1);
-}
 
-.deskspace #myBtn:hover {
-  box-shadow: 0 4px 8px 0 rgba(242, 99, 75, 1);
-}
-
-	/* PROTOTYPE BUTTON TOP OF PAGE */
+/* PROTOTYPE BUTTON TOP OF PAGE */
 
 .deskspace .prototype-btn {
 	grid-column: 1 / -1;
@@ -446,9 +693,9 @@ p {
 }
 
 /* --- HEADER ---- */
-.deskspace .header {
-  background: linear-gradient( rgba(77, 172, 174, .6), rgba(77, 172, 174, .9));
-  padding: 20px 30px 60px 30px;
+.deskspace .header,
+.deskspace .topnav {
+  background: rgba(77, 172, 174, .6);
   grid-row-gap: 20px;
 }
 
@@ -485,28 +732,6 @@ p {
 	color: #242424;
 }
 
-/* --- GRID ---- */
-
-/* setting general grid areas*/
-
-#font .btn {
-	grid-column: 1 / -1;
-	margin: 40px 0px 40px 0px;
-	justify-self: center;
-	align-self: center;
-}
-
-.desktop-only {
-	display: none;
-}
-
-.full-mobile-width {
-	grid-column: 1 / -1;
-}
-
-.image-fit.desktop-only {
-	display: none;
-}
 
 #project-details {
 	padding-top: 40px;
@@ -762,18 +987,18 @@ p {
 }
 
 #stickies {
-	width: 80%;
-	margin: 0px 40px;
+	width: 60%;
+	margin: 0px auto;
 }
 
 #priorities {
-	width: 60%;
+	width: 30%;
 	margin: 0 auto;
 }
 
 #user-flow-image {
 	display: block;
-	width: 90%;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -804,7 +1029,7 @@ p {
 	padding: 20px 0px 20px 0px;
 }
 
-#tested-tasks,
+#wireframe-testing,
 #preference-testing,
 #tested-tasks-2 {
 	background-color: #fdece9;
@@ -829,6 +1054,13 @@ p {
 
 .numbered-list {
 	padding-bottom: 40px;
+}
+
+.list-heading {
+	margin-bottom: 40px;
+	text-align: center;
+	font-weight: 400;
+	color: #891c0a;
 }
 
 .list-heading2 {
@@ -1106,7 +1338,7 @@ p {
 	background-color: #891c0a;
 }
 
-.conclusion p {
+.deskspace .conclusion p {
 	margin: 40px;
 }
 
@@ -1145,7 +1377,7 @@ p {
 }
 
 
-/* ****************LINKS************************* */
+			/* **************** DESKSPACE LINKS************************* */
 
 .deskspace .navigation a:link,
 .deskspace .navigation a:visited {
@@ -1200,28 +1432,12 @@ p {
 	padding: 10px 0px 10px 0px;
 }
 
-.ds-subsection-header {
-	grid-column: 1 / -1;
-	padding: 20px 0px 20px 0px;
-	font-weight: 400;
-	align-self: center;
-	text-transform: uppercase;
-}
-
 .concept-quote {
 	font-family: 'Nunito', sans-serif;
 	font-size: inherit;
 	padding: 20px 0px 20px 40px;
 	font-weight: 600;
 	color: #3B7D7E;
-}
-
-.black {
-	color: #242424;
-}
-
-.orange {
-	color: #F2634B;
 }
 
 .deskspace .header h3 {
@@ -1264,184 +1480,17 @@ p {
 	line-height: 1.2;
 }
 
-/* GRID *********************************/
-/* *********************************** */
-
-.grid {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-column-gap: 16px;
-	grid-row-gap: 20px;
-	margin: 0px 40px 20px 40px;
-}
-
-.grid-no-margin {
-	display: grid;
-	grid-template-columns: repeat(4, minmax(50px, 1fr));
-	grid-column-gap: 16px;
-	grid-row-gap: 20px;
-}
-
-.container .header {
-	padding: 20px 30px 20px 30px;
-}
-
-.image-fit {
-	object-fit: contain;
-	width: 100%;
-	display: block;
-}
-
-/* hero styles in header */
-.hero {
-	line-height: 1.6;
-	grid-column: 1 / -1;
-	padding: 20px 0px 40px 0px;
-}
-
-.case-description {
-		font-size: 16px;
-		line-height: 1.4;
-		font-family: 'Lato', sans-serif;
-}
-
-.case-title {
-		font-weight: 600;
-}
-
-/* images in previews for case studies */
-.imagepreview {
-	margin-top: 10px;
-	object-fit: cover;
-	width: 100%;
-}
-
-.case > * {
-	grid-column: 1 / -1;
-}
-
-.summary,
-.summary2 {
-	display: grid;
-	grid-row-gap: 20px;
-	justify-items: center;
-	text-align: center;
-}
-
-#case2 > .imagepreview {
-	grid-row: 1;
-}
 
 
-.ds-blue {
-	color: #3B7D7E;
-}
 
-.ds-blue-bg {
-	background-color: #3B7D7E;
-}
 
-.ds-coral-bg {
-	background-color: #b4452e;
-}
 
-.home .footer h2 {
-	color: inherit;
-}
 
-.footer-heading {
-	font-size: 18px;
-	font-weight: 600;
-}
 
-.footer-content p {
-	display: none;
-}
 
-.icons {
-	display: inline-block;
-	text-align: center;
-	padding: 0px 0px 10px 0px;
-}
 
-.icons li {
-	padding: 10px;
-}
 
-.container ion-icon {
-	color: white;
-	font-size: 28px;
-}
 
-.footer .caption {
-	padding: 0px 10px 0px 10px;
-}
-
-/*CONTACT ME PAGE *************************************************************************** */
-/* *********************************CONTACT ME PAGE****************************************** */
-
-.contact-me h1 {
-	line-height: 1.6;
-}
-
-.contact-me .header {
-	background-color: rgba(6, 190, 225, 0.6);
-	background-size: cover;
-	background-repeat: no-repeat;
-	}
-
-.contact-me .navigation ion-icon {
-	font-size: 40px;
-	color: #242424;
-}
-
-/* special grid for the mobile icons for contact info */
-.contact-me .navigation {
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	justify-items: center;
-	align-items: center;
-}
-
-.contact-me .navigation li {
-	padding: 10px;
-}
-
-.contact-initial {
-	margin: 40px 0px 40px 0px;
-}
-
-.contact-secondary {
-	margin-bottom: 20px;
-}
-
-.contact-me form {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	height: 100%;
-}
-
-.contact-me form > * {
-	padding: 10px 0px;
-	margin: 10px 0px;
-}
-
-.contact-me .btn {
-	align-self: center;
-	width: 60%;
-	background-color: #CC0E74;
-	color: white;
-}
-
-.contact-content {
-	background-color:
-}
-
-.contact-text,
-.contact-content .caption {
-	text-align: center;
-}
 
 
 				/* ------------------------------ */
@@ -1477,10 +1526,39 @@ p {
 					padding-left: 40px;
 				}
 
+				/* hide Mobile nav drawer */
+				.topnav {
+					display: none;
+				}
+
+				.contact-logo {
+					display: none;
+				}
+
+				/* GENERAL NAVIGATION for Desktop and Tablet********************** */
+
 				.navigation {
+					/* formatting */
+					font-family: 'Lato', sans-serif;
+					font-weight: 600;
+					font-size: 16px;
+
+					/* spacing */
+					align-items: center;
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+					grid-column: 6 / 9;
+					justify-items: center;
+				}
+
+				.home .header,
+				.deskspace .header {
+					padding: 20px 40px 100px 40px;
+				}
+				/* .navigation {
 					font-size: 16px;
 					grid-column: 6 / span 3;
-				}
+				} */
 
 				.mobile-only {
 					display: none;
@@ -1535,6 +1613,7 @@ p {
 				}
 
 				#mylogo {
+					display: block;
 					max-width: 100%;
 				}
 
@@ -1665,6 +1744,7 @@ p {
 				.summ {
 				  width: 25vw;
 				  margin: 0 5vw;
+					text-align: left;
 				}
 
 				.analysis ul {
@@ -1822,7 +1902,7 @@ p {
 					width: 50%;
 				}
 
-				.conclusion p {
+				.deskspace .conclusion p {
 					margin: 40px 10%;
 				}
 
@@ -1841,52 +1921,74 @@ p {
 
 				/* ABOUT PAGE Tablet Adjustments */
 
-				.about-logo {
-					max-width: 70%;
-				}
-
-				#backBtn {
-					display: none;
-				}
-
-				#first-div {
-					display: none;
-				}
-
-				.about .margin {
-					margin: 0px 80px;
-				}
-
-				.image-square {
-					width: 40%;
+				#header-border {
+					width: 65%;
+					padding-left: 19%;
 				}
 
 				#narrator {
-					margin-right: 40px;
-					font-size: 28px;
+					margin: 60px 20% 60px 10%;
+				}
+
+				.image-square {
+					max-width: 300px;
+					margin: 20px 60px 20px 0px;
+				}
+
+				.about .margin {
+					margin: 0 18%;
+				}
+
+				.test1 {
+					padding-top: 40px;
+				}
+
+				.about .divider {
+					border: none;
+					border-radius: 50px;
+					background-color: #CC0E74;
+					padding: 2px 0px 2px 0px;
+					margin: 20%;
+				}
+
+				#magna-doodle {
+					margin: 30px 0px 20px 13%;
+					overflow: auto;
+				}
+
+				.picture-divider {
+					margin: 40px 0px;
+				}
+
+				.about .conclusion {
+					padding: 40px 20%;
+				}
+
+				.about .header {
+					padding: 20px 40px 10px 40px;
 				}
 
 				/* CONTACT ME PAGE *************************************** */
 				/* ******************************************************* */
 
+				.contact-me .header {
+					padding: 20px 40px 10px 40px;
+				}
+
 				.contact-me form {
 					padding-top: 0px;
-					grid-column: 8 / span 4;
+					grid-column: 5 / span 4;
 					display: flex;
 					flex-direction: column;
 					align-self: start;
 				}
 
 				.contact-content {
-					margin-top: 80px;
-				}
-
-				.contact-content {
-					margin-top: 80px;
+					margin: 80px 40px 120px 40px;
 				}
 
 				.contact-text {
-					grid-column: 2 / span 6;
+					grid-column: 1 / span 4;
 				}
 
 				.contact-content.grid {
@@ -1896,8 +1998,12 @@ p {
 
 				.contact-me .caption {
 					grid-row: 2;
-					grid-column: 2 / span 5;
+					grid-column: 1 / span 5;
+				}
+
+				.contact-me #body-caption {
 					text-align: left;
+					justify-self: start;
 				}
 
 				.contact-initial {
@@ -1910,6 +2016,12 @@ p {
 					font-size: 32px;
 					margin-top: 40px;
 					text-align: left;
+				}
+
+				.contact-me .footer {
+					position: absolute;
+					bottom: 0;
+					width: 100%;
 				}
 
 				}
@@ -1988,10 +2100,6 @@ p {
 						/* DESKTOP HOMEPAGE ************************ */
 						/* DESKTOP HOMEPAGE************************ */
 
-						.container .header {
-							padding: 20px 40px 100px 40px;
-						}
-
 						.footer-heading {
 							font-size: 36px;
 						}
@@ -2005,23 +2113,10 @@ p {
 
 						.navigation {
 							display: grid;
-							grid-template-columns: subgrid;
-							grid-column: 10 / span 3;
-							align-self: center;
-							font-size: 14px;
-						}
-
-						.about .navigation {
-							display: grid;
 							grid-template-columns: 1fr 1fr 1fr;
-							grid-column: 10 / span 3;
-						}
-
-						#myBtn {
-							bottom: 40px;
-							right: 60px;
-							height: 60px;
-							width: 60px;
+							grid-column: 9 / span 4;
+							align-self: center;
+							font-size: 18px;
 						}
 
 						.case-title {
@@ -2117,10 +2212,6 @@ p {
 						/* DESKSPACE ADJUSTMENTS */
 						/* *********************************** */
 
-						.deskspace .header {
-							padding: 20px 30px 100px 30px;
-						}
-
 						.deskspace h1 {
 							font-size: 48px;
 						}
@@ -2144,10 +2235,6 @@ p {
 							padding: 40px 0px 40px 0px;
 							justify-self: center;
 							text-transform: uppercase;
-						}
-
-						.about-logo {
-							display: block;
 						}
 
 						#connected-heading .ds-subsection-header {
@@ -2400,7 +2487,11 @@ p {
 						}
 
 						#priorities {
-							width: 30%;
+							width: 20%;
+						}
+
+						#user-flow-image {
+							width: 70%;
 						}
 
 						#wireframe-sketches-image {
@@ -2408,7 +2499,7 @@ p {
 						}
 
 						#digital-wireframes > img {
-							width: 70%;
+							width: 50%;
 						}
 
 						#digital-wireframes1 {
@@ -2426,8 +2517,8 @@ p {
 						}
 
 						#wireframe-testing-image {
-							width: 80%;
-							margin: 60px auto 80px auto;
+							width: 60%;
+							margin: 0px auto 60px auto;
 						}
 
 						#brand-concept-image {
@@ -2517,7 +2608,7 @@ p {
 							padding-top: 60px;
 						}
 
-						.conclusion p {
+						.deskspace .conclusion p {
 							margin: 60px 20%;
 						}
 
@@ -2532,113 +2623,6 @@ p {
 
 
 						/* *********************************** */
-						/* ABOUT ADJUSTMENTS */
-						/* *********************************** */
-
-
-						.about .header {
-							display: grid;
-							grid-template-columns: repeat(12, minmax(50px, 1fr));
-							grid-column-gap: 18px;
-							padding: 20px 40px 10px 40px;
-						}
-
-						#header-border {
-							grid-row: 2;
-							grid-column: 4 / 10;
-							border: none;
-							margin: 0px;
-							width: auto;
-							padding: 0px;
-						}
-
-						#about-heading {
-							margin-top: 80px;
-							color: #233CB9;
-							-webkit-text-fill-color: #233CB9; /* Will override color (regardless of order) */
-							-webkit-text-stroke-width: 1px;
-							-webkit-text-stroke-color: white;
-						}
-
-						#phone, #email {
-							font-size: 78px;
-							justify-self: center;
-						}
-
-						#phone {
-							grid-column: 10 / 11;
-						}
-
-						#narrator {
-							grid-row: 3;
-							grid-column: 6 / 10;
-						}
-
-						/*naming grid areas in about page */
-						.about-body {
-							display: grid;
-							margin: 60px 30px 0px 30px;
-							grid-template-columns: repeat(12, minmax(50px, 1fr));
-							grid-template-rows: repeat(50px, auto);
-						}
-
-						.about .navigation li {
-							padding: 0px;
-						}
-
-						.images-together {
-							grid-column: 2 / span 3;
-							grid-row: 1 / 20;
-							display: flex;
-							flex-direction: column;
-							justify-content: space-between;
-							border-radius: 60px;
-							padding: 20px;
-						}
-
-
-						.column-wide {
-							object-fit: contain;
-							width: 100%;
-							margin: 40px 0px;
-							padding: 40px;
-							border-radius: 20%;
-							align-self: center;
-							border: 5px #CC0E74 solid;
-						}
-
-						#magna-doodle_desktop {
-							border: 5px solid #06BEE1;
-						}
-
-						.bio-text {
-							display: block;
-							grid-column: 6 / span 6;
-							grid-row: 4 / span 3;
-							padding-left: 80px;
-							margin: 100px 0px 100px 0px;
-							border-left: 5px solid rgba(6, 190, 225, .3);
-						}
-
-						.bio-text > p {
-							line-height: 2;
-						}
-
-						.about ion-icon {
-							color: #233CB9;
-						}
-
-						.about .footer ion-icon {
-							color: white;
-						}
-
-						.pink-background {
-							color: white;
-							background-color: #CC0E74;
-
-						}
-
-						/* *********************************** */
 						/* CONTACT ME ADJUSTMENTS */
 						/* *********************************** */
 
@@ -2649,7 +2633,7 @@ p {
 						.contact-me .navigation {
 							display: grid;
 							grid-template-columns: 1fr 1fr 1fr;
-							grid-column: 10 / span 3;
+							grid-column: 9 / span 4;
 						}
 
 						.contact-me .header {
@@ -2661,10 +2645,7 @@ p {
 
 						.contact-me form {
 							padding-top: 0px;
-							grid-column: 8 / span 3;
-							display: flex;
-							flex-direction: column;
-							align-self: start;
+							grid-column: 8 / span 4;
 						}
 
 						.contact-content {
@@ -2672,7 +2653,7 @@ p {
 						}
 
 						.contact-text {
-							grid-column: 3 / span 5;
+							grid-column: 2 / span 5;
 						}
 
 						.contact-content.grid {
@@ -2682,7 +2663,7 @@ p {
 
 						.contact-me .caption {
 							grid-row: 2;
-							grid-column: 3 / span 5;
+							grid-column: 2 / span 5;
 							justify-self: end;
 							padding-right: 80px;
 						}
@@ -2695,6 +2676,37 @@ p {
 							margin-top: 40px;
 						}
 
+						/* *********************************** */
+						/* ABOUT ADJUSTMENTS */
+						/* *********************************** */
+
+						#header-border {
+							width: 70%;
+						}
+
+						#narrator {
+							margin: 60px 20% 60px 20%;
+						}
+
+						#magna-doodle {
+							margin: 40px 0px 40px 60px;
+						}
+
+						.about-para {
+							margin: 60px 0px;
+						}
+
+						.test1 {
+							display: none;
+						}
+
+						.about .conclusion {
+							margin-top: 60px;
+						}
+
+						.about .divider {
+							margin: 15% 20%;
+						}
 
 					}
 
@@ -2747,10 +2759,6 @@ p {
 										/* DESKTOP HOMEPAGE ************************ */
 										/* DESKTOP HOMEPAGE************************ */
 
-										.container .header {
-											padding: 20px 40px 100px 40px;
-										}
-
 										.footer-heading {
 											font-size: 36px;
 										}
@@ -2760,20 +2768,6 @@ p {
 											line-height: 1.6;
 											grid-column: 1 / -1;
 											padding: 80px 40px 80px 40px;
-										}
-
-										.navigation {
-											display: grid;
-											grid-template-columns: subgrid;
-											grid-column: 10 / span 3;
-											align-self: center;
-											font-size: 20px;
-										}
-
-										.about .navigation {
-											display: grid;
-											grid-template-columns: 1fr 1fr 1fr;
-											grid-column: 10 / span 3;
 										}
 
 										#myBtn {
@@ -2876,9 +2870,6 @@ p {
 										/* DESKSPACE ADJUSTMENTS */
 										/* *********************************** */
 
-										.deskspace .header {
-											padding: 20px 30px 100px 30px;
-										}
 
 										.deskspace h1 {
 											font-size: 48px;
@@ -3113,155 +3104,21 @@ p {
 
 
 										/* *********************************** */
-										/* ABOUT ADJUSTMENTS */
-										/* *********************************** */
-
-										.about strong {
-											font-size: inherit;
-										}
-
-										.about-logo {
-											display: block;
-										}
-
-										.about .header {
-											display: grid;
-											grid-template-columns: repeat(12, minmax(50px, 1fr));
-											grid-column-gap: 18px;
-											padding: 20px 40px 10px 40px;
-										}
-
-										#header-border {
-											grid-row: 2;
-											grid-column: 4 / 10;
-											border: none;
-											margin: 0px;
-											width: auto;
-											padding: 0px;
-										}
-
-										#about-heading {
-											margin-top: 80px;
-											color: #233CB9;
-											-webkit-text-fill-color: #233CB9; /* Will override color (regardless of order) */
-											-webkit-text-stroke-width: 1px;
-											-webkit-text-stroke-color: white;
-										}
-
-										#phone, #email {
-											font-size: 78px;
-											justify-self: center;
-										}
-
-										#phone {
-											grid-column: 10 / 11;
-										}
-
-										#narrator {
-											grid-row: 3;
-											grid-column: 6 / 10;
-										}
-
-										/*naming grid areas in about page */
-										.about-body {
-											display: grid;
-											margin: 60px 30px 0px 30px;
-											grid-template-columns: repeat(12, minmax(50px, 1fr));
-											grid-template-rows: repeat(50px, auto);
-										}
-
-										.about .navigation li {
-											padding: 0px;
-										}
-
-										.images-together {
-											grid-column: 2 / span 3;
-											grid-row: 1 / 20;
-											display: flex;
-											flex-direction: column;
-											justify-content: space-between;
-											border-radius: 60px;
-											padding: 20px;
-										}
-
-
-										.column-wide {
-											object-fit: contain;
-											width: 100%;
-											margin: 40px 0px;
-											padding: 40px;
-											border-radius: 20%;
-											align-self: center;
-											border: 5px #CC0E74 solid;
-										}
-
-										#magna-doodle_desktop {
-											border: 5px solid #06BEE1;
-										}
-
-										.bio-text {
-											display: block;
-											grid-column: 6 / span 6;
-											grid-row: 4 / span 3;
-											padding-left: 80px;
-											margin: 100px 0px 100px 0px;
-											border-left: 5px solid rgba(6, 190, 225, .3);
-										}
-
-										.bio-text > p {
-											line-height: 2;
-										}
-
-										.about ion-icon {
-											color: #233CB9;
-										}
-
-										.about .footer ion-icon {
-											color: white;
-										}
-
-										.pink-background {
-											color: white;
-											background-color: #CC0E74;
-
-										}
-
-										/* *********************************** */
 										/* CONTACT ME ADJUSTMENTS */
 										/* *********************************** */
 
 
-										.contact-me .navigation li {
-											padding: 0px;
-										}
-
-										.contact-me .navigation {
-											display: grid;
-											grid-template-columns: 1fr 1fr 1fr;
-											grid-column: 10 / span 3;
-										}
-
-										.contact-me .header {
-											display: grid;
-											grid-template-columns: repeat(12, minmax(50px, 1fr));
-											grid-column-gap: 18px;
-											padding: 20px 40px 10px 40px;
-										}
-
 										.contact-me form {
 											padding-top: 0px;
-											grid-column: 8 / span 3;
-											display: flex;
-											flex-direction: column;
-											align-self: start;
+											grid-column: 8 / span 4;
 										}
 
 										.contact-content {
-											margin-top: 80px;
+											margin: 80px 60px 0px 60px;
 										}
 
 										.contact-text {
-											grid-column: 3 / span 5;
+											grid-column: 2 / span 5;
 										}
 
 										.contact-content.grid {
@@ -3271,7 +3128,7 @@ p {
 
 										.contact-me .caption {
 											grid-row: 2;
-											grid-column: 3 / span 5;
+											grid-column: 2 / span 5;
 											justify-self: end;
 											padding-right: 80px;
 										}
@@ -3284,155 +3141,181 @@ p {
 											margin-top: 40px;
 										}
 
+										/* *********************************** */
+										/* ABOUT ADJUSTMENTS */
+										/* *********************************** */
 
-															@media screen and (min-width: 1700px) {
-																/* *********************************** */
-																/* DESKSPACE ADJUSTMENTS */
-																/* *********************************** */
+										.picture-divider {
+											display: flex;
+										}
 
-																.answer-takeaways {
-																	margin: 40px 35%;
-																}
+										.square-border {
+											display: flex;
+											align-items: center;
+											justify-content: space-around;
+											border-radius: 50px;
+										}
 
-																#deskspace-preview-image {
-																	width: 70%;
-																}
+										#profile-pic2,
+										#belle {
+											object-fit: contain;
+											height: 400px;
+											align-self: center;
+											justify-self: center;
+											float: none;
+											border-radius: 20px;
+										}
 
-																#problem-solution {
-																	margin: 0px 0px 100px 0px;
-																	padding-left: 120px;
-																	padding-right: 120px;
-																}
-
-																.column {
-																	margin: 0px 100px;
-																}
-
-																.analysis {
-																	padding: 80px 400px;
-																}
-
-																.analysis ul {
-																	column-gap: 100px;
-																}
-
-																.question.btn {
-																	margin: 60px auto 100px auto;
-																}
-
-																#competitive .grid {
-																	padding-top: 80px;
-																}
-
-																#user-flow-image {
-																	width: 70%;
-																	padding: 60px 0px;
-																}
-
-																.co-logo {
-																	height: 140px;
-																	width: 140px;
-																}
-
-																.co-summary {
-																	width: 100%;
-																}
-
-																#company1 {
-																	grid-column: 1 / span 6;
-																	width: 70%;
-																}
-
-																.company-vl {
-																	height: 600px;
-																}
-
-																#stickies {
-																	padding-top: 100px;
-																	width: 40%;
-																}
-
-																#priorities {
-																	padding: 40px 0px;
-																	width: 15%;
-																}
-
-																#devices {
-																	width: 35%;
-																}
-
-																.complaint-image {
-																	width: 30vw;
-																	margin-left: 6vw;
-																}
-
-																.summ {
-																	margin: 0 6vw;
-																}
-
-																#tested-tasks,
-																#preference-testing,
-																#wireframe-sketch-description,
-																#usability-test-description,
-																#color-description,
-																#usability-test-description2,
-																#color-description {
-																	padding: 80px 30%;
-																}
-
-																#wireframe-sketches-images {
-																	width: 40%;
-																}
-
-																#digital-wireframes > img {
-																width: 50%;
-																}
-
-																.concept-text,
-																#name-description {
-																	margin: 100px 30%;
-																}
-
-																#brand-concept-image {
-																	width: 40%;
-																}
-
-																#quotes-section {
-																	margin: 20px 30%;
-																}
-
-																#color-palette {
-																	width: 40%;
-																}
-
-																#buttons {
-																	width: 30%;
-																}
-
-																.usability .image-fit {
-																	width: 60%;
-																}
-
-																.bullets {
-																	margin: 0px 15%;
-																}
-
-																#usability6 {
-																	width: 50%;
-																}
-
-																#usability7 {
-																	width: 35%;
-																}
-
-																#conclusion-quote {
-																	padding: 0px 60px;
-																	text-align: center;
-																	font-size: 20px;
-																}
-
-															}
+										}
 
 
+																				@media screen and (min-width: 1700px) {
+																					/* *********************************** */
+																					/* DESKSPACE ADJUSTMENTS */
+																					/* *********************************** */
 
-			}
+																					.answer-takeaways {
+																						margin: 40px 35%;
+																					}
+
+																					#deskspace-preview-image {
+																						width: 70%;
+																					}
+
+																					#problem-solution {
+																						margin: 0px 0px 100px 0px;
+																						padding-left: 120px;
+																						padding-right: 120px;
+																					}
+
+																					.column {
+																						margin: 0px 100px;
+																					}
+
+																					.analysis {
+																						padding: 80px 400px;
+																					}
+
+																					.analysis ul {
+																						column-gap: 100px;
+																					}
+
+																					.question.btn {
+																						margin: 60px auto 100px auto;
+																					}
+
+																					#competitive .grid {
+																						padding-top: 80px;
+																						margin: 0px 100px;
+																					}
+
+																					#user-flow-image {
+																						width: 70%;
+																						padding: 60px 0px;
+																					}
+
+																					.co-logo {
+																						height: 140px;
+																						width: 140px;
+																					}
+
+																					.co-summary {
+																						width: 100%;
+																					}
+
+																					#company1 {
+																						grid-column: 1 / span 6;
+																						width: 70%;
+																					}
+
+																					.company-vl {
+																						height: 600px;
+																					}
+
+																					#stickies {
+																						padding-top: 100px;
+																						width: 40%;
+																					}
+
+																					#priorities {
+																						padding: 40px 0px;
+																						width: 15%;
+																					}
+
+																					#devices {
+																						width: 35%;
+																					}
+
+																					.complaint-image {
+																						width: 30vw;
+																						margin-left: 6vw;
+																					}
+
+																					.summ {
+																						margin: 0 6vw;
+																					}
+
+																					#tested-tasks,
+																					#preference-testing,
+																					#wireframe-sketch-description,
+																					#usability-test-description,
+																					#color-description,
+																					#usability-test-description2,
+																					#color-description {
+																						padding: 80px 30%;
+																					}
+
+																					#wireframe-sketches-images {
+																						width: 40%;
+																					}
+
+																					#digital-wireframes > img {
+																					width: 50%;
+																					}
+
+																					.concept-text,
+																					#name-description {
+																						margin: 100px 30%;
+																					}
+
+																					#brand-concept-image {
+																						width: 40%;
+																					}
+
+																					#quotes-section {
+																						margin: 20px 30%;
+																					}
+
+																					#color-palette {
+																						width: 40%;
+																					}
+
+																					#buttons {
+																						width: 30%;
+																					}
+
+																					.usability .image-fit {
+																						width: 60%;
+																					}
+
+																					.bullets {
+																						margin: 0px 15%;
+																					}
+
+																					#usability6 {
+																						width: 50%;
+																					}
+
+																					#usability7 {
+																						width: 35%;
+																					}
+
+																					#conclusion-quote {
+																						padding: 0px 60px;
+																						text-align: center;
+																						font-size: 20px;
+																					}
+
+																				}
+
+								}
