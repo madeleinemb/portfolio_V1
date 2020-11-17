@@ -238,6 +238,10 @@ p {
   background: linear-gradient( rgba(6, 190, 225, 0.6), rgba(6, 190, 225, 0.6));
 }
 
+.container .header {
+	 background-color: #06BEE1;
+}
+
 
 /* LINKS ***************************** */
 
@@ -374,32 +378,6 @@ p {
   background-color: #CC0E74;
 	padding: 2px 0px 2px 0px;
   opacity: 40%;
-}
-
-.container .header,
-.home .topnav {
-    background: linear-gradient(231deg, #00D9FF, #06bee1, #FF47AC);
-    background-size: 600% 600%;
-
-    -webkit-animation: Maddie 14s ease infinite;
-    -moz-animation: Maddie 14s ease infinite;
-    animation: Maddie 14s ease infinite;
-}
-
-@-webkit-keyframes Maddie {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes Maddie {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes Maddie {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
 }
 
 /* styling headings for each case study */
@@ -1541,8 +1519,37 @@ p {
 					display: none;
 				}
 
+				.container .header {
+				    background: linear-gradient(231deg, #00D9FF, #06bee1, #FF47AC);
+				    background-size: 600% 600%;
+
+				    -webkit-animation: Maddie 14s ease infinite;
+				    -moz-animation: Maddie 14s ease infinite;
+				    animation: Maddie 14s ease infinite;
+				}
+
+				@-webkit-keyframes Maddie {
+				    0%{background-position:0% 50%}
+				    50%{background-position:100% 50%}
+				    100%{background-position:0% 50%}
+				}
+				@-moz-keyframes Maddie {
+				    0%{background-position:0% 50%}
+				    50%{background-position:100% 50%}
+				    100%{background-position:0% 50%}
+				}
+				@keyframes Maddie {
+				    0%{background-position:0% 50%}
+				    50%{background-position:100% 50%}
+				    100%{background-position:0% 50%}
+				}
+
 				.contact-logo {
 					display: none;
+				}
+
+				.hero {
+					padding: 60px 10% 60px 10%;
 				}
 
 				/* GENERAL NAVIGATION for Desktop and Tablet********************** */
@@ -2118,7 +2125,7 @@ p {
 						.hero {
 							line-height: 1.6;
 							grid-column: 1 / -1;
-							padding: 80px 40px 80px 40px;
+							padding: 80px 20% 80px 20%;
 						}
 
 						.navigation {
@@ -2797,7 +2804,6 @@ p {
 										.hero {
 											line-height: 1.6;
 											grid-column: 1 / -1;
-											padding: 80px 40px 80px 40px;
 										}
 
 										#myBtn {
@@ -3222,6 +3228,14 @@ p {
 
 
 																				@media screen and (min-width: 1700px) {
+																					/* *********************************** */
+																					/* HOMEPAGE ADJUSTMENTS */
+																					/* *********************************** */
+
+																					.hero {
+																						padding: 80px 18% 80px 18%;
+																					}
+
 																					/* *********************************** */
 																					/* DESKSPACE ADJUSTMENTS */
 																					/* *********************************** */
