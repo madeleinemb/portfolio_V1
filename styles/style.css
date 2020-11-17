@@ -234,8 +234,7 @@ p {
 /* setting header background color */
 
 .about .header,
-.contact-me .header,
-.topnav {
+.contact-me .header {
   background: linear-gradient( rgba(6, 190, 225, 0.6), rgba(6, 190, 225, 0.6));
 }
 
@@ -243,7 +242,7 @@ p {
 /* LINKS ***************************** */
 
 .active-link {
-	color: #03256C !important;
+	font-weight: 600;
 	text-decoration: underline;
 }
 
@@ -310,7 +309,7 @@ p {
 	font-size: 16px;
 	position: relative;
 	bottom: 5vh;
-	left: 80%;
+	left: 70%;
 	text-decoration: underline;
 	color: #242424;
 }
@@ -377,7 +376,8 @@ p {
   opacity: 40%;
 }
 
-.container .header {
+.container .header,
+.home .topnav {
 	animation: pulse 10s infinite;
 }
 
