@@ -378,18 +378,28 @@ p {
 
 .container .header,
 .home .topnav {
-	animation: pulse 10s infinite;
+    background: linear-gradient(231deg, #06bee1, #3892C6, #6966AB);
+    background-size: 600% 600%;
+
+    -webkit-animation: Maddie 14s ease infinite;
+    -moz-animation: Maddie 14s ease infinite;
+    animation: Maddie 14s ease infinite;
 }
 
-@keyframes pulse {
-
-	0%, 100% {
-		background-color: #06BEE1;
-	}
-
-	50% {
-		background-color: #6ad8ed;
-	}
+@-webkit-keyframes Maddie {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes Maddie {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes Maddie {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 
 /* styling headings for each case study */
@@ -1101,7 +1111,7 @@ p {
 
 .user-quotes {
 	font-weight: 800;
-	color: ##3B7D7E;
+	color: #3B7D7E;
 }
 
 #quote2 {
@@ -3359,5 +3369,3 @@ p {
 																					}
 
 																				}
-
-								}
