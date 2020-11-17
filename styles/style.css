@@ -3346,21 +3346,48 @@ p {
 																						width: 30%;
 																					}
 
-																					.usability .image-fit {
-																						width: 60%;
+																					.flex-container {
+																						display: flex;
+																						flex-wrap: wrap;
+																						justify-content: space-around;
+																					}
+
+																					#preference1,
+																					#preference2 {
+																						width: 35%;
+																						margin: auto;
+																						height: 450px;
 																					}
 
 																					.bullets {
 																						margin: 0px 15%;
 																					}
 
-																					#usability6 {
-																						width: 50%;
+																					.bullets li {
+																						overflow: hidden;
 																					}
 
-																					#usability7 {
-																						width: 35%;
+																					#preference2 {
+																						display: flex;
+																						flex-wrap: wrap;
+																						align-items: center;
+																						justify-content: center;
 																					}
+
+																					#preference3 {
+																						width: 40%;
+																						align-self: center;
+																					}
+
+																					#preference3 {
+																						padding: 40px;
+																					}
+
+																					#pref-images-3 {
+																						display: flex;
+																					}
+
+
 
 																					#conclusion-quote {
 																						padding: 0px 60px;
