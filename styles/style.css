@@ -2558,7 +2558,7 @@ p {
 						}
 
 						.usability .image-fit {
-							width: 75%;
+							width: 50%;
 							margin: 0 auto;
 							padding: 20px;
 						}
@@ -2619,6 +2619,10 @@ p {
 						.quote {
 							margin: 80px 20% 100px 20%;
 							padding: 60px;
+						}
+
+						.to-top {
+							left: 80%;
 						}
 
 
@@ -3110,12 +3114,34 @@ p {
 											padding-top:40px;
 										}
 
+										.usability-images {
+											display: flex;
+											flex-direction: row;
+											margin: 0 10%;
+										}
+
+										#usability-visuals li {
+											padding: 30px 28%;
+										}
+
 										#usability1 {
+											width: 40%;
+										}
+
+										#usability6 {
+											width: 50%;
+										}
+
+										#usability7 {
 											width: 40%;
 										}
 
 										#illustration {
 											width: 60%;
+										}
+
+										.to-top {
+											left: 85%;
 										}
 
 
