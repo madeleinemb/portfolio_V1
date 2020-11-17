@@ -378,7 +378,7 @@ p {
 
 .container .header,
 .home .topnav {
-    background: linear-gradient(231deg, #06bee1, #3892C6, #6966AB);
+    background: linear-gradient(231deg, #00D9FF, #06bee1, #FF47AC);
     background-size: 600% 600%;
 
     -webkit-animation: Maddie 14s ease infinite;
