@@ -121,7 +121,7 @@ p {
 }
 
 .divider {
-	margin: 0px 80px 10px 80px;
+	margin: 100px;
 	padding: 2px 0px 2px 0px;
 	border-radius: 20px;
 }
@@ -374,7 +374,7 @@ p {
 .container .divider {
 	/* spacing and color of divider */
   grid-column: 2 / 4;
-	margin: 0px;
+	margin: 40px 0px;
   background-color: #CC0E74;
 	padding: 2px 0px 2px 0px;
   opacity: 40%;
@@ -392,11 +392,29 @@ p {
 	color: white;
 }
 
+.container .btn.disabled {
+	background-color: #F4CEE3;
+	color: #6B6B6B;
+	box-shadow: none;
+}
+
+p.btn.disabled {
+	line-height: 1;
+}
+
 .case-description {
 		font-size: 16px;
 		line-height: 1.4;
 		font-family: 'Lato', sans-serif;
 }
+
+/* .case-description span {
+	border-style: solid;
+	border-color: #233CB9;
+	border-width: 2px;
+	border-radius: 10px;
+	padding: 2px;
+} */
 
 .case-title {
 		font-weight: 600;
@@ -404,9 +422,16 @@ p {
 
 /* images in previews for case studies */
 .imagepreview {
-	margin-top: 10px;
 	object-fit: cover;
 	width: 100%;
+}
+
+#case2 > .imagepreview {
+	margin-top: 40px;
+}
+
+.inline {
+	max-width: 150px;
 }
 
 .case > * {
@@ -421,9 +446,6 @@ p {
 	text-align: center;
 }
 
-#case2 > .imagepreview {
-	grid-row: 1;
-}
 
 .home .footer h2 {
 	color: inherit;
@@ -1581,6 +1603,17 @@ p {
 					display: none;
 				}
 
+				/* HOMEPAGE mods for Tablet */
+				#case2 {
+					margin-top: 40px;
+				}
+
+				#case2 > .imagepreview {
+					max-width: 75%;
+					justify-self: center;
+					margin-top: 20px;
+				}
+
 				/*DESKTOP GRID *************/
 
 				.grid {
@@ -1635,7 +1668,8 @@ p {
 				}
 
 				.container .divider {
-					grid-column: 4/10;
+					grid-column: 1/-1;
+					margin: 50px 100px;
 				}
 
 				#specs-heading {
@@ -2091,8 +2125,8 @@ p {
 							border: none;
 							border-radius: 50px;
 							padding: 2px 0px 2px 0px;
-							margin-top: 40px;
-							margin-bottom: 40px;
+							margin-top: 100px;
+							margin-bottom: 100px;
 						}
 
 						.full-mobile-width {
@@ -2145,22 +2179,26 @@ p {
 							line-height: 2;
 						}
 
-						#fire,
-						#deskspacepreview {
-							grid-column: 2 / 9;
-						}
-
 						#water {
 							grid-column: 5 / 12;
 						}
 
 						.imagepreview {
 							object-fit: cover;
+							grid-column: 2 / 9;
 							max-width: 800px;
+							margin-top: 0px;
 						}
 
 						#case2 > .imagepreview {
 							grid-row: auto;
+							max-width: 80%;
+							padding-right: 20px;
+							margin-top: 10px;
+						}
+
+						#case1 > .imagepreview {
+							margin-top: -20px;
 						}
 
 						/* Summary for first and third case studies grid positioning */
@@ -2170,22 +2208,16 @@ p {
 							grid-row-gap: 20px;
 							text-align: left;
 							justify-items: start;
-							align-content: center;
+							align-content: start;
 						}
 
-						/* Summary for second case study grid positioning */
-						.summary2 {
-							grid-column: 2 / span 2;
-							display: grid;
-							grid-row-gap: 20px;
-							text-align: left;
-							justify-items: start;
-							align-content: center;
-						}
 
-						.summary > h4,
-						.summary2 > h4 {
+						.summary > h4 {
 							display: inherit;
+						}
+
+						#case2 > .summary {
+							grid-column: 9 / span 4;
 						}
 
 
@@ -2747,6 +2779,9 @@ p {
 
 					}
 
+
+
+
 										@media screen and (min-width: 1280px) {
 										/* *********************************** */
 										/* DESKTOP ADJUSTMENTS */
@@ -2822,22 +2857,20 @@ p {
 											line-height: 2;
 										}
 
-										#fire,
-										#deskspacepreview {
-											grid-column: 2 / 9;
-										}
-
 										#water {
 											grid-column: 5 / 12;
 										}
 
 										.imagepreview {
 											object-fit: cover;
-											max-width: 800px;
+											max-width: 1000px;
+											grid-column: 2 / 9;
 										}
 
 										#case2 > .imagepreview {
 											grid-row: auto;
+											max-width: 900px;
+											padding-right: 50px;
 										}
 
 										/* Summary for first and third case studies grid positioning */
@@ -2847,28 +2880,20 @@ p {
 											grid-row-gap: 20px;
 											text-align: left;
 											justify-items: start;
-											align-content: center;
+											align-content: start;
 										}
 
-										/* Summary for second case study grid positioning */
-										.summary2 {
-											grid-column: 2 / span 2;
-											display: grid;
-											grid-row-gap: 20px;
-											text-align: left;
-											justify-items: start;
-											align-content: center;
+										#case2 > .summary {
+											grid-column: 9 / span 3;
 										}
 
-										.summary > h4,
-										.summary2 > h4 {
+										.summary > h4 {
 											display: inherit;
 										}
 
 
 										/* Line separator between cases */
 										.container .divider {
-										  grid-column: 4/10;
 										  background-color: #CC0E74;
 										  opacity: 40%;
 										}
@@ -3234,6 +3259,18 @@ p {
 
 																					.hero {
 																						padding: 80px 18% 80px 18%;
+																					}
+
+																					#case1 > .imagepreview {
+																						margin-top: -28px;
+																					}
+
+																					#case2 > .imagepreview {
+																						padding-right: 30px;
+																					}
+
+																					#case2 > .summary {
+																						padding-top: 10px;
 																					}
 
 																					/* *********************************** */
