@@ -21,8 +21,8 @@ html {
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 500;
+	cursor: pointer;
 }
-
 
 /* GENERAL FOOTER *************************** */
 .footer {
@@ -392,6 +392,11 @@ p {
 	color: white;
 }
 
+.container .btn:hover {
+		background-color: #A30B5C;
+	}
+
+
 .container .btn.disabled {
 	background-color: #F4CEE3;
 	color: #6B6B6B;
@@ -695,12 +700,22 @@ p.btn.disabled {
 	font-weight: 500;
 }
 
+.deskspace .prototype-btn:hover {
+	background-color: #9B2F1C;
+}
+
 	/* Deskspace generic buttons */
 
 .deskspace .btn {
   background-color: #4B7B7D;
 	color: white;
 }
+
+.deskspace .btn:hover {
+  background-color: #3C6364;
+}
+
+
 
 /* --- HEADER ---- */
 .deskspace .header,
